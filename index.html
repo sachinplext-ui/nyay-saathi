@@ -37,26 +37,47 @@
     </section>
     <section id="drafts" class="section"><div class="section-head"><div><span class="eyebrow" data-i18n="templates">उपयोगी प्रारूप</span><h2 data-i18n="draftTitle">दस्तावेज़ टेम्पलेट</h2></div></div>
       <div class="draft-panel"><div><h3 data-i18n="applicationTitle">सामान्य आवेदन का प्रारूप</h3><p data-i18n="applicationText">अपनी परिस्थिति के अनुसार संपादित करें। जमा करने से पहले योग्य व्यक्ति से जाँच करवाएँ।</p></div><button id="copyDraft" class="btn outline" type="button" data-i18n="copy">प्रारूप कॉपी करें</button></div>
-      <pre id="draftText" class="draft-text">सेवा में,
-थाना प्रभारी / संबंधित अधिकारी
-[कार्यालय का नाम]
+      <div class="generator">
+        <h3>आवेदन जनरेटर</h3>
+        <p class="generator-note">यह जानकारी केवल इसी पेज पर आपके ब्राउज़र में इस्तेमाल होगी। नाम, पता, फोन, FIR नंबर, पहचान संख्या या गोपनीय दस्तावेज़ यहाँ न लिखें।</p>
+        <label for="draftType">आवेदन का प्रकार</label>
+        <select id="draftType">
+          <option value="general">सामान्य आवेदन</option>
+          <option value="police">पुलिस को शिकायत/निवेदन</option>
+          <option value="records">दस्तावेज़/रिकॉर्ड की प्रति हेतु अनुरोध</option>
+          <option value="cyber">साइबर शिकायत का फॉलो-अप</option>
+        </select>
+        <label for="draftOffice">किस अधिकारी/कार्यालय को</label>
+        <input id="draftOffice" maxlength="100" placeholder="जैसे: संबंधित थाना प्रभारी / कार्यालय">
+        <label for="draftSubject">विषय</label>
+        <input id="draftSubject" maxlength="140" placeholder="आवेदन का संक्षिप्त विषय">
+        <label for="draftFacts">घटनाओं का तथ्यात्मक विवरण</label>
+        <textarea id="draftFacts" rows="4" maxlength="1800" placeholder="केवल सामान्य तथ्य और तारीख़ों का क्रम लिखें; निजी पहचान वाली जानकारी न दें।"></textarea>
+        <label for="draftRequest">आपका अनुरोध</label>
+        <textarea id="draftRequest" rows="2" maxlength="500" placeholder="आप संबंधित कार्यालय से क्या अनुरोध करना चाहते हैं?"></textarea>
+        <div class="generator-actions">
+          <button id="generateDraft" class="btn gold" type="button">आवेदन तैयार करें</button>
+          <button id="copyDraft" class="btn outline" type="button">आवेदन कॉपी करें</button>
+        </div>
+        <pre id="draftText" class="draft-text" aria-live="polite">सेवा में,
+[संबंधित अधिकारी/कार्यालय]
 
 विषय: [आवेदन का विषय]
 
 महोदय/महोदया,
-मैं [अपना नाम] निवेदन करता/करती हूँ कि [तथ्यों को तारीख और क्रम के अनुसार स्पष्ट लिखें]।
+[घटनाओं का तथ्यात्मक विवरण]
 
-कृपया नियमानुसार मेरे आवेदन पर विचार कर आवश्यक मार्गदर्शन/कार्यवाही की जानकारी देने का कष्ट करें।
+निवेदन: [अपना अनुरोध]
 
 संलग्नक: [यदि कोई हों]
 दिनांक: [दिनांक]
-नाम: [नाम]
-संपर्क: [सुरक्षित संपर्क विवरण]</pre>
+[नाम/हस्ताक्षर]</pre>
+      </div>
     </section>
     <section class="official"><h2 data-i18n="officialTitle">आधिकारिक संसाधन</h2><div class="resource-links"><a href="https://nalsa.gov.in/" target="_blank" rel="noopener">NALSA ↗</a><a href="https://www.mha.gov.in/" target="_blank" rel="noopener">Ministry of Home Affairs ↗</a><a href="https://cybercrime.gov.in/" target="_blank" rel="noopener">National Cyber Crime Portal ↗</a><a href="https://www.indiacode.nic.in/" target="_blank" rel="noopener">India Code ↗</a></div></section>
   </main>
   <footer><span>⚖ NYAY SAATHI</span><span data-i18n="footer">सामान्य जानकारी के लिए • कानूनी सलाह का विकल्प नहीं</span></footer>
   <script src="api-config.js"></script>
-  <script src="app.js?v=4"></script>
+  <script src="app.js?v=5"></script>
 </body>
 </html>
