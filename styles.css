@@ -11,3 +11,7 @@
 .generator-actions .btn{min-height:48px}
 .generator .draft-text{display:block;width:100%;max-width:100%;overflow-wrap:anywhere;white-space:pre-wrap}
 @media(max-width:760px){.generator{padding:16px!important}.generator label{margin-top:16px!important}.generator-actions{display:grid;grid-template-columns:1fr}.generator-actions .btn{width:100%}}
+
+.form-field{display:block!important;width:100%;margin:0 0 16px!important}
+.form-field label{display:block!important;width:100%;margin:0 0 7px!important}
+.form-field input,.form-field select,.form-field textarea{display:block!important;width:100%!important;max-width:100%!important;margin:0!important}
