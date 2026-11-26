@@ -28,3 +28,10 @@
   #drafts>.generator{display:block!important;width:100%!important;max-width:none!important;margin:0!important;padding:0!important;border:0!important;box-shadow:none!important;background:#fff!important}
   .generator>#draftText{display:block!important;position:static!important;visibility:visible!important;width:100%!important;max-width:none!important;height:auto!important;min-height:0!important;max-height:none!important;overflow:visible!important;margin:0!important;padding:0!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:#fff!important;color:#111!important;font-family:"Noto Serif Devanagari","Nirmala UI",serif!important;font-size:16pt!important;font-weight:400!important;line-height:1.8!important;white-space:pre-wrap!important;overflow-wrap:break-word!important;word-break:normal!important}
 }
+
+
+/* Readable assistant answers and balanced mobile guide cards */
+.answer{white-space:pre-line;overflow-wrap:anywhere;line-height:1.8;background:#f8fafc;border-left:3px solid var(--gold);padding:14px;border-radius:0 7px 7px 0}
+.answer:empty{display:none}
+.cards{grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
+@media(max-width:760px){.ask-box{padding:18px}.answer{font-size:14px;padding:12px}.card{padding:21px}.section-head p{margin-top:10px}}
