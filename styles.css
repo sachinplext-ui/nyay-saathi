@@ -15,3 +15,10 @@
 .form-field{display:block!important;width:100%;margin:0 0 16px!important}
 .form-field label{display:block!important;width:100%;margin:0 0 7px!important}
 .form-field input,.form-field select,.form-field textarea{display:block!important;width:100%!important;max-width:100%!important;margin:0!important}
+
+@media print{
+  @page{size:A4;margin:18mm}
+  body *{visibility:hidden!important}
+  #draftText,#draftText *{visibility:visible!important}
+  #draftText{position:absolute!important;left:0!important;top:0!important;width:100%!important;margin:0!important;padding:0!important;border:0!important;box-shadow:none!important;background:#fff!important;color:#111!important;font:12pt/1.65 serif!important;white-space:pre-wrap!important;overflow:visible!important}
+}
