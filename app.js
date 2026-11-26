@@ -20,9 +20,18 @@ const legalTopics={
 document.getElementById("askBtn").addEventListener("click",()=>{const q=document.getElementById("question").value.trim();const out=document.getElementById("answer");if(!q){out.textContent=language==="hi"?"कृपया पहले अपना सवाल लिखें।":"Please write your question first.";return}if(q.length>1200){out.textContent=language==="hi"?"कृपया 1200 अक्षरों से छोटा सवाल लिखें।":"Please keep your question under 1,200 characters.";return}const lower=q.toLowerCase();const topics=legalTopics[language];const match=topics.find(topic=>topic.keys.some(key=>lower.includes(key)));const privacy=language==="hi"?"\n\nगोपनीयता: यहाँ नाम, पता, फोन नंबर, FIR नंबर, पहचान संख्या या निजी दस्तावेज़ न लिखें।":"\n\nPrivacy: Do not enter names, addresses, phone numbers, FIR numbers, identity numbers, or private documents here.";out.textContent=(match?match.answer:(language==="hi"?"मैं इस सवाल के लिए पक्का सामान्य विषय नहीं पहचान पाया। संबंधित दस्तावेज़ सुरक्षित रखें, India Code और सरकारी स्रोत देखें, और योग्य वकील/NALSA से सलाह लें। https://www.indiacode.nic.in/":"I could not confidently identify a general topic for this question. Preserve relevant records, check India Code and official sources, and consult a qualified advocate/legal-aid service. https://www.indiacode.nic.in/"))+privacy;});
 const draftLabels={hi:{general:"सामान्य आवेदन",police:"पुलिस को शिकायत/निवेदन",records:"दस्तावेज़/रिकॉर्ड की प्रति हेतु अनुरोध",cyber:"साइबर शिकायत का फॉलो-अप"},en:{general:"General application",police:"Complaint / representation to police",records:"Request for a copy of records",cyber:"Cyber complaint follow-up"}};
 function applyDraftLanguage(){
- const t=translations[language], ids={draftGeneratorTitle:"generatorTitle",draftTypeLabel:"typeLabel",draftOfficeLabel:"officeLabel",draftSubjectLabel:"subjectLabel",draftFactsLabel:"factsLabel",draftRequestLabel:"requestLabel",generateDraft:"generate",copyDraft:"copyDraft",printDraft:"printDraft"};
- Object.entries(ids).forEach(([id,key])=>{const el=document.getElementById(id);if(el)el.textContent=t[key]});
- const privacy=document.getElementById("draftPrivacy");if(privacy)privacy.textContent=t.privacyNote;
+ const t=translations[language];
+ const setText=(id,selector,value)=>{const el=document.getElementById(id)||document.querySelector(selector);if(el)el.textContent=value};
+ setText("draftGeneratorTitle","#drafts .generator h3",t.generatorTitle);
+ setText("draftTypeLabel",'label[for="draftType"]',t.typeLabel);
+ setText("draftOfficeLabel",'label[for="draftOffice"]',t.officeLabel);
+ setText("draftSubjectLabel",'label[for="draftSubject"]',t.subjectLabel);
+ setText("draftFactsLabel",'label[for="draftFacts"]',t.factsLabel);
+ setText("draftRequestLabel",'label[for="draftRequest"]',t.requestLabel);
+ setText("generateDraft","#generateDraft",t.generate);
+ setText("copyDraft","#copyDraft",t.copyDraft);
+ setText("printDraft","#printDraft",t.printDraft);
+ setText("draftPrivacy",".generator-note",t.privacyNote);
  const placeholders={draftOffice:"officePlaceholder",draftSubject:"subjectPlaceholder",draftFacts:"factsPlaceholder",draftRequest:"requestPlaceholder"};
  Object.entries(placeholders).forEach(([id,key])=>{const el=document.getElementById(id);if(el)el.placeholder=t[key]});
  const type=document.getElementById("draftType");if(type)[...type.options].forEach(o=>{o.textContent=draftLabels[language][o.value]||o.textContent});
