@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: nyay-saathi-api
+    runtime: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGIN
+        value: https://sachinplext-ui.github.io
+      - key: OPENAI_MODEL
+        value: gpt-5.5
