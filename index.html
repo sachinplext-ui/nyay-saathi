@@ -46,22 +46,22 @@
     <section id="drafts" class="section"><div class="section-head"><div><span class="eyebrow" data-i18n="templates">उपयोगी प्रारूप</span><h2 data-i18n="draftTitle">दस्तावेज़ टेम्पलेट</h2></div></div>
       <div class="draft-panel"><div><h3 data-i18n="applicationTitle">सामान्य आवेदन का प्रारूप</h3><p data-i18n="applicationText">अपनी परिस्थिति के अनुसार संपादित करें। जमा करने से पहले योग्य व्यक्ति से जाँच करवाएँ।</p></div></div>
       <div class="generator">
-        <h3>आवेदन जनरेटर</h3>
-        <p class="generator-note">यह जानकारी केवल इसी पेज पर आपके ब्राउज़र में इस्तेमाल होगी। नाम, पता, फोन, FIR नंबर, पहचान संख्या या गोपनीय दस्तावेज़ यहाँ न लिखें।</p>
-        <div class="form-field"><label for="draftType">आवेदन का प्रकार</label>
+        <h3 id="draftGeneratorTitle">आवेदन जनरेटर</h3>
+        <p id="draftPrivacy" class="generator-note">यह जानकारी केवल इसी पेज पर आपके ब्राउज़र में इस्तेमाल होगी। नाम, पता, फोन, FIR नंबर, पहचान संख्या या गोपनीय दस्तावेज़ यहाँ न लिखें।</p>
+        <div class="form-field"><label id="draftTypeLabel" for="draftType">आवेदन का प्रकार</label>
         <select id="draftType">
           <option value="general">सामान्य आवेदन</option>
           <option value="police">पुलिस को शिकायत/निवेदन</option>
           <option value="records">दस्तावेज़/रिकॉर्ड की प्रति हेतु अनुरोध</option>
           <option value="cyber">साइबर शिकायत का फॉलो-अप</option>
         </select></div>
-        <div class="form-field"><label for="draftOffice">किस अधिकारी/कार्यालय को</label>
+        <div class="form-field"><label id="draftOfficeLabel" for="draftOffice">किस अधिकारी/कार्यालय को</label>
         <input id="draftOffice" maxlength="100" placeholder="जैसे: संबंधित थाना प्रभारी / कार्यालय"></div>
-        <div class="form-field"><label for="draftSubject">विषय</label>
+        <div class="form-field"><label id="draftSubjectLabel" for="draftSubject">विषय</label>
         <input id="draftSubject" maxlength="140" placeholder="आवेदन का संक्षिप्त विषय"></div>
-        <div class="form-field"><label for="draftFacts">घटनाओं का तथ्यात्मक विवरण</label>
+        <div class="form-field"><label id="draftFactsLabel" for="draftFacts">घटनाओं का तथ्यात्मक विवरण</label>
         <textarea id="draftFacts" rows="4" maxlength="1800" placeholder="केवल सामान्य तथ्य और तारीख़ों का क्रम लिखें; निजी पहचान वाली जानकारी न दें।"></textarea></div>
-        <div class="form-field"><label for="draftRequest">आपका अनुरोध</label>
+        <div class="form-field"><label id="draftRequestLabel" for="draftRequest">आपका अनुरोध</label>
         <textarea id="draftRequest" rows="2" maxlength="500" placeholder="आप संबंधित कार्यालय से क्या अनुरोध करना चाहते हैं?"></textarea></div>
         <div class="generator-actions">
           <button id="generateDraft" class="btn gold" type="button">आवेदन तैयार करें</button>
@@ -86,6 +86,6 @@
     <section class="official"><h2 data-i18n="officialTitle">आधिकारिक संसाधन</h2><div class="resource-links"><a href="https://nalsa.gov.in/" target="_blank" rel="noopener">NALSA ↗</a><a href="https://www.mha.gov.in/" target="_blank" rel="noopener">Ministry of Home Affairs ↗</a><a href="https://cybercrime.gov.in/" target="_blank" rel="noopener">National Cyber Crime Portal ↗</a><a href="https://www.indiacode.nic.in/" target="_blank" rel="noopener">India Code ↗</a></div></section>
   </main>
   <footer><span>⚖ NYAY SAATHI</span><span data-i18n="footer">सामान्य जानकारी के लिए • कानूनी सलाह का विकल्प नहीं</span></footer>
-  <script src="app.js?v=12"></script>
+  <script src="app.js?v=13"></script>
 </body>
 </html>
