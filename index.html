@@ -36,7 +36,7 @@
       <div class="ask-box"><label for="question" data-i18n="questionLabel">आप किस बारे में जानना चाहते हैं?</label><textarea id="question" rows="3" placeholder="जैसे: FIR की कॉपी कैसे मिलेगी?"></textarea><button id="askBtn" class="btn gold" type="button" data-i18n="getGuidance">सामान्य मार्गदर्शन देखें</button><div id="answer" class="answer" aria-live="polite"></div></div>
     </section>
     <section id="drafts" class="section"><div class="section-head"><div><span class="eyebrow" data-i18n="templates">उपयोगी प्रारूप</span><h2 data-i18n="draftTitle">दस्तावेज़ टेम्पलेट</h2></div></div>
-      <div class="draft-panel"><div><h3 data-i18n="applicationTitle">सामान्य आवेदन का प्रारूप</h3><p data-i18n="applicationText">अपनी परिस्थिति के अनुसार संपादित करें। जमा करने से पहले योग्य व्यक्ति से जाँच करवाएँ।</p></div><button id="copyDraft" class="btn outline" type="button" data-i18n="copy">प्रारूप कॉपी करें</button></div>
+      <div class="draft-panel"><div><h3 data-i18n="applicationTitle">सामान्य आवेदन का प्रारूप</h3><p data-i18n="applicationText">अपनी परिस्थिति के अनुसार संपादित करें। जमा करने से पहले योग्य व्यक्ति से जाँच करवाएँ।</p></div></div>
       <div class="generator">
         <h3>आवेदन जनरेटर</h3>
         <p class="generator-note">यह जानकारी केवल इसी पेज पर आपके ब्राउज़र में इस्तेमाल होगी। नाम, पता, फोन, FIR नंबर, पहचान संख्या या गोपनीय दस्तावेज़ यहाँ न लिखें।</p>
@@ -58,6 +58,7 @@
         <div class="generator-actions">
           <button id="generateDraft" class="btn gold" type="button">आवेदन तैयार करें</button>
           <button id="copyDraft" class="btn outline" type="button">आवेदन कॉपी करें</button>
+          <button id="printDraft" class="btn outline" type="button">PDF / प्रिंट करें</button>
         </div>
         <pre id="draftText" class="draft-text" aria-live="polite">सेवा में,
 [संबंधित अधिकारी/कार्यालय]
@@ -78,6 +79,6 @@
   </main>
   <footer><span>⚖ NYAY SAATHI</span><span data-i18n="footer">सामान्य जानकारी के लिए • कानूनी सलाह का विकल्प नहीं</span></footer>
   <script src="api-config.js"></script>
-  <script src="app.js?v=7"></script>
+  <script src="app.js?v=8"></script>
 </body>
 </html>
