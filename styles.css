@@ -35,3 +35,8 @@
 .answer:empty{display:none}
 .cards{grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
 @media(max-width:760px){.ask-box{padding:18px}.answer{font-size:14px;padding:12px}.card{padding:21px}.section-head p{margin-top:10px}}
+
+
+.form-status{margin:12px 0;padding:12px 14px;border-radius:8px;background:#fff7e6;border:1px solid #dfc27a;color:#5b4820;font-weight:600;line-height:1.5}
+.form-status[hidden]{display:none}
+#clearDraft{margin-top:8px}
