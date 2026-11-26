@@ -30,7 +30,7 @@ function showGuidance(){
  out.textContent=(match?match.answer:(language==="hi"?"मैं इस सवाल के लिए पक्का सामान्य विषय नहीं पहचान पाया। संबंधित दस्तावेज़ सुरक्षित रखें, India Code और सरकारी स्रोत देखें, और योग्य वकील/NALSA से सलाह लें। https://www.indiacode.nic.in/":"I could not confidently identify a general topic for this question. Preserve relevant records, check India Code and official sources, and consult a qualified advocate/legal-aid service. https://www.indiacode.nic.in/"))+privacy;
 }
 document.getElementById("askBtn").addEventListener("click",showGuidance);
-const draftLabels={hi:{general:"सामान्य आवेदन",police:"पुलिस को शिकायत/निवेदन",records:"दस्तावेज़/रिकॉर्ड की प्रति हेतु अनुरोध",cyber:"साइबर शिकायत का फॉलो-अप"},en:{general:"General application",police:"Complaint / representation to police",records:"Request for a copy of records",cyber:"Cyber complaint follow-up"}};
+const draftLabels={hi:{general:"सामान्य आवेदन",police:"पुलिस को शिकायत/निवेदन",records:"दस्तावेज़/रिकॉर्ड की प्रति हेतु अनुरोध",fircopy:"FIR की कॉपी हेतु अनुरोध",cyber:"साइबर शिकायत का फॉलो-अप"},en:{general:"General application",police:"Complaint / representation to police",records:"Request for a copy of records",fircopy:"Request for a copy of an FIR",cyber:"Cyber complaint follow-up"}};
 function applyDraftLanguage(){
  const t=translations[language];
  const setText=(id,selector,value)=>{const el=document.getElementById(id)||document.querySelector(selector);if(el)el.textContent=value};
@@ -52,8 +52,16 @@ function applyDraftLanguage(){
  buildDraft();
 }
 function buildDraft(){
- const en=language==="en", office=document.getElementById("draftOffice").value.trim()||(en?"[Relevant officer / office]":"[संबंधित अधिकारी/कार्यालय]"), subject=document.getElementById("draftSubject").value.trim()||(en?"[Application subject]":"[आवेदन का विषय]"), facts=document.getElementById("draftFacts").value.trim()||(en?"[Factual description of events]":"[घटनाओं का तथ्यात्मक विवरण]"), request=document.getElementById("draftRequest").value.trim()||(en?"[Your request]":"[अपना अनुरोध]"), enclosures=document.getElementById("draftEnclosures").value.trim(), date=new Intl.DateTimeFormat(en?"en-IN":"hi-IN",{day:"numeric",month:"long",year:"numeric"}).format(new Date()), type=draftLabels[language][document.getElementById("draftType").value]||draftLabels[language].general;
- const output=en?"To,\n"+office+"\n\nSubject: "+subject+"\n\nSir/Madam,\nI wish to bring the following facts to your attention regarding this "+type+":\n\n"+facts+"\n\nI therefore request that: "+request+"\n\n"+(enclosures?"Enclosures: "+enclosures+"\n\n":"")+"Date: "+date+"\nName / Signature: [Name and signature]":"सेवा में,\n"+office+"\n\nविषय: "+subject+"\n\nमहोदय/महोदया,\nमैं इस "+type+" के संबंध में निम्न तथ्य आपके संज्ञान में लाना चाहता/चाहती हूँ:\n\n"+facts+"\n\nअतः निवेदन है कि: "+request+"\n\n"+(enclosures?"संलग्नक: "+enclosures+"\n\n":"")+"दिनांक: "+date+"\nनाम / हस्ताक्षर: [नाम और हस्ताक्षर]";
+ const en=language==="en", typeKey=document.getElementById("draftType").value, office=document.getElementById("draftOffice").value.trim()||(en?"[Relevant officer / office]":"[संबंधित अधिकारी/कार्यालय]"), subject=document.getElementById("draftSubject").value.trim()||(en?"[Application subject]":"[आवेदन का विषय]"), facts=document.getElementById("draftFacts").value.trim()||(en?"[Factual description of events]":"[घटनाओं का तथ्यात्मक विवरण]"), request=document.getElementById("draftRequest").value.trim()||(en?"[Your request]":"[अपना अनुरोध]"), enclosures=document.getElementById("draftEnclosures").value.trim(), date=new Intl.DateTimeFormat(en?"en-IN":"hi-IN",{day:"numeric",month:"long",year:"numeric"}).format(new Date());
+ const templates={
+  general:{en:"I wish to bring the following facts to your attention:",hi:"मैं निम्न तथ्य आपके संज्ञान में लाना चाहता/चाहती हूँ:"},
+  police:{en:"I wish to submit this complaint and place the following facts on record:",hi:"मैं यह शिकायत प्रस्तुत करते हुए निम्न तथ्य रिकॉर्ड पर रखना चाहता/चाहती हूँ:"},
+  records:{en:"I am writing to request access to the following record/document:",hi:"मैं निम्न रिकॉर्ड/दस्तावेज़ की प्रति/उपलब्धता हेतु अनुरोध कर रहा/रही हूँ:"},
+  fircopy:{en:"I respectfully request information about the procedure for obtaining a copy of the relevant FIR:",hi:"मैं संबंधित FIR की प्रति प्राप्त करने की प्रक्रिया और उपलब्धता के संबंध में जानकारी देने का अनुरोध करता/करती हूँ:"},
+  cyber:{en:"I am submitting a follow-up regarding a cybercrime report and provide these general details:",hi:"मैं साइबर अपराध की पूर्व शिकायत के संबंध में फॉलो-अप प्रस्तुत कर रहा/रही हूँ और निम्न सामान्य विवरण दे रहा/रही हूँ:"}
+ };
+ const intro=(templates[typeKey]||templates.general)[en?"en":"hi"];
+ const output=en?"To,\\n"+office+"\\n\\nSubject: "+subject+"\\n\\nSir/Madam,\\n"+intro+"\\n\\n"+facts+"\\n\\nI respectfully request that: "+request+"\\n\\n"+(enclosures?"Enclosures: "+enclosures+"\\n\\n":"")+"Date: "+date+"\\nName / Signature: [Name and signature]":"सेवा में,\\n"+office+"\\n\\nविषय: "+subject+"\\n\\nमहोदय/महोदया,\\n"+intro+"\\n\\n"+facts+"\\n\\nअतः निवेदन है कि: "+request+"\\n\\n"+(enclosures?"संलग्नक: "+enclosures+"\\n\\n":"")+"दिनांक: "+date+"\\nनाम / हस्ताक्षर: [नाम और हस्ताक्षर]";
  document.getElementById("draftText").textContent=output;return output;
 }
 document.getElementById("generateDraft").addEventListener("click",()=>{
