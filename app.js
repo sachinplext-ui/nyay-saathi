@@ -24,3 +24,4 @@ document.getElementById("generateDraft").addEventListener("click",()=>{buildDraf
 document.getElementById("copyDraft").addEventListener("click",async()=>{const text=document.getElementById("draftText").textContent;try{await navigator.clipboard.writeText(text);document.getElementById("copyDraft").textContent=language==="hi"?"कॉपी हो गया ✓":"Copied ✓"}catch{document.getElementById("copyDraft").textContent=language==="hi"?"कॉपी उपलब्ध नहीं":"Copy unavailable"}});
 
 if("serviceWorker" in navigator && location.protocol!=="file:"){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}
+document.getElementById("printDraft").addEventListener("click",()=>{if(!document.getElementById("draftText").textContent.trim()){buildDraft()}window.print()});
