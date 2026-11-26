@@ -1,20 +1,36 @@
-# NYAY SAATHI
+# NYAY SAATHI — न्याय का साथ
 
-AI-powered legal information and assistance platform.
+A responsive Hindi/English educational legal-information website and document-template prototype for India.
 
-## Project status
-Initial project scaffold. The first release is an informational prototype, not a government service and not a substitute for advice from a qualified lawyer.
+## Live website
+https://sachinplext-ui.github.io/nyay-saathi/
 
-## Planned features
-- Responsive Hindi/English interface
-- FIR and false-FIR information guides
-- General legal information assistant interface
-- Complaint and application drafting templates
-- Links to official Indian legal and public-service resources
-- Progressive Web App support
+## Current features
+- Responsive dark-navy and gold interface
+- Hindi/English interface toggle
+- General educational topic guidance for FIRs, disputed allegations, cyber-fraud reporting and legal aid
+- Browser-side application draft generator
+- Copy application text
+- Standalone A4-oriented print page for saving as PDF
+- PWA manifest and service worker for basic offline support
+- Links to official public resources: NALSA, Ministry of Home Affairs, National Cyber Crime Portal and India Code
 
-## Safety and legal notice
-NYAY SAATHI provides general educational information only. It does not create an advocate-client relationship, guarantee legal outcomes, or file complaints on a user's behalf. Verify current law and procedure with official sources and consult a qualified advocate for case-specific advice.
+## Important limitations
+- The assistant is a rules-based demo, not a connected AI model and not a lawyer.
+- It does not assess individual cases or predict legal outcomes.
+- The draft generator creates a generic editable template, not a legally reviewed pleading.
+- Do not enter sensitive personal information, identity numbers, private case documents, passwords or financial details.
+- Review all facts and documents with a qualified lawyer or eligible legal-aid service before submitting anything.
+- This is not a government service and does not create an advocate-client relationship.
 
-## Run locally
-Open `index.html` in a browser.
+## Hosting
+The current prototype is a static site suitable for GitHub Pages. No paid Render service or API key is required for these static features.
+
+## Local development
+Open `index.html` through a local static web server. For production changes, test the Hindi/English toggle, mobile layout, application copy, print-to-PDF flow and service-worker refresh on a phone.
+
+## Next development milestones
+1. Improve and test bilingual document templates.
+2. Add accessible form validation and clearer privacy guidance.
+3. Expand general topic guides with official-source references.
+4. Only later consider an optional backend/AI service with privacy, security and cost controls.
