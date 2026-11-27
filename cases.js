@@ -13,7 +13,7 @@ function render(){const list=$("demoCaseList");list.replaceChildren();$("demoCas
 function changeStatus(id,status){const item=items.find(x=>x.id===id);if(!item)return;item.status=status;render();message(t().statusChanged);}
 function message(value){const el=$("demoCaseStatusMessage");el.textContent=value;el.hidden=false;}
 function reset(){root.reset();editing=null;labels();$("demoCaseStatusMessage").hidden=true;}
-function beginEdit(id){const item=items.find(x=>x.id===id);if(!item)return;editing=id;$("demoCaseTitle").value=item.title;$("demoCaseType").value=item.type;$("demoCaseStatus").value=item.status;labels();$("demoCaseTitle").focus();}
+function beginEdit(id){const item=items.find(x=>x.id===id);if(!item)return;editing=id;$("demoCaseTitle").value=item.sampleKey?t()[item.sampleKey]:item.title;$("demoCaseType").value=item.type;$("demoCaseStatus").value=item.status;labels();$("demoCaseTitle").focus();}
 function removeItem(id){if(!window.confirm(t().confirm))return;items=items.filter(x=>x.id!==id);if(editing===id)reset();render();message(t().deleted);}
 root.addEventListener("submit",event=>{
  event.preventDefault();
@@ -23,7 +23,7 @@ root.addEventListener("submit",event=>{
  if(!["police","property","consumer","other"].includes(type)||!["draft","review","closed"].includes(status)){message(t().required);return;}
  const isNew=editing===null;
  if(isNew){items.push({id:Math.max(0,...items.map(x=>x.id))+1,title,type,status});}
- else{const item=items.find(x=>x.id===editing);if(!item){reset();return;}Object.assign(item,{title,type,status});}
+ else{const item=items.find(x=>x.id===editing);if(!item){reset();return;}Object.assign(item,{title,type,status,sampleKey:null});}
  reset();
  render();
  message(t()[isNew?"saved":"updated"]);
