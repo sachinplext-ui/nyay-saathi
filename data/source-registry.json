@@ -217,18 +217,19 @@
     },
     {
       "source_id": "MP-GOV-DEPARTMENT-DIRECTORY",
-      "name": "Madhya Pradesh Government Departments Directory",
-      "authority": "Government of Madhya Pradesh",
+      "name": "Madhya Pradesh Government Departments — Integrated Government Online Directory",
+      "authority": "National Informatics Centre, Government of India (IGOD)",
       "jurisdiction": "Madhya Pradesh",
       "source_type": [
         "government_department_directory"
       ],
-      "official_url": "https://www.mp.gov.in/web/guest/government-departments1",
+      "official_url": "https://igod.gov.in/sg/MP/E003/organizations",
       "related_urls": [
+        "https://mp.gov.in/department",
         "https://hrms.mp.gov.in/s_a_p/DE/Home/departmentAdmin"
       ],
-      "verification_status": "directory_link_recorded",
-      "scope_note": "Official directory reference only. It does not establish a dedicated Home Department complaint process or prove that a particular grievance belongs there."
+      "verification_status": "directory_listing_found",
+      "scope_note": "The IGOD Madhya Pradesh departments listing includes Home Department. This is a directory, not a Home Department complaint portal. The older mp.gov.in/web/guest/government-departments1 URL returned a 404 in the user's screenshot and has been replaced."
     }
   ],
   "state_and_ut_register": {
@@ -273,15 +274,16 @@
           "High Court of Madhya Pradesh official portal and judgment search",
           "State Bar Council of Madhya Pradesh portal, with its rules page; the Bar Council of India directory also lists the MP council and its official site",
           "Government Press Madhya Pradesh portal and Gazette search destination referenced by an official Madhya Pradesh district government directory",
-          "Madhya Pradesh Government departments directory, which is a directory rather than a confirmed dedicated Home Department website"
+          "Madhya Pradesh Government departments directory, which is a directory rather than a confirmed dedicated Home Department website",
+          "Integrated Government Online Directory (Government of India) Madhya Pradesh department listing, which includes Home Department as a listed department"
         ],
         "unresolved_fields": [
-          "Dedicated Home Department website URL and current public-facing department contact/procedure pages still need direct confirmation"
+          "A dedicated Madhya Pradesh Home Department public website and complaint-procedure page have not yet been directly confirmed"
         ],
-        "caution": "Police citizen portal use may require registration. Complaint routes and jurisdiction depend on facts and applicable rules. Do not represent Lokayukta as the correct forum for every allegation or every public official. The government departments directory is not itself a Home Department complaint channel; do not treat it as one.",
+        "caution": "Police citizen portal use may require registration. Complaint routes and jurisdiction depend on facts and applicable rules. Do not represent Lokayukta as the correct forum for every allegation or every public official. The government departments directory is not itself a Home Department complaint channel; do not treat it as one. The IGOD page is a department directory, not a complaint portal.",
         "state_bar_council_rules_url": "https://www.sbcofmp.org.in/Gen%20Rules%20SBC.htm",
         "state_gazette_search_url": "https://govtpressmp.nic.in/gazette.html",
-        "home_department_directory_url": "https://www.mp.gov.in/web/guest/government-departments1",
+        "home_department_directory_url": "https://igod.gov.in/sg/MP/E003/organizations",
         "home_department_contact_directory_reference": "https://hrms.mp.gov.in/s_a_p/DE/Home/departmentAdmin"
       }
     ]
