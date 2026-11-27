@@ -36,7 +36,7 @@ const legalTopics={
 function showGuidance(){
  const q=document.getElementById("question").value.trim(),out=document.getElementById("answer");
  // Match the answer language to the script actually used in the question.
- language=/[\\u0900-\\u097F]/.test(q)?"hi":(document.documentElement.lang==="en"?"en":"hi");
+ language=/[\u0900-\u097F]/.test(q)?"hi":(document.documentElement.lang==="en"?"en":"hi");
  if(!q){out.textContent=language==="hi"?"कृपया पहले अपना सवाल लिखें।":"Please write your question first.";return}
  if(q.length>1200){out.textContent=language==="hi"?"कृपया 1200 अक्षरों से छोटा सवाल लिखें।":"Please keep your question under 1,200 characters.";return}
  const lower=q.toLowerCase(),topics=legalTopics[language];
