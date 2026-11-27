@@ -151,3 +151,9 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Result:** **PASS — Settings tab switches to and displays its privacy/preferences panel.**
 - **Scope:** Confirms navigation and visible content only; no account or privacy control interaction is available in this panel.
 
+## Run 15 — Dashboard Overview tab
+
+- **Observed evidence:** User screenshot shows the “आपका स्वागत है” dashboard overview panel with sample metrics, a demo case-status timeline, and quick links to the application generator, general assistant, and legal guide.
+- **Result:** **PASS — Dashboard tab switches to and displays its overview panel.**
+- **Scope:** Confirms navigation and rendering only. Metrics and case status are explicitly sample/demo content; quick-link actions still require separate tests.
+
