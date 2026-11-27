@@ -79,6 +79,19 @@ function buildDraft(){
  const output=en?"To,\n"+office+(officeAddress?"\n"+officeAddress:"")+"\n\nSubject: "+subject+"\n\nSir/Madam,\n"+intro+"\n\n"+facts+"\n\nI respectfully request that: "+request+"\n\n"+(enclosures?"Enclosures: "+enclosures+"\n\n":"")+"Date: "+date+"\n\nApplicant address:\n"+applicantAddress+contact+"\nName: "+(name||"[Applicant name]")+"\nSignature: __________________":"सेवा में,\n"+office+(officeAddress?"\n"+officeAddress:"")+"\n\nविषय: "+subject+"\n\nमहोदय/महोदया,\n"+intro+"\n\n"+facts+"\n\nअतः निवेदन है कि: "+request+"\n\n"+(enclosures?"संलग्नक: "+enclosures+"\n\n":"")+"दिनांक: "+date+"\n\nआवेदक का पत्राचार पता:\n"+applicantAddress+contact+"\nनाम: "+(name||"[आवेदक का नाम]")+"\nहस्ताक्षर: __________________";
  document.getElementById("draftText").textContent=output;return output;
 }
+// Keep the preview, copy, and print output synchronized with the latest form values.
+const draftFieldIds=["draftType","draftOffice","draftOfficeAddress","draftApplicantAddress","draftPhone","draftEmail","draftName","draftSubject","draftFacts","draftRequest","draftEnclosures"];
+draftFieldIds.forEach(id=>{
+ const field=document.getElementById(id);
+ if(!field)return;
+ field.addEventListener(id==="draftType"?"change":"input",()=>{
+  buildDraft();
+  const status=document.getElementById("draftStatus");
+  if(status){status.textContent="";status.hidden=true;}
+  const generateButton=document.getElementById("generateDraft");
+  if(generateButton)generateButton.textContent=translations[language].generate;
+ });
+});
 document.getElementById("generateDraft").addEventListener("click",()=>{
  const subject=document.getElementById("draftSubject").value.trim(),facts=document.getElementById("draftFacts").value.trim(),request=document.getElementById("draftRequest").value.trim();
  if(!subject||!facts||!request){const status=document.getElementById("draftStatus");status.textContent=translations[language].requiredFields;status.hidden=false;return}
