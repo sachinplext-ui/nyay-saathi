@@ -44,3 +44,21 @@ Use fictional prompts only. Do not enter real names, addresses, phone numbers, F
 - Live AI tests: 0 executed.
 - Remaining synthetic scenarios: 7 topics × 2 languages not yet run.
 
+## Run 3 — Hindi MP scheme grievance prompt
+
+- **Test prompt:** `एक सरकारी योजना का आवेदन लंबित है। मध्य प्रदेश में जानकारी या शिकायत कहाँ करूँ?`
+- **Language:** Hindi
+- **Observed behavior:** The assistant returned the generic application-format guidance instead of the Madhya Pradesh CM Helpline route.
+- **Result:** **FAIL — topic routing / intent matching.**
+- **Likely cause:** The generic keyword `आवेदन` matched before any MP government-scheme grievance topic existed.
+- **Privacy:** The observed answer included a general privacy reminder. No private details were used.
+- **AI status:** **NOT TESTED.** This was the browser-side rules-based assistant.
+
+## Corrective change
+
+A more specific Madhya Pradesh government-scheme / state-grievance topic was added before the generic application topic in both Hindi and English. The new guidance identifies CM Helpline 181 as an initial route, links the official About and FAQ pages, and states that 181 is not an emergency service, court, legal representation or FIR registration channel. It avoids promising acceptance or resolution.
+
+**Fix commit:** `d13603ae40f8de5051fc7a9c02d5d61698c18e70`
+
+**Retest status:** Pending. The correction must be checked on the deployed website after the Pages workflow completes. Do not count Run 3 as passed until retested.
+
