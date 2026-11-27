@@ -218,3 +218,18 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 
 
 - Manual mobile check — official MP Police Citizen Portal URL: user confirmed the link opened successfully from the assistant answer on 27 November 2026. **Link tap/open check: confirmed by user.**
+
+## Build update — 28 November 2026
+
+- The browser-side application generator now provides bilingual type-specific starter text for general applications, police complaints, FIR-copy requests, Zero FIR representations and representations after refusal to record information.
+- Starter subject, fact prompts and request wording are prefilled when a type is selected. If a user edits a field, changing the application type preserves that edit rather than overwriting it. The presets also follow the Hindi/English language toggle when the field still contains an untouched preset.
+- These are source-code changes only. The new preset selection, edit-preservation and language-switch behaviour have **not** yet been exercised in a browser.
+- The FIR-copy preset states the BNSS Section 173(2) copy provision for the informant or victim; the Zero FIR and refusal presets identify Sections 173(1) and 173(4), respectively. The generated text remains a generic editable draft, not a legal opinion or filing.
+
+## Current verification boundary
+
+- The source-level synthetic prompt harness previously checked 16 Hindi/English prompt variants for intended topic routing or clarification fallback. This is not a legal-accuracy pass or browser test.
+- The user supplied mobile screenshots for several guidance scenarios, and the visible answer content was reviewed. Those checks do not establish that every screen, input, button, link, device size or offline flow works.
+- A user confirmed that the official MP Police Citizen Portal link opened from an assistant answer. Other external links still need individual checking.
+- No live AI assistant is enabled. The optional API remains fail-closed until verified legal-source retrieval, citation output, privacy/security review and qualified legal review are complete.
+- Do not describe the project as production-ready or fully tested. The remaining end-to-end mobile checks, official-source revalidation, accessibility review and qualified Indian legal-professional review are still required.
