@@ -97,3 +97,21 @@ This is a QA status record, not a security certification or legal review.
 - This is a source-level JavaScript harness, not a real browser session: it does not verify rendered UI, actual tap/typing behaviour, deployed Pages content, screen-reader/mobile layout, or external links.
 - The public site could not be opened by the available page-inspection service, and no interactive browser-control tool is available in this session. Therefore browser/runtime QA remains outstanding.
 - This is not legal verification or a live-AI test. Current official sources and all changeable legal facts still require revalidation, followed by qualified Indian legal-professional review.
+
+
+## Manual mobile screenshot checks (27 November 2026)
+
+The user manually exercised the published GitHub Pages site on an Android mobile browser and shared screenshots. The following visible-output checks were reviewed:
+
+- Test 1, Hindi — Madhya Pradesh government scheme delay / CM Helpline 181: answer and safety qualifications visibly match the expected route.
+- Test 1, English — same scenario: answer and safety qualifications visibly match the expected route.
+- Test 2, Hindi — Madhya Pradesh free legal aid eligibility: answer visibly identifies MPSLSA, Section 12, directory, helpline 15100 and the need to recheck current income criteria.
+- Test 2, English — same scenario: equivalent qualifications and references are visible.
+
+**Manual screenshot review: 4/4 language variants visually consistent with the expected answer content.** This is user-operated mobile evidence reviewed from screenshots, not automated browser testing. It does not verify that external links open, every viewport/layout, source pages' currentness, legal correctness, or the backend/live AI.
+
+### UI observations from screenshots
+
+- The official URLs render as plain text rather than visibly clickable links.
+- Long URLs wrap across lines; this is readable but visually untidy.
+- The navigation bar is crowded on the narrow mobile viewport and some labels appear mixed between languages in the English screenshot. Review responsive navigation and language translation coverage.
