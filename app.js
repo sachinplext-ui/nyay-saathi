@@ -39,7 +39,13 @@ function showGuidance(){
  if(!q){out.textContent=language==="hi"?"कृपया पहले अपना सवाल लिखें।":"Please write your question first.";return}
  if(q.length>1200){out.textContent=language==="hi"?"कृपया 1200 अक्षरों से छोटा सवाल लिखें।":"Please keep your question under 1,200 characters.";return}
  const lower=q.toLowerCase(),topics=legalTopics[language];
- const match=topics.find(topic=>topic.keys.some(key=>key.length>3&&lower.includes(key)))||topics.find(topic=>topic.keys.some(key=>lower.includes(key)));
+ // Give Lokayukta fee questions explicit priority over the broader Lokayukta topic.
+ const lokayuktaFeeQuestion=/(lokayukta|लोकायुक्त)/i.test(lower)&&(
+   /(?:₹|rs\\.?\\s*)\\s*25|\\b25\\b\\s*(?:रुपये|रु|rupees?)/i.test(lower)||
+   /(फीस|शुल्क|fee|charge)/i.test(lower)
+ );
+ const feeTopic=lokayuktaFeeQuestion?topics.find(topic=>topic.keys.some(key=>key.includes("₹25")||key.includes("लोकायुक्त फीस")||key.includes("lokayukta fee"))):null;
+ const match=feeTopic||topics.find(topic=>topic.keys.some(key=>key.length>3&&lower.includes(key)))||topics.find(topic=>topic.keys.some(key=>lower.includes(key)));
  const privacy=language==="hi"?"\n\nगोपनीयता: यहाँ नाम, पता, फोन नंबर, FIR नंबर, पहचान संख्या या निजी दस्तावेज़ न लिखें।":"\n\nPrivacy: Do not enter names, addresses, phone numbers, FIR numbers, identity numbers, or private documents here.";
  out.textContent=(match?match.answer:(language==="hi"?"सही सामान्य शिकायत-मार्ग बताने के लिए कृपया दो सामान्य बातें बताएं: शिकायत किस विषय से जुड़ी है—जैसे सरकारी योजना, पुलिस सेवा, वकील का पेशेवर आचरण या कोई अन्य मामला—and यह किस राज्य/केंद्रशासित प्रदेश से संबंधित है? नाम, पता, फोन नंबर, FIR नंबर या निजी दस्तावेज़ साझा न करें।":"To identify the right general route, please share two non-identifying details: what broad topic is the complaint about—such as a government scheme, police service, an advocate's professional conduct or something else—and which State/Union Territory is involved? Do not share names, addresses, phone numbers, FIR numbers or private documents."))+privacy;
 }
