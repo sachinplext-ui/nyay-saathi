@@ -130,3 +130,13 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - Re-ran source-level matching for the exact screenshot prompt, the original Hindi synthetic prompt, and the English synthetic prompt: all three now select the fee-specific answer, including the ₹25 judicial-stamp distinction and 18 May 2022 source-page date.
 - Code commit: `e52e4c65ddc721bedfb3d945f0622472fcab614d`.
 - **Next required check:** refresh/reopen the published mobile site after GitHub Pages deployment and repeat the Hindi ₹25 question. Do not mark Test 4 Hindi as visually passed until the fee-specific answer appears on screen. Then perform the English visual check.
+
+
+## Lokayukta fee-priority fix (27 November 2026)
+
+- A manual mobile screenshot of the Hindi ₹25 question showed that the broad Lokayukta jurisdiction answer was selected instead of the fee-specific answer.
+- Updated `showGuidance()` so a prompt containing Lokayukta/लोकायुक्त plus ₹25/25 rupees or fee/शुल्क terms explicitly prioritizes the dedicated fee answer before the broad jurisdiction topic.
+- Checked the priority condition against the exact Hindi screenshot prompt, the English synthetic fee prompt, and a Hindi “25 रुपये फीस” wording. All three trigger the fee-priority condition in a source-level check.
+- Code commit: `f36a6a4`.
+
+**Pending:** The new code must propagate to GitHub Pages and be rechecked on the user's phone. Do not mark the manual Hindi fee test passed until the updated fee-specific answer is visible. This source-level check is not browser testing or legal verification.
