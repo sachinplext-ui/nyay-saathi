@@ -8,7 +8,7 @@ https://sachinplext-ui.github.io/nyay-saathi/
 ## Current features
 - Responsive dark-navy and gold interface
 - Hindi/English interface toggle
-- General educational topic guidance for FIRs, disputed allegations, cyber-fraud reporting and legal aid
+- Expanded Hindi/English general guidance on FIR procedure under BNSS Section 173, disputed allegations, cyber-fraud reporting and NALSA legal aid, with official references
 - Browser-side application draft generator
 - Copy application text
 - Standalone A4-oriented print page for saving as PDF
@@ -32,5 +32,5 @@ Open `index.html` through a local static web server. For production changes, tes
 ## Next development milestones
 1. Improve and test bilingual document templates.
 2. Add accessible form validation and clearer privacy guidance.
-3. Expand general topic guides with official-source references.
+3. Expand and verify general topic guides with official-source references.
 4. Only later consider an optional backend/AI service with privacy, security and cost controls.
