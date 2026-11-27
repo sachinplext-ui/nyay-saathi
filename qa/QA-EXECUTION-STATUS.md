@@ -285,3 +285,11 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - Preserved edit behaviour: opening a built-in sample for editing now starts with its visible translated title; saving converts it to a normal user-entered sample title so later language changes do not overwrite it.
 - Updated the case-manager script cache version to `cases.js?v=9` and service-worker cache to `nyay-saathi-v83`.
 - This is a source-level fix and has not yet been exercised in a browser. The latest GitHub Actions run must pass syntax and deployment checks; later mobile/browser testing remains required.
+
+
+## Case manager bilingual rendering and search validation — 28 November 2026
+
+- Extended the language-consistency fix so the built-in sample case titles are translated in the list, edit form and search matching. User-entered sample titles remain unchanged when the interface language changes.
+- The final cache-busted source state uses `cases.js?v=10` and service-worker cache `nyay-saathi-v84`.
+- GitHub Actions run `46053825343` on commit `082f148d48cb6f799b662edf2c2408eb241a5fc1` completed successfully. Both `validate` and `deploy` jobs passed, including JavaScript syntax, JSON, HTML and app contract checks; Pages deployment succeeded.
+- This confirms repository-level checks and deployment for the source snapshot. It does not prove the browser behaviour visually or functionally; language switching, translated search and edit preservation still require the planned browser/mobile test pass.
