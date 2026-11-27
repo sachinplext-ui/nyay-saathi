@@ -118,3 +118,5 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 
 
 - Test 3, Hindi — private-shopkeeper dispute / MP Lokayukta scope: the shared mobile screenshot visibly shows the limited statutory-scope explanation, says a private person/dispute is not automatically within the Lokayukta route, links the official Scope and Jurisdiction page and government-hosted Act copy, and advises confirming current scope with the official office. **Manual screenshot content check: consistent with the expected answer.** Link click behaviour and legal-source currentness remain unverified.
+
+- Test 3, English — private-shopkeeper dispute / MP Lokayukta scope: the shared mobile screenshot visibly shows the limited statutory-scope explanation, does not treat every private dispute as a Lokayukta matter, links the official scope page and government-hosted Act copy, and qualifies current amendments/procedure as unverified. **Manual screenshot content check: consistent with the expected answer.** Link click behaviour and legal-source currentness remain unverified.
