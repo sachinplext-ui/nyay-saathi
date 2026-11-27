@@ -309,3 +309,11 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - This prevents an English or Hindi question from silently changing the language state used by the page controls and document generator. The page language remains controlled by the visible language toggle.
 - Cache-busted `app.js?v=65` and service-worker cache `nyay-saathi-v86`.
 - Source-level syntax and deployment checks for this change are pending; this is not yet a browser interaction test.
+
+
+## Print-to-PDF pagination review — 28 November 2026
+
+- Reviewed the browser-side print window and confirmed user-entered draft text is HTML-escaped before insertion into the print document.
+- Removed `break-inside: avoid-page` from the single long `pre` block. Avoiding page breaks on the entire document could force long applications to overflow or paginate poorly; the browser can now split long drafts across A4 pages while retaining widow/orphan controls.
+- Updated cache-busted script to `app.js?v=66` and service-worker cache to `nyay-saathi-v87`.
+- This is a source-level print CSS correction. Actual print preview, page count, Hindi font rendering and PDF output still need browser/device verification.
