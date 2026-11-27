@@ -67,6 +67,16 @@ function showGuidance(){
  const privacy=language==="hi"?"\n\nगोपनीयता: यहाँ नाम, पता, फोन नंबर, FIR नंबर, पहचान संख्या या निजी दस्तावेज़ न लिखें।":"\n\nPrivacy: Do not enter names, addresses, phone numbers, FIR numbers, identity numbers, or private documents here.";
  renderGuidance(out,(match?match.answer:(language==="hi"?"सही सामान्य शिकायत-मार्ग बताने के लिए कृपया दो सामान्य बातें बताएं: शिकायत किस विषय से जुड़ी है—जैसे सरकारी योजना, पुलिस सेवा, वकील का पेशेवर आचरण या कोई अन्य मामला—और यह किस राज्य/केंद्रशासित प्रदेश से संबंधित है? नाम, पता, फोन नंबर, FIR नंबर या निजी दस्तावेज़ साझा न करें।":"To identify the right general route, please share two non-identifying details: what broad topic is the complaint about—such as a government scheme, police service, an advocate's professional conduct or something else—and which State/Union Territory is involved? Do not share names, addresses, phone numbers, FIR numbers or private documents."))+privacy);;
 }
+const questionInput=document.getElementById("question");
+const questionCounter=document.getElementById("questionCounter");
+function updateQuestionCounter(){
+ if(!questionInput||!questionCounter)return;
+ const count=questionInput.value.length;
+ questionCounter.textContent=language==="en"?count+"/1200":count+"/1200 अक्षर";
+ questionCounter.classList.toggle("question-limit",count>=1100);
+}
+questionInput?.addEventListener("input",updateQuestionCounter);
+updateQuestionCounter();
 document.getElementById("askBtn").addEventListener("click",showGuidance);
 
 document.querySelectorAll('a[href="#drafts"]').forEach(link=>link.addEventListener("click",event=>{event.preventDefault();const section=document.getElementById("drafts");if(section){history.replaceState(null,"","#drafts");section.scrollIntoView({behavior:"smooth",block:"start"});section.setAttribute("tabindex","-1");section.focus({preventScroll:true});}}));
