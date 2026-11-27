@@ -353,3 +353,10 @@ footer{background:#030a14;border-top:1px solid #d9b66f33}
 .checklist-meter>div:first-child{display:flex;justify-content:space-between;gap:12px;color:#f0d9a5;font-size:12px}
 .checklist-track{height:8px;margin-top:10px;overflow:hidden;border-radius:99px;background:#243b54}
 .checklist-track i{display:block;width:0;height:100%;border-radius:99px;background:linear-gradient(90deg,#b88d45,#f0d9a5);transition:width .2s ease}
+
+
+/* My Cases search and status filter */
+.case-tools{display:grid;grid-template-columns:minmax(0,1fr) minmax(130px,.55fr);gap:10px;margin:10px 0 14px}
+.case-tools input,.case-tools select{width:100%;min-height:44px;padding:10px 12px;border:1px solid #425a72;border-radius:7px;background:#08182b;color:#f2f5f9;font:inherit;font-size:14px}
+.case-empty{padding:16px;border:1px dashed #9d824d88;border-radius:8px;color:#c7d2df;font-size:13px}
+@media(max-width:520px){.case-tools{grid-template-columns:1fr}}
