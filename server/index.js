@@ -36,6 +36,11 @@ app.post("/api/ask", askLimiter, async (req, res) => {
 
   if (!question) return res.status(400).json({ error: "Please enter a question." });
   if (question.length > 2000) return res.status(400).json({ error: "Question is too long." });
+  // Fail closed until verified legal-source retrieval and citation output are implemented.
+  // Do not enable this endpoint as a general model-only legal assistant.
+  return res.status(503).json({ error: "Verified legal-source retrieval is not ready. The educational demo remains available on the website." });
+
+  /* Future integration only after legal retrieval, citations, privacy review and QA:
   if (!process.env.OPENAI_API_KEY) return res.status(503).json({ error: "AI service is not configured." });
 
   try {
@@ -63,6 +68,7 @@ app.post("/api/ask", askLimiter, async (req, res) => {
   } catch {
     return res.status(502).json({ error: "The AI service is temporarily unavailable." });
   }
+  */
 });
 
 app.use((err, _req, res, _next) => {
