@@ -260,3 +260,10 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - Confirmed the optional API remains fail-closed with HTTP 503 until verified legal-source retrieval and citation handling are implemented. No API key is present in public frontend configuration.
 - Added `qa/check-app-contract.mjs` to check that every application type has a preset, print escaping remains present, the API remains fail-closed, browser storage is not introduced accidentally, and key text fields retain their length limits. The workflow now runs this check after the HTML source check.
 - **Pending:** the new contract checker has not yet run in GitHub Actions; inspect its result before treating the check as passed. Static source review does not replace browser testing, penetration/security review, accessibility testing or legal-professional review.
+
+
+## Contract-check correction — 28 November 2026
+
+- The first run of the new app contract checker failed in the validation step. Inspection found over-escaped regular expressions in the checker itself; the application source was not the reported cause.
+- Rewrote the checker to use simpler source boundaries and direct print/API assertions, while retaining checks for all seven preset types, input limits and absence of browser storage.
+- The corrected checker has been committed. Its new GitHub Actions run must pass before the contract check is marked successful. The cancelled intermediate runs were superseded by the latest commit.
