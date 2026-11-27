@@ -33,6 +33,23 @@ const legalTopics={
     {keys:["application","complaint letter","draft"],answer:"A general application usually includes the receiving officer/office and address, a clear subject, a factual chronological account, the specific request, a list of enclosures, and date/contact details on the copy you submit. Use verified facts, avoid sharing private details publicly, and have the draft reviewed before submission."}
   ]
 };
+function renderGuidance(container,content){
+ container.replaceChildren();
+ const urlPattern=/https:\/\/[^\s]+/g;
+ let cursor=0,match;
+ while((match=urlPattern.exec(content))!==null){
+  const raw=match[0],url=raw.replace(/[),.;!?।]+$/,"");
+  if(!url)continue;
+  container.appendChild(document.createTextNode(content.slice(cursor,match.index)));
+  const link=document.createElement("a");
+  link.href=url;link.textContent=url;link.target="_blank";link.rel="noopener noreferrer";link.className="answer-link";
+  link.setAttribute("aria-label",language==="hi"?"आधिकारिक लिंक नए टैब में खोलें":"Open official link in a new tab");
+  container.appendChild(link);
+  const trailing=raw.slice(url.length);if(trailing)container.appendChild(document.createTextNode(trailing));
+  cursor=match.index+raw.length;
+ }
+ container.appendChild(document.createTextNode(content.slice(cursor)));
+}
 function showGuidance(){
  const q=document.getElementById("question").value.trim(),out=document.getElementById("answer");
  // Match the answer language to the script actually used in the question.
@@ -48,7 +65,7 @@ function showGuidance(){
  const feeTopic=lokayuktaFeeQuestion?topics.find(topic=>topic.keys.some(key=>key.includes("₹25")||key.includes("लोकायुक्त फीस")||key.includes("lokayukta fee"))):null;
  const match=feeTopic||topics.find(topic=>topic.keys.some(key=>key.length>3&&lower.includes(key)))||topics.find(topic=>topic.keys.some(key=>lower.includes(key)));
  const privacy=language==="hi"?"\n\nगोपनीयता: यहाँ नाम, पता, फोन नंबर, FIR नंबर, पहचान संख्या या निजी दस्तावेज़ न लिखें।":"\n\nPrivacy: Do not enter names, addresses, phone numbers, FIR numbers, identity numbers, or private documents here.";
- out.textContent=(match?match.answer:(language==="hi"?"सही सामान्य शिकायत-मार्ग बताने के लिए कृपया दो सामान्य बातें बताएं: शिकायत किस विषय से जुड़ी है—जैसे सरकारी योजना, पुलिस सेवा, वकील का पेशेवर आचरण या कोई अन्य मामला—और यह किस राज्य/केंद्रशासित प्रदेश से संबंधित है? नाम, पता, फोन नंबर, FIR नंबर या निजी दस्तावेज़ साझा न करें।":"To identify the right general route, please share two non-identifying details: what broad topic is the complaint about—such as a government scheme, police service, an advocate's professional conduct or something else—and which State/Union Territory is involved? Do not share names, addresses, phone numbers, FIR numbers or private documents."))+privacy;
+ renderGuidance(out,(match?match.answer:(language==="hi"?"सही सामान्य शिकायत-मार्ग बताने के लिए कृपया दो सामान्य बातें बताएं: शिकायत किस विषय से जुड़ी है—जैसे सरकारी योजना, पुलिस सेवा, वकील का पेशेवर आचरण या कोई अन्य मामला—और यह किस राज्य/केंद्रशासित प्रदेश से संबंधित है? नाम, पता, फोन नंबर, FIR नंबर या निजी दस्तावेज़ साझा न करें।":"To identify the right general route, please share two non-identifying details: what broad topic is the complaint about—such as a government scheme, police service, an advocate's professional conduct or something else—and which State/Union Territory is involved? Do not share names, addresses, phone numbers, FIR numbers or private documents."))+privacy);;
 }
 document.getElementById("askBtn").addEventListener("click",showGuidance);
 
