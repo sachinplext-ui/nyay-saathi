@@ -258,3 +258,22 @@ footer{background:#030a14;border-top:1px solid #d9b66f33}
  .topbar nav a{min-height:36px!important}
  .hero{position:relative!important;z-index:0!important;margin-top:0!important}
 }
+
+/* My Cases interactive, memory-only demonstration */
+.case-form{padding:18px;margin:14px 0 22px;background:#0d2038;border:1px solid #d9b66f55;border-radius:10px}
+.case-form h4,.case-list-heading h4{margin:0 0 14px;color:#f0d9a5;font-size:14px}
+.case-form label{display:block;margin:12px 0 6px;color:#dce5ef;font-size:12px;font-weight:700}
+.case-form input,.case-form select{display:block;width:100%;min-height:46px;padding:10px 12px;border-radius:7px;border:1px solid #425a72;background:#08182b;color:#f2f5f9;font:inherit;font-size:16px}
+.case-form-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.case-form-actions .btn{min-height:44px}
+.case-list-heading{display:flex;justify-content:space-between;align-items:center;margin:18px 0 8px;color:#e4c37b}
+.case-list-heading h4{margin:0}
+.case-list-heading span{font-size:12px;color:#aebbd0}
+.case-item{padding:15px;margin:10px 0;background:linear-gradient(145deg,#132b46,#0e2036);border:1px solid #d9b66f44;border-radius:9px}
+.case-item-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.case-item h5{margin:0;color:#f0d9a5;font-size:14px;overflow-wrap:anywhere}
+.case-item p{margin:7px 0;color:#aebbd0;font-size:11px}
+.case-item-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.case-item-actions button{border:1px solid #9d824d;background:transparent;color:#e4c37b;border-radius:6px;padding:8px 12px;font:inherit;font-size:11px;cursor:pointer}
+.case-empty{padding:18px;border:1px dashed #66778d;border-radius:8px;color:#b7c4d4;text-align:center;font-size:12px}
+@media(max-width:760px){.case-form{padding:14px}.case-form-actions{display:grid;grid-template-columns:1fr}.case-form-actions .btn{width:100%}.case-item-head{align-items:flex-start}}
