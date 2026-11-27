@@ -191,3 +191,5 @@ footer{background:#030a14;border-top:1px solid #d9b66f33}
 .lawyer-option a{display:inline-block;color:#e4c37b;font-size:12px;margin:8px 14px 8px 0}
 .lawyer-option strong{display:block;color:#f0d9a5;font-size:12px}
 @media(max-width:760px){.dash-tab{justify-content:center;text-align:center;font-size:10px;padding:9px 4px}.view-heading h3{font-size:19px}.vault-grid{grid-template-columns:1fr}.case-sample-card{align-items:flex-start}}
+
+.footer-links{display:flex;flex-wrap:wrap;gap:14px}.footer-links a{color:#e4c37b;text-decoration:none}.footer-links a:hover{text-decoration:underline}@media(max-width:760px){.footer-links{gap:10px}}
