@@ -147,7 +147,30 @@ document.getElementById("clearDraft").addEventListener("click",()=>{
  document.getElementById("generateDraft").textContent=translations[language].generate;
  buildDraft();
 });
-document.getElementById("copyDraft").addEventListener("click",async()=>{try{await navigator.clipboard.writeText(document.getElementById("draftText").textContent);document.getElementById("copyDraft").textContent=translations[language].copied}catch{document.getElementById("copyDraft").textContent=translations[language].copyUnavailable}});
+async function copyTextWithFallback(value){
+ try{
+  if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(value);return true;}
+ }catch{}
+ const temporary=document.createElement("textarea");
+ temporary.value=value;
+ temporary.setAttribute("readonly","");
+ temporary.style.position="fixed";
+ temporary.style.opacity="0";
+ temporary.style.pointerEvents="none";
+ document.body.appendChild(temporary);
+ temporary.focus();
+ temporary.select();
+ temporary.setSelectionRange(0,temporary.value.length);
+ let copied=false;
+ try{copied=document.execCommand("copy")}catch{}
+ temporary.remove();
+ return copied;
+}
+document.getElementById("copyDraft").addEventListener("click",async()=>{
+ const button=document.getElementById("copyDraft");
+ const copied=await copyTextWithFallback(document.getElementById("draftText").textContent);
+ button.textContent=translations[language][copied?"copied":"copyUnavailable"];
+});
 applyDraftLanguage();
 
 
