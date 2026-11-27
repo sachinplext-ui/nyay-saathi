@@ -215,3 +215,6 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - User screenshot review after the first mobile navigation update found the sticky header retained a fixed 76px height while its contents expanded to two navigation rows. The menu therefore overlapped the hero heading. Added a mobile override to make the header height content-driven, keep the brand/language button on row one, the six navigation links in a 3×2 grid on row two, and the hero below the complete header.
 - Header spacing fix commit: `1a25164`; stylesheet cache: `styles.css?v=22`; service-worker cache: `nyay-saathi-v52`; cache-bust commits: `ebbbc14`, `555bbd5`.
 - **Pending:** verify on mobile that the hero eyebrow and heading start below the complete navigation without overlap.
+
+
+- Manual mobile check — official MP Police Citizen Portal URL: user confirmed the link opened successfully from the assistant answer on 27 November 2026. **Link tap/open check: confirmed by user.**
