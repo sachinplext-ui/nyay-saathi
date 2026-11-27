@@ -97,7 +97,7 @@
         <article class="card"><span class="card-icon">05</span><h3 data-i18n="legalAidTitle">निःशुल्क कानूनी सहायता</h3><p data-i18n="legalAidText">पात्रता की जानकारी NALSA से लें। हेल्पलाइन: 15100। जिला और तालुका विधिक सेवा प्राधिकरण भी सहायता देते हैं।</p><a href="https://nalsa.gov.in/legal-aid/" target="_blank" rel="noopener" data-i18n="legalAid">NALSA कानूनी सहायता ↗</a></article>
       </div>    </section>
     <section id="assistant" class="section assistant"><div><span class="eyebrow" data-i18n="askTitle">NYAY SAATHI ASSISTANT</span><h2 data-i18n="assistantTitle">अपना सवाल लिखें</h2><p data-i18n="assistantText">यह शुरुआती डेमो आपको सही विषय और अगले सवाल पहचानने में मदद करेगा। यह AI वकील नहीं है और व्यक्तिगत कानूनी निष्कर्ष नहीं देता।</p></div>
-      <div class="ask-box"><label for="question" data-i18n="questionLabel">आप किस बारे में जानना चाहते हैं?</label><textarea id="question" rows="3" placeholder="जैसे: FIR की कॉपी कैसे मिलेगी?"></textarea><button id="askBtn" class="btn gold" type="button" data-i18n="getGuidance">सामान्य मार्गदर्शन देखें</button><div id="answer" class="answer" aria-live="polite"></div></div>
+      <div class="ask-box"><label for="question" data-i18n="questionLabel">आप किस बारे में जानना चाहते हैं?</label><textarea id="question" rows="3" maxlength="1200" aria-describedby="questionPrivacy questionCounter" placeholder="जैसे: FIR की कॉपी कैसे मिलेगी?"></textarea><div class="question-meta"><small id="questionPrivacy">यहाँ निजी पहचान या वास्तविक केस दस्तावेज़ न लिखें।</small><small id="questionCounter" aria-live="polite">0/1200</small></div><button id="askBtn" class="btn gold" type="button" data-i18n="getGuidance">सामान्य मार्गदर्शन देखें</button><div id="answer" class="answer" aria-live="polite"></div></div>
     </section>
     <section id="drafts" class="section"><div class="section-head"><div><span class="eyebrow" data-i18n="templates">उपयोगी प्रारूप</span><h2 data-i18n="draftTitle">दस्तावेज़ टेम्पलेट</h2></div></div>
       <div class="draft-panel"><div><h3 data-i18n="applicationTitle">सामान्य आवेदन का प्रारूप</h3><p data-i18n="applicationText">अपनी परिस्थिति के अनुसार संपादित करें। जमा करने से पहले योग्य व्यक्ति से जाँच करवाएँ।</p></div></div>
@@ -147,7 +147,7 @@
     <section class="official"><h2 data-i18n="officialTitle">आधिकारिक संसाधन</h2><div class="resource-links"><a href="https://nalsa.gov.in/" target="_blank" rel="noopener">NALSA ↗</a><a href="https://www.mha.gov.in/" target="_blank" rel="noopener">Ministry of Home Affairs ↗</a><a href="https://cybercrime.gov.in/" target="_blank" rel="noopener">National Cyber Crime Portal ↗</a><a href="https://www.indiacode.nic.in/" target="_blank" rel="noopener">India Code ↗</a></div></section>
   </main>
   <footer><span>⚖ NYAY SAATHI</span><span data-i18n="footer">सामान्य जानकारी के लिए • कानूनी सलाह का विकल्प नहीं</span><nav class="footer-links" aria-label="Help and policies"><a href="help-contact.html">Help & Contact / सहायता</a><a href="privacy.html">Privacy Policy / गोपनीयता नीति</a><a href="data-retention.html">Data Retention / डेटा हटाने की नीति</a></nav></footer>
-  <script src="app.js?v=50"></script>
+  <script src="app.js?v=51"></script>
   <script src="cases.js?v=6"></script>
 </body>
 </html>
