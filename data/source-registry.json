@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "registry_status": "starter_directory_only",
+  "last_reviewed": "2026-11-27",
+  "notice": "This registry lists official source portals for development. It is not a complete legal database, does not verify any specific law or procedure, and must not be presented as live legal retrieval.",
+  "sources": [
+    {
+      "source_id": "IN-CODE",
+      "name": "India Code",
+      "authority": "Legislative Department, Ministry of Law and Justice, Government of India",
+      "jurisdiction": "Central",
+      "source_type": ["acts", "rules", "regulations"],
+      "official_url": "https://www.indiacode.nic.in/",
+      "verification_status": "portal_link_recorded",
+      "scope_note": "Use to locate legislation; verify the exact instrument, amendments, commencement and territorial scope."
+    },
+    {
+      "source_id": "IN-EGAZETTE",
+      "name": "e-Gazette of India",
+      "authority": "Government of India",
+      "jurisdiction": "Central",
+      "source_type": ["gazette_notifications", "commencement", "amendments"],
+      "official_url": "https://egazette.gov.in/",
+      "verification_status": "portal_link_recorded",
+      "scope_note": "Retrieve and cite the exact Gazette document; a portal search result alone is not sufficient."
+    },
+    {
+      "source_id": "IN-MHA",
+      "name": "Ministry of Home Affairs",
+      "authority": "Ministry of Home Affairs, Government of India",
+      "jurisdiction": "Central",
+      "source_type": ["official_guidance", "notifications", "policy_material"],
+      "official_url": "https://www.mha.gov.in/",
+      "verification_status": "portal_link_recorded",
+      "scope_note": "Use for official ministry material; primary legislation and Gazette instruments remain controlling."
+    },
+    {
+      "source_id": "IN-SCI",
+      "name": "Supreme Court of India",
+      "authority": "Supreme Court of India",
+      "jurisdiction": "National court",
+      "source_type": ["judgments", "orders", "court_rules"],
+      "official_url": "https://www.sci.gov.in/",
+      "verification_status": "portal_link_recorded",
+      "scope_note": "Verify the exact judgment/order, decision date, operative directions and subsequent treatment."
+    },
+    {
+      "source_id": "IN-ECOURTS",
+      "name": "eCourts Services",
+      "authority": "eCommittee, Supreme Court of India",
+      "jurisdiction": "National court services",
+      "source_type": ["court_services", "case_status_information"],
+      "official_url": "https://ecourts.gov.in/",
+      "verification_status": "portal_link_recorded",
+      "scope_note": "Case-status information is not a legal opinion. Do not collect case identifiers in the prototype."
+    },
+    {
+      "source_id": "IN-NALSA",
+      "name": "National Legal Services Authority",
+      "authority": "National Legal Services Authority",
+      "jurisdiction": "National",
+      "source_type": ["legal_aid", "schemes", "access_to_justice"],
+      "official_url": "https://nalsa.gov.in/",
+      "verification_status": "portal_link_recorded",
+      "scope_note": "Verify current eligibility and the relevant State or District Legal Services Authority process."
+    },
+    {
+      "source_id": "IN-BCI",
+      "name": "Bar Council of India",
+      "authority": "Bar Council of India",
+      "jurisdiction": "National professional regulator",
+      "source_type": ["professional_rules", "regulatory_information"],
+      "official_url": "https://www.barcouncilofindia.org/",
+      "verification_status": "portal_link_recorded",
+      "scope_note": "For individual complaints, verify whether the relevant State Bar Council is the proper forum."
+    },
+    {
+      "source_id": "IN-CYBERCRIME",
+      "name": "National Cyber Crime Reporting Portal",
+      "authority": "Government of India",
+      "jurisdiction": "National",
+      "source_type": ["cybercrime_reporting"],
+      "official_url": "https://cybercrime.gov.in/",
+      "verification_status": "portal_link_recorded",
+      "scope_note": "This is a cybercrime reporting route, not a universal complaint portal."
+    }
+  ],
+  "state_and_ut_register": {
+    "status": "not_populated",
+    "required_fields": [
+      "state_or_ut",
+      "police_authority_url",
+      "home_department_url",
+      "state_legal_services_authority_url",
+      "state_bar_council_url",
+      "anti_corruption_or_vigilance_authority_url",
+      "state_gazette_url",
+      "high_court_url",
+      "last_verified_at",
+      "verification_status"
+    ],
+    "rule": "Populate only after confirming each destination is controlled by the relevant government, court or statutory authority. Never infer a state-specific route from a central portal."
+  }
+]
