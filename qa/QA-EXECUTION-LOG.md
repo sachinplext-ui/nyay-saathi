@@ -199,3 +199,9 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Result:** **PASS — user confirms the language toggle action completed.**
 - **Scope:** The resulting English page was not shown in a screenshot in this run, so full-page translation and reverse switching to Hindi remain unverified.
 
+## Run 23 — Language toggle / Hindi-English visual check
+
+- **Observed evidence:** User screenshot shows the application-generator page with English heading, safety notice, field labels and placeholders, while the selected application-type value remains Hindi (“सामान्य आवेदन”). The language toggle button displays “EN”.
+- **Result:** **PARTIAL — mixed-language rendering is visible; full-page translation and complete reverse switching are not verified.**
+- **Follow-up required:** Inspect translation mappings for application-type option labels and remaining generator content; verify both directions on the deployed site before marking language parity as passed.
+
