@@ -145,3 +145,9 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Result:** **PASS — Lawyer Support tab switches to and displays its legal-aid information panel.**
 - **Scope:** Confirms navigation and display only. The NALSA link/helpline were not independently tested in this run, and eligibility must be checked with the official service.
 
+## Run 14 — Settings / Privacy dashboard tab
+
+- **Observed evidence:** User screenshot shows “सेटिंग” selected and the “सेटिंग और गोपनीयता” panel rendered. It states that the prototype does not save private data on an account or server and that login, cloud storage, and real case management are not currently available.
+- **Result:** **PASS — Settings tab switches to and displays its privacy/preferences panel.**
+- **Scope:** Confirms navigation and visible content only; no account or privacy control interaction is available in this panel.
+
