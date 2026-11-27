@@ -250,3 +250,13 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - Updated the app asset version to `app.js?v=64` and service-worker cache to `nyay-saathi-v82`.
 - Expanded the next validation run to syntax-check `sw.js` and `qa/check-html.mjs` as well as the existing JavaScript files.
 - **Pending:** the new cyber/records preset changes and the expanded workflow have not yet run through GitHub Actions or been exercised in a browser. Do not mark them tested until the new run passes and later full mobile/browser testing is completed.
+
+
+## Application form, privacy and API contract review — 28 November 2026
+
+- Reviewed the current HTML form fields and JavaScript handlers. The hero question, main assistant question, FIR draft and application generator have character limits; visible reminders instruct users to use fictional/sample data and not enter identifying details or private documents.
+- Confirmed the case manager is page-memory-only, with no `localStorage` or `sessionStorage` references in `app.js`. No server-side case database or file upload is represented as active.
+- Reviewed the print-to-PDF flow: user-provided draft text is escaped for ampersands and angle brackets before being inserted into the print document. Guidance URLs are rendered as DOM-created anchors with `noopener noreferrer`.
+- Confirmed the optional API remains fail-closed with HTTP 503 until verified legal-source retrieval and citation handling are implemented. No API key is present in public frontend configuration.
+- Added `qa/check-app-contract.mjs` to check that every application type has a preset, print escaping remains present, the API remains fail-closed, browser storage is not introduced accidentally, and key text fields retain their length limits. The workflow now runs this check after the HTML source check.
+- **Pending:** the new contract checker has not yet run in GitHub Actions; inspect its result before treating the check as passed. Static source review does not replace browser testing, penetration/security review, accessibility testing or legal-professional review.
