@@ -131,3 +131,45 @@ Direct users to the official MP Police portal or the relevant local police autho
 
 ---
 This is a development knowledge pack, not an operational legal AI service. The website must display these limits wherever this material is shown.
+
+## 9. Additional primary-source checks (27 November 2026)
+
+### 9.1 Legal-aid income ceiling cross-check
+
+The current NALSA Legal Aid and FAQ pages both list the Madhya Pradesh annual income ceiling under Section 12(h) as **₹2,00,000** for cases before courts other than the Supreme Court. NALSA separately states the Supreme Court income ceiling as ₹5,00,000. The statutory Section 12 categories remain separate eligibility routes; the income ceiling is not the only way a person may qualify.
+
+- [NALSA — Legal Aid](https://nalsa.gov.in/legal-aid/)
+- [NALSA — FAQs](https://nalsa.gov.in/faqs/)
+- [MPSLSA — Legal Aid](https://madhyapradesh.nalsa.gov.in/legal-aid/)
+
+**Implementation rule:** Show the amount only with the jurisdiction, annual basis, court-level qualification and “verify current rules” note. Do not infer a person's eligibility from income alone or ask a user to disclose income in this public demo. Source pages checked 27 November 2026.
+
+### 9.2 Lokayukta Act — primary-source location
+
+The official India Code file search surfaced a Government-hosted copy titled **The Madhya Pradesh Act No. 37 of 1981**, the Madhya Pradesh Lokayukt Evam Up-Lokayukt Adhiniyam, 1981:
+
+- [India Code — MP Act No. 37 of 1981 PDF](https://upload.indiacode.nic.in/showfile?actid=AC_MP_74_256_00002_00002_1540466798580&filename=Adhiniyam1981.pdf&type=actfile)
+
+The located document identifies the Act as applying to the whole State of Madhya Pradesh and describes its purpose as providing authorities to enquire into allegations against public servants. It is an Act text copy, but this check did **not** establish a consolidated, fully amended current version or confirm every current rule, limitation, exclusion, form or fee.
+
+**Implementation rule:** Use the PDF as a primary-source starting point only. Before explaining present-day filing eligibility or procedure, verify subsequent amending Acts, rules and Gazette notifications. Do not treat the old Lokayukta website fee/form information as current solely because it remains online. No conclusion about any individual complaint's jurisdiction should be generated from this entry alone.
+
+### 9.3 MP Police citizen portal — limited official description
+
+The official Indore Police Commissionerate page links to the Madhya Pradesh Police Citizen Portal and describes it generally as a platform for citizen police services:
+
+- [Indore Police Commissionerate — official portal page](https://indore.mppolice.gov.in/)
+
+This page does not, by itself, establish the current workflow or legal effect of every portal service. The starter pack has not verified a complete service-by-service catalogue.
+
+**Implementation rule:** Link users to the official portal for current service descriptions. Never state that a portal submission is an FIR, that a particular service is available in every district, or that an online submission guarantees police action unless the exact official service page confirms it.
+
+### 9.4 Source status and confidence
+
+| Topic | Source located | What is supported | What remains unverified |
+|---|---|---|---|
+| MP legal-aid income ceiling | Current NALSA Legal Aid and FAQ pages | MP ₹2,00,000 annual ceiling under Section 12(h); Supreme Court ceiling separately ₹5,00,000 | Individual eligibility, current local application workflow and district-specific contacts |
+| MP Lokayukta | Government-hosted India Code Act PDF | Primary-source text of MP Act No. 37 of 1981; broad statutory purpose and territorial extent | Consolidated amendments, current rules, forms, fees, exclusions and limitation as applied today |
+| MP Police citizen portal | Official Indore Police Commissionerate page | Official portal is promoted as a citizen police-services platform | Exact current service list, district coverage and legal effect of each submission |
+
+
