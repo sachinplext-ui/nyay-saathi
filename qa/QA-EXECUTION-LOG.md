@@ -193,3 +193,9 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Result:** **PASS — user confirms the NALSA link opened.**
 - **Scope:** Confirmation only; the destination URL and page content were not independently verified in this run.
 
+## Run 22 — Language toggle: Hindi to English
+
+- **Observed evidence:** User confirmed “Done” after being asked to tap the “EN” language toggle.
+- **Result:** **PASS — user confirms the language toggle action completed.**
+- **Scope:** The resulting English page was not shown in a screenshot in this run, so full-page translation and reverse switching to Hindi remain unverified.
+
