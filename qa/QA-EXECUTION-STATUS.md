@@ -167,3 +167,10 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - Code commit: `b3d8f3e`.
 
 **Pending:** Refresh the published site and repeat the English prompt. The screenshot before this correction is a failed route, not a pass. Link click behaviour and legal-source currentness remain unverified.
+
+
+- Follow-up screenshot after the English advocate-key update still showed the generic English clarification response. The current `main` branch source contains the expected “professional misconduct” key and the exact prompt matches it in source-level inspection. This indicates the published mobile page was not yet executing the updated script (likely stale deployed asset/cache; deployment propagation itself not independently observed).
+- Bumped the HTML script URL from `app.js?v=40` to `app.js?v=41` and the service-worker cache from `nyay-saathi-v47` to `nyay-saathi-v48` to force clients to request the current script and refresh cached assets.
+- Cache-bust commits: `7563fc6` (index.html), `56fac08` (sw.js).
+
+**Pending:** Wait for GitHub Pages deployment, then hard-refresh/reopen the site and repeat the exact English advocate misconduct prompt. Do not mark this test passed until the State Bar Council answer is visible on the phone.
