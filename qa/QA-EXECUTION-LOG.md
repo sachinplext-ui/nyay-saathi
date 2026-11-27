@@ -89,3 +89,10 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Result:** **PASS — Rights Guide navigation opens the intended page.**
 - **Scope:** This confirms page navigation and visible rendering only; it does not validate every external link or legal statement on the page.
 
+## Run 5 — Document generator feature tile navigation
+
+- **Observed evidence:** User screenshot shows the page scrolled to the “दस्तावेज़ टेम्पलेट” section and the “Application generator” form, including its safety notice and application-type selector.
+- **Result:** **PASS — document generator tile navigation reaches the intended generator section on mobile.**
+- **Scope:** This confirms navigation and form visibility only. Form generation, copy/print controls and output accuracy have not yet been tested.
+- **Safety:** Use fictional/sample details only; do not enter real personal or case information.
+
