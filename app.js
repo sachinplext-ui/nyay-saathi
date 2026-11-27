@@ -73,7 +73,7 @@ function buildDraft(){
  };
  const intro=(templates[typeKey]||templates.general)[en?"en":"hi"];
  const contact=(phone?(en?"\nPhone: ":"\nमोबाइल: ")+phone:"")+(email?(en?"\nEmail: ":"\nईमेल: ")+email:"");
- const output=en?"From:\n"+applicantAddress+"\n\nTo,\n"+office+"\n\nSubject: "+subject+"\n\nSir/Madam,\n"+intro+"\n\n"+facts+"\n\nI respectfully request that: "+request+"\n\n"+(enclosures?"Enclosures: "+enclosures+"\n\n":"")+"Date: "+date+"\nName / Signature: [Name and signature]"+contact:"प्रेषक का पता:\n"+applicantAddress+"\n\nसेवा में,\n"+office+"\n\nविषय: "+subject+"\n\nमहोदय/महोदया,\n"+intro+"\n\n"+facts+"\n\nअतः निवेदन है कि: "+request+"\n\n"+(enclosures?"संलग्नक: "+enclosures+"\n\n":"")+"दिनांक: "+date+"\nनाम / हस्ताक्षर: [नाम और हस्ताक्षर]"+contact;
+ const output=en?"To,\n"+office+"\n\nSubject: "+subject+"\n\nSir/Madam,\n"+intro+"\n\n"+facts+"\n\nI respectfully request that: "+request+"\n\n"+(enclosures?"Enclosures: "+enclosures+"\n\n":"")+"Date: "+date+"\n\nApplicant address:\n"+applicantAddress+contact+"\nName / Signature: [Name and signature]":"सेवा में,\n"+office+"\n\nविषय: "+subject+"\n\nमहोदय/महोदया,\n"+intro+"\n\n"+facts+"\n\nअतः निवेदन है कि: "+request+"\n\n"+(enclosures?"संलग्नक: "+enclosures+"\n\n":"")+"दिनांक: "+date+"\n\nआवेदक का पत्राचार पता:\n"+applicantAddress+contact+"\nनाम / हस्ताक्षर: [नाम और हस्ताक्षर]";
  document.getElementById("draftText").textContent=output;return output;
 }
 document.getElementById("generateDraft").addEventListener("click",()=>{
