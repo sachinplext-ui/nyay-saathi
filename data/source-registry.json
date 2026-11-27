@@ -9,7 +9,11 @@
       "name": "India Code",
       "authority": "Legislative Department, Ministry of Law and Justice, Government of India",
       "jurisdiction": "Central",
-      "source_type": ["acts", "rules", "regulations"],
+      "source_type": [
+        "acts",
+        "rules",
+        "regulations"
+      ],
       "official_url": "https://www.indiacode.nic.in/",
       "verification_status": "portal_link_recorded",
       "scope_note": "Use to locate legislation; verify the exact instrument, amendments, commencement and territorial scope."
@@ -19,7 +23,11 @@
       "name": "e-Gazette of India",
       "authority": "Government of India",
       "jurisdiction": "Central",
-      "source_type": ["gazette_notifications", "commencement", "amendments"],
+      "source_type": [
+        "gazette_notifications",
+        "commencement",
+        "amendments"
+      ],
       "official_url": "https://egazette.gov.in/",
       "verification_status": "portal_link_recorded",
       "scope_note": "Retrieve and cite the exact Gazette document; a portal search result alone is not sufficient."
@@ -29,7 +37,11 @@
       "name": "Ministry of Home Affairs",
       "authority": "Ministry of Home Affairs, Government of India",
       "jurisdiction": "Central",
-      "source_type": ["official_guidance", "notifications", "policy_material"],
+      "source_type": [
+        "official_guidance",
+        "notifications",
+        "policy_material"
+      ],
       "official_url": "https://www.mha.gov.in/",
       "verification_status": "portal_link_recorded",
       "scope_note": "Use for official ministry material; primary legislation and Gazette instruments remain controlling."
@@ -39,7 +51,11 @@
       "name": "Supreme Court of India",
       "authority": "Supreme Court of India",
       "jurisdiction": "National court",
-      "source_type": ["judgments", "orders", "court_rules"],
+      "source_type": [
+        "judgments",
+        "orders",
+        "court_rules"
+      ],
       "official_url": "https://www.sci.gov.in/",
       "verification_status": "portal_link_recorded",
       "scope_note": "Verify the exact judgment/order, decision date, operative directions and subsequent treatment."
@@ -49,7 +65,10 @@
       "name": "eCourts Services",
       "authority": "eCommittee, Supreme Court of India",
       "jurisdiction": "National court services",
-      "source_type": ["court_services", "case_status_information"],
+      "source_type": [
+        "court_services",
+        "case_status_information"
+      ],
       "official_url": "https://ecourts.gov.in/",
       "verification_status": "portal_link_recorded",
       "scope_note": "Case-status information is not a legal opinion. Do not collect case identifiers in the prototype."
@@ -59,7 +78,11 @@
       "name": "National Legal Services Authority",
       "authority": "National Legal Services Authority",
       "jurisdiction": "National",
-      "source_type": ["legal_aid", "schemes", "access_to_justice"],
+      "source_type": [
+        "legal_aid",
+        "schemes",
+        "access_to_justice"
+      ],
       "official_url": "https://nalsa.gov.in/",
       "verification_status": "portal_link_recorded",
       "scope_note": "Verify current eligibility and the relevant State or District Legal Services Authority process."
@@ -69,7 +92,10 @@
       "name": "Bar Council of India",
       "authority": "Bar Council of India",
       "jurisdiction": "National professional regulator",
-      "source_type": ["professional_rules", "regulatory_information"],
+      "source_type": [
+        "professional_rules",
+        "regulatory_information"
+      ],
       "official_url": "https://www.barcouncilofindia.org/",
       "verification_status": "portal_link_recorded",
       "scope_note": "For individual complaints, verify whether the relevant State Bar Council is the proper forum."
@@ -79,14 +105,84 @@
       "name": "National Cyber Crime Reporting Portal",
       "authority": "Government of India",
       "jurisdiction": "National",
-      "source_type": ["cybercrime_reporting"],
+      "source_type": [
+        "cybercrime_reporting"
+      ],
       "official_url": "https://cybercrime.gov.in/",
       "verification_status": "portal_link_recorded",
       "scope_note": "This is a cybercrime reporting route, not a universal complaint portal."
+    },
+    {
+      "source_id": "MP-POLICE-CITIZEN",
+      "name": "Madhya Pradesh Police Citizen Portal",
+      "authority": "Madhya Pradesh Police",
+      "jurisdiction": "Madhya Pradesh",
+      "source_type": [
+        "police_citizen_services",
+        "complaint_lodging",
+        "lost_property",
+        "citizen_information"
+      ],
+      "official_url": "https://citizen.mppolice.gov.in/",
+      "verification_status": "portal_link_recorded",
+      "scope_note": "Official citizen-services portal. The Indore and Bhopal police sites state that complaint lodging requires prior portal registration; verify current service terms before presenting a workflow."
+    },
+    {
+      "source_id": "MP-SLSA",
+      "name": "Madhya Pradesh State Legal Services Authority",
+      "authority": "Madhya Pradesh State Legal Services Authority",
+      "jurisdiction": "Madhya Pradesh",
+      "source_type": [
+        "legal_aid",
+        "district_legal_services_directory"
+      ],
+      "official_url": "https://madhyapradesh.nalsa.gov.in/",
+      "related_urls": [
+        "https://madhyapradesh.nalsa.gov.in/directory/",
+        "https://madhyapradesh.nalsa.gov.in/contact-us/"
+      ],
+      "verification_status": "portal_link_recorded",
+      "scope_note": "Official state legal-services authority. Verify current eligibility, district contacts and service availability before giving a referral."
+    },
+    {
+      "source_id": "MP-LOKAYUKTA",
+      "name": "Lokayukt Madhya Pradesh",
+      "authority": "Lokayukt Organisation, Government of Madhya Pradesh",
+      "jurisdiction": "Madhya Pradesh",
+      "source_type": [
+        "public_servant_complaints",
+        "complaint_procedure",
+        "jurisdiction"
+      ],
+      "official_url": "https://mplokayukt.nic.in/",
+      "related_urls": [
+        "https://mplokayukt.nic.in/complaints-filing",
+        "https://mplokayukt.nic.in/scope-and-jurisdiction"
+      ],
+      "verification_status": "portal_link_recorded",
+      "scope_note": "Use only after checking the statutory scope, covered public functionary and current complaint requirements. Not every grievance or allegation belongs before Lokayukta."
+    },
+    {
+      "source_id": "MP-HIGH-COURT",
+      "name": "High Court of Madhya Pradesh",
+      "authority": "High Court of Madhya Pradesh",
+      "jurisdiction": "Madhya Pradesh",
+      "source_type": [
+        "judgments",
+        "orders",
+        "court_rules",
+        "case_services"
+      ],
+      "official_url": "https://www.mphc.gov.in/",
+      "related_urls": [
+        "https://www.mphc.gov.in/judgements"
+      ],
+      "verification_status": "portal_link_recorded",
+      "scope_note": "Official High Court portal and judgment search. Verify exact case, bench, date and later treatment before summarizing a judgment."
     }
   ],
   "state_and_ut_register": {
-    "status": "not_populated",
+    "status": "partially_populated",
     "required_fields": [
       "state_or_ut",
       "police_authority_url",
@@ -99,6 +195,40 @@
       "last_verified_at",
       "verification_status"
     ],
-    "rule": "Populate only after confirming each destination is controlled by the relevant government, court or statutory authority. Never infer a state-specific route from a central portal."
+    "rule": "Populate only after confirming each destination is controlled by the relevant government, court or statutory authority. Never infer a state-specific route from a central portal.",
+    "states": [
+      {
+        "state_or_ut": "Madhya Pradesh",
+        "police_authority_url": "https://citizen.mppolice.gov.in/",
+        "police_information_pages": [
+          "https://indore.mppolice.gov.in/complaint-lodging/",
+          "https://bhopal.mppolice.gov.in/complaint-lodging/"
+        ],
+        "home_department_url": null,
+        "state_legal_services_authority_url": "https://madhyapradesh.nalsa.gov.in/",
+        "state_legal_services_directory_url": "https://madhyapradesh.nalsa.gov.in/directory/",
+        "state_bar_council_url": null,
+        "anti_corruption_or_vigilance_authority_url": "https://mplokayukt.nic.in/",
+        "lokayukta_complaint_guidance_url": "https://mplokayukt.nic.in/complaints-filing",
+        "lokayukta_jurisdiction_url": "https://mplokayukt.nic.in/scope-and-jurisdiction",
+        "state_gazette_url": null,
+        "high_court_url": "https://www.mphc.gov.in/",
+        "high_court_judgments_url": "https://www.mphc.gov.in/judgements",
+        "last_verified_at": "2026-11-27",
+        "verification_status": "partially_verified",
+        "verified_scope": [
+          "MP Police Citizen Portal and Indore/Bhopal police complaint-lodging information",
+          "Madhya Pradesh State Legal Services Authority portal and directory",
+          "Madhya Pradesh Lokayukta complaint-filing and jurisdiction pages",
+          "High Court of Madhya Pradesh official portal and judgment search"
+        ],
+        "unresolved_fields": [
+          "Official State Bar Council portal and complaint procedure not confirmed in this pass",
+          "Official Madhya Pradesh Gazette portal not confirmed in this pass",
+          "State Home Department page not independently confirmed in this pass"
+        ],
+        "caution": "Police citizen portal use may require registration. Complaint routes and jurisdiction depend on facts and applicable rules. Do not represent Lokayukta as the correct forum for every allegation or every public official."
+      }
+    ]
   }
 }
