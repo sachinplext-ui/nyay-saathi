@@ -181,3 +181,9 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Result:** **PASS — Legal Library navigation opens the legal guide page.**
 - **Scope:** Confirms navigation and page rendering only; individual external source links have not been tested here.
 
+## Run 20 — Main navigation: Lawyer Support
+
+- **Observed evidence:** User screenshot shows “वकील सहायता” highlighted in the navigation bar and the “योग्य कानूनी सहायता खोजें” section rendered with a NALSA information button.
+- **Result:** **PASS — Lawyer Support navigation opens the legal-support section.**
+- **Scope:** Confirms navigation and page rendering only; the NALSA external button was not tested in this run.
+
