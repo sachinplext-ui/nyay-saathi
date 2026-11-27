@@ -175,3 +175,9 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Result:** **PASS — user confirms the Legal Guide quick link opened.**
 - **Scope:** Confirmation only; the destination page content and individual links were not rechecked in this run.
 
+## Run 19 — Main navigation: Legal Library / Legal Guide
+
+- **Observed evidence:** User screenshot shows the “लीगल लाइब्रेरी” navigation item highlighted and the “कानूनी गाइड” page rendered with introductory legal topics, including “FIR क्या है?” and “FIR में गलत तथ्य हों तो?”.
+- **Result:** **PASS — Legal Library navigation opens the legal guide page.**
+- **Scope:** Confirms navigation and page rendering only; individual external source links have not been tested here.
+
