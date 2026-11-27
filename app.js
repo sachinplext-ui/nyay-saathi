@@ -77,11 +77,6 @@ function applyDraftLanguage(){
  setText("draftGeneratorTitle","#drafts .generator h3",t.generatorTitle);
  setText("draftTypeLabel",'label[for="draftType"]',t.typeLabel);
  setText("draftOfficeLabel",'label[for="draftOffice"]',t.officeLabel);
- setText("draftOfficeAddressLabel",'label[for="draftOfficeAddress"]',t.officeAddressLabel);
- setText("draftApplicantAddressLabel",'label[for="draftApplicantAddress"]',t.applicantAddressLabel);
- setText("draftPhoneLabel",'label[for="draftPhone"]',t.phoneLabel);
- setText("draftEmailLabel",'label[for="draftEmail"]',t.emailLabel);
- setText("draftNameLabel",'label[for="draftName"]',t.nameLabel);
  setText("draftSubjectLabel",'label[for="draftSubject"]',t.subjectLabel);
  setText("draftFactsLabel",'label[for="draftFacts"]',t.factsLabel);
  setText("draftRequestLabel",'label[for="draftRequest"]',t.requestLabel);
@@ -91,7 +86,7 @@ function applyDraftLanguage(){
  setText("clearDraft","#clearDraft",t.clearDraft);
  setText("draftEnclosuresLabel",'label[for="draftEnclosures"]',t.enclosuresLabel);
  setText("draftPrivacy",".generator-note",t.privacyNote);
- const placeholders={draftOffice:"officePlaceholder",draftOfficeAddress:"officeAddressPlaceholder",draftApplicantAddress:"applicantAddressPlaceholder",draftPhone:"phonePlaceholder",draftEmail:"emailPlaceholder",draftName:"namePlaceholder",draftSubject:"subjectPlaceholder",draftFacts:"factsPlaceholder",draftRequest:"requestPlaceholder",draftEnclosures:"enclosuresPlaceholder"};
+ const placeholders={draftOffice:"officePlaceholder",draftSubject:"subjectPlaceholder",draftFacts:"factsPlaceholder",draftRequest:"requestPlaceholder",draftEnclosures:"enclosuresPlaceholder"};
  Object.entries(placeholders).forEach(([id,key])=>{const el=document.getElementById(id);if(el)el.placeholder=t[key]});
  const type=document.getElementById("draftType");if(type)[...type.options].forEach(o=>{o.textContent=draftLabels[language][o.value]||o.textContent});
  buildDraft();
