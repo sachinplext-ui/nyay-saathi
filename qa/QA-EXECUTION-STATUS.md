@@ -211,3 +211,7 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - Cache versions: `styles.css?v=21`, `app.js?v=44`, service-worker cache `nyay-saathi-v51`; update commits: `3b07153` and `4564aec`.
 
 **Pending manual mobile confirmation:** wait for GitHub Pages deployment, reopen/refresh the site, confirm all six nav links fit in two rows, tap at least one official URL to confirm it opens, and rerun the English Police Portal answer to confirm the duplicate URL is absent. These are code-level updates until verified on the phone.
+
+- User screenshot review after the first mobile navigation update found the sticky header retained a fixed 76px height while its contents expanded to two navigation rows. The menu therefore overlapped the hero heading. Added a mobile override to make the header height content-driven, keep the brand/language button on row one, the six navigation links in a 3×2 grid on row two, and the hero below the complete header.
+- Header spacing fix commit: `1a25164`; stylesheet cache: `styles.css?v=22`; service-worker cache: `nyay-saathi-v52`; cache-bust commits: `ebbbc14`, `555bbd5`.
+- **Pending:** verify on mobile that the hero eyebrow and heading start below the complete navigation without overlap.
