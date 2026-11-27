@@ -169,3 +169,9 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Result:** **PASS — the “सामान्य सवाल पूछें” Dashboard quick link navigates to the assistant page.**
 - **Scope:** Confirms navigation only. The page identifies itself as an introductory demo; this does not establish a live AI connection or verify answer quality.
 
+## Run 18 — Dashboard quick link: Legal Guide
+
+- **Observed evidence:** User confirmed “Done” after being asked to open the “कानूनी गाइड देखें” quick link.
+- **Result:** **PASS — user confirms the Legal Guide quick link opened.**
+- **Scope:** Confirmation only; the destination page content and individual links were not rechecked in this run.
+
