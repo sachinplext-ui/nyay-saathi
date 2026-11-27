@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b1424">
   <meta name="description" content="NYAY SAATHI — भारतीय कानून की सामान्य जानकारी और उपयोगी दस्तावेज़ टेम्पलेट।">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=16">
+  <link rel="stylesheet" href="styles.css?v=17">
   <title>NYAY SAATHI | न्याय का साथ</title>
   <style id="print-only-application">
     @media print {
@@ -20,7 +20,7 @@
 <body>
   <header class="topbar">
     <a class="brand" href="#" aria-label="NYAY SAATHI home"><span class="brand-mark">⚖</span><span><b>NYAY SAATHI</b><small>न्याय का साथ</small></span></a>
-    <nav><a href="#guides" data-i18n="navGuides">कानूनी गाइड</a><a href="#assistant" data-i18n="navAssistant">AI सहायक</a><a href="#drafts" data-i18n="navDrafts">दस्तावेज़</a></nav>
+    <nav><a href="#home" data-i18n="navHome">होम</a><a href="#assistant" data-i18n="navAssistant">AI सहायक</a><a href="#case-preview" data-i18n="navCases">माय केस</a><a href="#guides" data-i18n="navGuides">लीगल लाइब्रेरी</a><a href="#lawyer-connect" data-i18n="navLawyer">वकील सहायता</a></nav>
     <button id="langToggle" class="lang-btn" type="button" aria-label="Change language">EN</button>
   </header>
   <main>
@@ -45,7 +45,26 @@
       <div><span>◎</span><b data-i18n="ribbonLanguage">हिंदी + English</b></div>
       <div><span>⌂</span><b data-i18n="ribbonResources">आधिकारिक संसाधन</b></div>
     </section>
+    <section class="feature-ribbon" aria-label="Platform features">
+      <div><span>⚖</span><b data-i18n="ribbonGuides">कानूनी गाइड</b></div>
+      <div><span>✦</span><b data-i18n="ribbonAssistant">सामान्य सहायक</b></div>
+      <div><span>▤</span><b data-i18n="ribbonDrafts">दस्तावेज़ जनरेटर</b></div>
+      <div><span>◎</span><b data-i18n="ribbonLanguage">हिंदी + English</b></div>
+      <div><span>⌂</span><b data-i18n="ribbonResources">आधिकारिक संसाधन</b></div>
+    </section>
     <section class="notice"><span>ⓘ</span><p data-i18n="notice">यह प्लेटफ़ॉर्म केवल सामान्य शैक्षिक जानकारी देता है। यह कानूनी सलाह या सरकारी सेवा नहीं है। अपने मामले के लिए योग्य वकील से सलाह लें।</p></section>
+    <section id="case-preview" class="showcase section">
+      <div class="section-head"><div><span class="eyebrow" data-i18n="dashboardEyebrow">NYAY SAATHI WORKSPACE</span><h2 data-i18n="dashboardTitle">आपका कानूनी सहायता डैशबोर्ड</h2></div><p data-i18n="dashboardSub">सुविधाओं का नमूना दृश्य • काल्पनिक जानकारी</p></div>
+      <div class="dashboard-grid">
+        <aside class="dash-sidebar"><div class="dash-brand">⚖ <b>NYAY SAATHI</b></div><div class="dash-active">▦ <span data-i18n="dashOverview">डैशबोर्ड</span></div><div>▤ <span data-i18n="dashCases">माय केस</span></div><div>✦ <span data-i18n="dashAssistant">AI सहायक</span></div><div>▧ <span data-i18n="dashDocuments">दस्तावेज़</span></div><div>⚖ <span data-i18n="dashLawyer">वकील सहायता</span></div><div>⚙ <span data-i18n="dashSettings">सेटिंग</span></div></aside>
+        <div class="dash-main"><div class="dash-welcome"><div><small data-i18n="samplePreview">SAMPLE PREVIEW</small><h3 data-i18n="welcomeSample">नमस्ते! आपका स्वागत है</h3><p data-i18n="sampleOnly">यह केवल डिज़ाइन का नमूना है, असली केस रिकॉर्ड नहीं।</p></div><span class="sample-pill" data-i18n="demoBadge">डेमो</span></div>
+          <div class="dash-stats"><article><small data-i18n="statCases">कुल केस</small><b>03</b><span data-i18n="sampleData">नमूना डेटा</span></article><article><small data-i18n="statDocuments">दस्तावेज़</small><b>12</b><span data-i18n="sampleData">नमूना डेटा</span></article><article><small data-i18n="statGuides">कानूनी गाइड</small><b>05</b><span data-i18n="availableNow">उपलब्ध</span></article><article><small data-i18n="statSecurity">गोपनीयता</small><b>100%</b><span data-i18n="localDemo">स्थानीय डेमो</span></article></div>
+          <div class="dash-lower"><article class="dash-panel"><h4 data-i18n="caseStrength">केस की स्थिति (डेमो)</h4><div class="timeline"><span>● <b data-i18n="stepOne">जानकारी</b></span><i></i><span>● <b data-i18n="stepTwo">दस्तावेज़</b></span><i></i><span>● <b data-i18n="stepThree">समीक्षा</b></span></div><p data-i18n="caseDisclaimer">यह प्रगति-रेखा केवल इंटरफेस दिखाने के लिए है।</p></article>
+          <article class="dash-panel quick-panel"><h4 data-i18n="quickActions">त्वरित सुविधाएँ</h4><a href="#drafts" data-i18n="quickDraft">▤ आवेदन जनरेटर खोलें</a><a href="#assistant" data-i18n="quickAsk">✦ सामान्य सवाल पूछें</a><a href="#guides" data-i18n="quickGuides">⚖ कानूनी गाइड देखें</a></article></div>
+        </div>
+      </div>
+    </section>
+    <section id="lawyer-connect" class="lawyer-strip"><div><span class="eyebrow" data-i18n="lawyerEyebrow">LEGAL SUPPORT</span><h2 data-i18n="lawyerTitle">योग्य कानूनी सहायता खोजें</h2><p data-i18n="lawyerText">कानूनी सहायता की पात्रता और उपलब्ध सेवाओं के लिए NALSA की आधिकारिक जानकारी देखें।</p></div><a class="btn gold" href="https://nalsa.gov.in/legal-aid/" target="_blank" rel="noopener" data-i18n="lawyerButton">NALSA सहायता देखें ↗</a></section>
     <section id="guides" class="section"><div class="section-head"><div><span class="eyebrow" data-i18n="learn">सीखें और समझें</span><h2 data-i18n="guidesTitle">कानूनी गाइड</h2></div><p data-i18n="guidesSub">आम कानूनी सवालों पर सरल शुरुआती जानकारी।</p></div>
       <div class="cards">
         <article class="card"><span class="card-icon">01</span><h3 data-i18n="firTitle">FIR क्या है?</h3><p data-i18n="firText">BNSS की धारा 173 में संज्ञेय अपराध की सूचना दर्ज करने की सामान्य प्रक्रिया दी गई है।</p><a href="https://bprd.mha.gov.in/uploads/pdf/Final_BNSS.pdf" target="_blank" rel="noopener" data-i18n="official">BNSS का आधिकारिक पाठ ↗</a></article>
@@ -115,6 +134,6 @@
     <section class="official"><h2 data-i18n="officialTitle">आधिकारिक संसाधन</h2><div class="resource-links"><a href="https://nalsa.gov.in/" target="_blank" rel="noopener">NALSA ↗</a><a href="https://www.mha.gov.in/" target="_blank" rel="noopener">Ministry of Home Affairs ↗</a><a href="https://cybercrime.gov.in/" target="_blank" rel="noopener">National Cyber Crime Portal ↗</a><a href="https://www.indiacode.nic.in/" target="_blank" rel="noopener">India Code ↗</a></div></section>
   </main>
   <footer><span>⚖ NYAY SAATHI</span><span data-i18n="footer">सामान्य जानकारी के लिए • कानूनी सलाह का विकल्प नहीं</span></footer>
-  <script src="app.js?v=34"></script>
+  <script src="app.js?v=35"></script>
 </body>
 </html>
