@@ -63,3 +63,10 @@ The following code changes were committed to `app.js` after the initial review:
 7. Changed the unknown-topic fallback in both languages to ask for the broad topic and State/UT, while warning users not to share identifying details or private documents.
 
 **Verification limitation:** These changes have been committed and the affected keyword routes were checked against the exact synthetic prompt wording by static inspection. A real browser interaction run and rendered-output verification have not yet been performed. Do not mark the 16 test variants as passed until that runtime check and source/legal review are complete.
+
+
+## Follow-up keyword-route regression (27 November 2026)
+
+A second static route-matrix pass used the exact 16 prompts in `qa/MP-SYNTHETIC-TEST-SET.md`. It exposed two additional Hindi key gaps (the private-shopkeeper prompt's “MP Lokayukta” wording and the advocate-behaviour wording). Those keys were added and the matrix was rerun.
+
+**Result: 16/16 prompts now select the intended topic route or the intended clarification fallback.** This confirms keyword selection only. It does not certify the legal accuracy, completeness, rendered formatting, currentness of official sources, or runtime/browser behaviour of the selected answers. The eight test answers must still undergo browser output review and qualified legal review before being scored or marked passed.
