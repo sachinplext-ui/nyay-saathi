@@ -174,3 +174,5 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - Cache-bust commits: `7563fc6` (index.html), `56fac08` (sw.js).
 
 **Pending:** Wait for GitHub Pages deployment, then hard-refresh/reopen the site and repeat the exact English advocate misconduct prompt. Do not mark this test passed until the State Bar Council answer is visible on the phone.
+
+- English advocate professional misconduct — manual mobile retest after script cache-bust: the latest user screenshot now visibly shows the correct State Bar Council of Madhya Pradesh guidance, General Rules link, and the qualification that the source pack does not establish the full complaint procedure/form/fee/deadline. **Manual screenshot content check: expected English advocate-conduct route displayed.** Link click behaviour and legal-source currentness remain unverified.
