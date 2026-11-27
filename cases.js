@@ -15,7 +15,19 @@ function message(value){const el=$("demoCaseStatusMessage");el.textContent=value
 function reset(){root.reset();editing=null;labels();$("demoCaseStatusMessage").hidden=true;}
 function beginEdit(id){const item=items.find(x=>x.id===id);if(!item)return;editing=id;$("demoCaseTitle").value=item.title;$("demoCaseType").value=item.type;$("demoCaseStatus").value=item.status;labels();$("demoCaseTitle").focus();}
 function removeItem(id){if(!window.confirm(t().confirm))return;items=items.filter(x=>x.id!==id);if(editing===id)reset();render();message(t().deleted);}
-root.addEventListener("submit",event=>{event.preventDefault();const title=$("demoCaseTitle").value.trim();if(!title){message(t().required);return;}const type=$("demoCaseType").value,status=$("demoCaseStatus").value;if(editing===null){items.push({id:Math.max(0,...items.map(x=>x.id))+1,title,type,status});render();message(t().saved);}else{const item=items.find(x=>x.id===editing);if(item)Object.assign(item,{title,type,status});render();message(t().updated);}reset();});
+root.addEventListener("submit",event=>{
+ event.preventDefault();
+ const title=$("demoCaseTitle").value.replace(/[\\u0000-\\u001f\\u007f]/g," ").replace(/\\s+/g," ").trim().slice(0,60);
+ const type=$("demoCaseType").value,status=$("demoCaseStatus").value;
+ if(!title){message(t().required);$("demoCaseTitle").focus();return;}
+ if(!["police","property","consumer","other"].includes(type)||!["draft","review","closed"].includes(status)){message(t().required);return;}
+ const isNew=editing===null;
+ if(isNew){items.push({id:Math.max(0,...items.map(x=>x.id))+1,title,type,status});}
+ else{const item=items.find(x=>x.id===editing);if(!item){reset();return;}Object.assign(item,{title,type,status});}
+ reset();
+ render();
+ message(t()[isNew?"saved":"updated"]);
+});
 $("cancelDemoEdit").addEventListener("click",reset);$("demoCaseSearch").addEventListener("input",render);$("demoCaseFilter").addEventListener("change",render);
 new MutationObserver(labels).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});
 labels();render();
