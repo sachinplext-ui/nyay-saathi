@@ -48,3 +48,18 @@ Do not mark all 16 variants as passed based on this static inspection. Browser e
 
 ---
 This report records code-path findings only; it is not legal advice, a security certification, or proof of live service behavior.
+
+
+## Code fixes applied (27 November 2026)
+
+The following code changes were committed to `app.js` after the initial review:
+
+1. Added Hindi and English fee-specific Lokayukta topics. They distinguish the ₹25 judicial-stamp mention for complaints against a Minister or Secretary from other categories, state the source-pack page date (18 May 2022), and instruct users to recheck current fees.
+2. Updated the Madhya Pradesh legal-aid answers in both languages. They now say eligibility is not automatic, point to MPSLSA Legal Aid and directory pages, and do not present the income ceiling as current without rechecking.
+3. Added English wording variants for advocate professional-conduct questions. Hindi and English answers now point to the State Bar Council and General Rules while disclosing that the source pack does not establish a complete current complaint procedure, form, fee or deadline.
+4. Updated both Lokayukta jurisdiction answers to link the official Scope and Jurisdiction page.
+5. Updated the police-portal answers to avoid listing unverified service options and to state clearly that a portal submission is not automatically an FIR.
+6. Added trusted-adult routing to the immediate-danger answer in both languages.
+7. Changed the unknown-topic fallback in both languages to ask for the broad topic and State/UT, while warning users not to share identifying details or private documents.
+
+**Verification limitation:** These changes have been committed and the affected keyword routes were checked against the exact synthetic prompt wording by static inspection. A real browser interaction run and rendered-output verification have not yet been performed. Do not mark the 16 test variants as passed until that runtime check and source/legal review are complete.
