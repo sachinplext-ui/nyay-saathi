@@ -32,6 +32,8 @@ function showGuidance(){
  out.textContent=(match?match.answer:(language==="hi"?"मैं इस सवाल के लिए पक्का सामान्य विषय नहीं पहचान पाया। संबंधित दस्तावेज़ सुरक्षित रखें, India Code और सरकारी स्रोत देखें, और योग्य वकील/NALSA से सलाह लें। https://www.indiacode.nic.in/":"I could not confidently identify a general topic for this question. Preserve relevant records, check India Code and official sources, and consult a qualified advocate/legal-aid service. https://www.indiacode.nic.in/"))+privacy;
 }
 document.getElementById("askBtn").addEventListener("click",showGuidance);
+
+document.querySelectorAll('a[href="#drafts"]').forEach(link=>link.addEventListener("click",event=>{event.preventDefault();const section=document.getElementById("drafts");if(section){history.replaceState(null,"","#drafts");section.scrollIntoView({behavior:"smooth",block:"start"});section.setAttribute("tabindex","-1");section.focus({preventScroll:true});}}));
 const draftLabels={hi:{general:"सामान्य आवेदन",police:"पुलिस को शिकायत/निवेदन",records:"दस्तावेज़/रिकॉर्ड की प्रति हेतु अनुरोध",fircopy:"FIR की कॉपी हेतु अनुरोध",cyber:"साइबर शिकायत का फॉलो-अप"},en:{general:"General application",police:"Complaint / representation to police",records:"Request for a copy of records",fircopy:"Request for a copy of an FIR",cyber:"Cyber complaint follow-up"}};
 function applyDraftLanguage(){
  const t=language==="hi"?{...translations.en,...hi}:translations.en;
