@@ -45,3 +45,12 @@
 
 ---
 This is a QA status record, not a security certification or legal review.
+
+## Integration inspection (27 November 2026)
+
+- `api-config.js` sets `window.NYAY_API_BASE = ""`; no production API URL is configured.
+- The current `app.js` assistant button calls the browser-side `showGuidance` function; no request to `/api/ask` was found in the inspected assistant flow.
+- `render.yaml` defines a Node web service with root directory `server`, a `/health` health check, and server-side environment variables. This is deployment configuration only; it does not prove a Render service exists or is running.
+- `server/package.json` and `server/index.js` provide a separate API prototype. The frontend is not yet connected to it.
+- The current site is therefore correctly described as a rules-based static demo. Do not change the UI label to “live AI” until the backend is deployed, health-checked, safely integrated and reviewed.
+
