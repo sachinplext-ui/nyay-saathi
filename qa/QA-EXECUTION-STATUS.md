@@ -155,3 +155,5 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - Code commits: `d6ece93`, `b47647a`.
 
 **Pending:** Refresh the published site and repeat the same Hindi prompt. The screenshot supplied before this correction is a failed route, not a pass. English-language advocate prompt still requires its separate manual screenshot check.
+
+- Advocate-conduct Hindi prompt — manual mobile retest after script-detection and keyword fixes: the user's screenshot now shows the Hindi State Bar Council of Madhya Pradesh guidance, General Rules link, and the qualification that the source pack does not establish the full complaint procedure/form/fee/deadline. The page toggle remains English while the question is Hindi; the answer correctly follows the Hindi question script. **Manual screenshot content check: expected advocate-conduct route now displayed.** Link click behaviour and legal-source currentness remain unverified.
