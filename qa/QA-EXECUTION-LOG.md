@@ -157,3 +157,9 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Result:** **PASS — Dashboard tab switches to and displays its overview panel.**
 - **Scope:** Confirms navigation and rendering only. Metrics and case status are explicitly sample/demo content; quick-link actions still require separate tests.
 
+## Run 16 — Dashboard quick link: Application Generator
+
+- **Observed evidence:** User screenshot shows the application-generator form opened from the Dashboard quick link, including the demo-safety notice and application-type selector.
+- **Result:** **PASS — the “आवेदन जनरेटर खोलें” quick link navigates to the generator form.**
+- **Scope:** Confirms navigation only; generation, copy and PDF/Print were tested separately above.
+
