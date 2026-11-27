@@ -107,7 +107,7 @@ function applyDraftLanguage(){
  const placeholders={draftOffice:"officePlaceholder",draftSubject:"subjectPlaceholder",draftFacts:"factsPlaceholder",draftRequest:"requestPlaceholder",draftEnclosures:"enclosuresPlaceholder"};
  Object.entries(placeholders).forEach(([id,key])=>{const el=document.getElementById(id);if(el)el.placeholder=t[key]});
  const type=document.getElementById("draftType");if(type)[...type.options].forEach(o=>{o.textContent=draftLabels[language][o.value]||o.textContent});
- buildDraft();
+ applyDraftPreset();buildDraft();
 }
 const draftPresets={
  general:{hi:{subject:"[आवेदन का संक्षिप्त विषय]",facts:"[घटनाओं का क्रम, अनुमानित तारीख़ें और केवल अपनी जानकारी के तथ्य लिखें। निजी पहचान न लिखें।]",request:"[कार्यालय से किया जाने वाला स्पष्ट अनुरोध लिखें।]"},en:{subject:"[Brief application subject]",facts:"[Describe the sequence of events, approximate dates and facts within your own knowledge. Do not include identifying details.]",request:"[State the specific action or information requested from the office.]"}},
@@ -126,6 +126,7 @@ function applyDraftPreset(){
   lastDraftPreset[key]=preset[key];
  });
 }
+applyDraftPreset();
 function buildDraft(){
  const en=language==="en", typeKey=document.getElementById("draftType").value;
  const office=document.getElementById("draftOffice").value.trim()||(en?"[Relevant officer / office]":"[संबंधित अधिकारी/कार्यालय]");
