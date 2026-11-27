@@ -240,3 +240,13 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - The first run of the new validation job completed its JavaScript syntax and JSON validation steps successfully. The deployment job was still waiting when this note was written; this does not prove the latest commit is deployed.
 - A source-level sweep of `index.html` found one brand link pointing to `#` with no target. It has been corrected to `#home`. Other internal hash links in that sweep resolved to existing IDs; no duplicate IDs were found.
 - This was a source-level HTML reference check, not browser interaction, accessibility conformance or a full link check.
+
+
+## Latest automated validation — 28 November 2026
+
+- Corrected the HTML source checker regular-expression escaping so it actually detects duplicate IDs, missing in-page targets and unsafe new-tab links.
+- GitHub Actions run `46052789428` completed successfully: the validation job and GitHub Pages deployment job both reported success. The HTML source-check step passed as part of the validation job.
+- Added dedicated bilingual application presets for cybercrime follow-up and official-record requests. The application type selector already includes these types; the new preset text now gives them topic-specific starter wording and privacy reminders.
+- Updated the app asset version to `app.js?v=64` and service-worker cache to `nyay-saathi-v82`.
+- Expanded the next validation run to syntax-check `sw.js` and `qa/check-html.mjs` as well as the existing JavaScript files.
+- **Pending:** the new cyber/records preset changes and the expanded workflow have not yet run through GitHub Actions or been exercised in a browser. Do not mark them tested until the new run passes and later full mobile/browser testing is completed.
