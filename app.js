@@ -240,21 +240,57 @@ document.getElementById("printDraft").addEventListener("click",()=>{const draft=
  const form=document.getElementById("firDraftForm");
  if(!form)return;
  const fields=["firOffice","firSubject","firWhen","firWhere","firFacts","firRequest"];
- const labels={
-  hi:["किसे संबोधित करें","शिकायत का विषय","घटना की तारीख / अनुमानित समय","घटना का सामान्य स्थान (पूरा पता नहीं)","क्या हुआ? तथ्य क्रम से लिखें","पुलिस से क्या अनुरोध है?","शिकायत का ड्राफ्ट बनाएँ"],
-  en:["Addressed to","Complaint subject","Date / approximate time of incident","General location (not full address)","What happened? Describe facts in order","What are you requesting from the police?","Create complaint draft"]
+ const copy={
+  hi:{
+   labels:["किसे संबोधित करें","शिकायत का विषय","घटना की तारीख / अनुमानित समय","घटना का सामान्य स्थान (पूरा पता नहीं)","क्या हुआ? तथ्य क्रम से लिखें","पुलिस से क्या अनुरोध है?"],
+   heading:"पुलिस शिकायत का प्रारूप तैयार करें",
+   privacy:"केवल काल्पनिक/नमूना जानकारी डालें। असली नाम, फोन, पता, FIR नंबर, पहचान विवरण या निजी दस्तावेज़ न लिखें। यह टूल शिकायत जमा नहीं करता।",
+   placeholders:["जैसे: संबंधित थाना प्रभारी","घटना का संक्षिप्त विषय","यदि ज्ञात हो; अनुमान स्पष्ट लिखें","जैसे: क्षेत्र / शहर","केवल तथ्य लिखें; जो बात निश्चित न हो उसे अनुमान या सुनी-सुनाई बात के रूप में स्पष्ट करें।","जैसे: सूचना की जाँच कर कानून के अनुसार उचित कार्रवाई करने का अनुरोध।"],
+   button:"शिकायत का ड्राफ्ट बनाएँ",status:"नीचे शिकायत का ड्राफ्ट तैयार है। ध्यान से जाँचें; यह जमा नहीं हुआ है。",
+   required:"कृपया विषय, घटना के तथ्य और अनुरोध भरें।",
+   cards:[
+    ["शिकायत का प्रारूप","घटना के तथ्य क्रम से लिखकर पुलिस को देने हेतु एक सामान्य ड्राफ्ट तैयार करें。"],
+    ["FIR की स्थिति / कॉपी","FIR की कॉपी या प्रक्रिया संबंधी जानकारी के लिए आधिकारिक स्रोत और योग्य सहायता देखें。","BNSS का आधिकारिक पाठ ↗"],
+    ["FIR दर्ज न होने पर","अगले कदम मामले और क्षेत्राधिकार पर निर्भर करते हैं। किसी निष्कर्ष से पहले वकील या विधिक सेवा प्राधिकरण से सलाह लें。","निःशुल्क कानूनी सहायता ↗"]
+   ]
+  },
+  en:{
+   labels:["Addressed to","Complaint subject","Date / approximate time of incident","General location (not full address)","What happened? Describe facts in order","What are you requesting from the police?"],
+   heading:"Prepare a police complaint draft",
+   privacy:"Use fictional/sample information only. Do not enter real names, phone numbers, addresses, FIR numbers, identity details or private documents. This tool does not submit a complaint.",
+   placeholders:["e.g. Officer in charge of the concerned police station","Brief subject of the incident","If known; clearly mark estimates","e.g. locality / city","State facts only. Mark anything uncertain as an estimate or second-hand information.","e.g. Request that the information be examined and appropriate action taken according to law."],
+   button:"Create complaint draft",status:"A complaint draft is ready below. Review it carefully; it has not been submitted.",
+   required:"Please complete the subject, facts and request.",
+   cards:[
+    ["Complaint format","Prepare a general draft by setting out the facts of an incident in chronological order."],
+    ["FIR status / copy","For an FIR copy or process information, consult official sources and qualified support.","Official BNSS text ↗"],
+    ["If an FIR is not registered","Next steps depend on the facts and jurisdiction. Seek advice from a lawyer or Legal Services Authority before deciding what to do.","Free legal aid ↗"]
+   ]
+  }
  };
  const updateLanguage=()=>{
-  const en=document.documentElement.lang==="en",t=labels[en?"en":"hi"];
-  fields.forEach((id,i)=>{const label=form.querySelector('label[for="'+id+'"]');if(label)label.textContent=t[i]});
-  const button=form.querySelector('button[type="submit"]');if(button)button.textContent=t[6];
+  const en=document.documentElement.lang==="en",t=copy[en?"en":"hi"];
+  fields.forEach((id,i)=>{
+   const label=form.querySelector('label[for="'+id+'"]'),input=document.getElementById(id);
+   if(label)label.textContent=t.labels[i];
+   if(input)input.placeholder=t.placeholders[i];
+  });
+  const heading=form.querySelector("h3"),privacy=form.querySelector(".generator-note"),button=form.querySelector('button[type="submit"]');
+  if(heading)heading.textContent=t.heading;
+  if(privacy)privacy.textContent=t.privacy;
+  if(button)button.textContent=t.button;
+  const cards=document.querySelectorAll("#fir-help .fir-intro-grid article");
+  cards.forEach((card,i)=>{
+   const title=card.querySelector("b"),paragraph=card.querySelector("p"),link=card.querySelector("a"),item=t.cards[i];
+   if(title)title.textContent=item[0];if(paragraph)paragraph.textContent=item[1];if(link&&item[2])link.textContent=item[2];
+  });
  };
  form.addEventListener("submit",event=>{
   event.preventDefault();
   const values=fields.map(id=>document.getElementById(id).value.trim());
   const status=document.getElementById("firDraftStatus");
   if(!values[1]||!values[4]||!values[5]){
-   status.textContent=document.documentElement.lang==="en"?"Please complete the subject, facts and request.":"कृपया विषय, घटना के तथ्य और अनुरोध भरें।";
+   status.textContent=copy[document.documentElement.lang==="en"?"en":"hi"].required;
    status.hidden=false;return;
   }
   const en=document.documentElement.lang==="en";
@@ -269,7 +305,7 @@ document.getElementById("printDraft").addEventListener("click",()=>{const draft=
    const el=document.getElementById(id);el.dispatchEvent(new Event(id==="draftType"?"change":"input",{bubbles:true}));
   });
   document.getElementById("generateDraft").click();
-  status.textContent=en?"Draft prepared below. Review it carefully; it has not been submitted.":"नीचे शिकायत का ड्राफ्ट तैयार है। ध्यान से जाँचें; यह जमा नहीं हुआ है।";
+  status.textContent=copy[en?"en":"hi"].status;
   status.hidden=false;
   document.getElementById("drafts").scrollIntoView({behavior:"smooth",block:"start"});
  });
