@@ -198,3 +198,5 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - Test 8, Hindi — broad complaint / portal selection: the user's mobile screenshot visibly asks for the complaint topic and State/Union Territory before recommending a portal, and warns not to share identifying or private information. **Manual screenshot content check: expected clarification displayed.** Minor mixed-language word “and” in the Hindi sentence was identified and corrected to “और”.
 - Clarification wording code commit: `42d8d05`; cache-bust commits: `c04ddf0` and `33d63bd`.
 **Pending:** Repeat the Hindi prompt once after deployment to confirm the wording correction, then complete the English clarification screenshot check.
+
+- Test 8, English — broad complaint / portal selection: the user's mobile screenshot visibly asks for the complaint topic and State/Union Territory before recommending a portal, and warns against sharing names, addresses, phone numbers, FIR numbers or private documents. **Manual screenshot content check: expected clarification displayed.**
