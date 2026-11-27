@@ -225,3 +225,46 @@ document.getElementById("printDraft").addEventListener("click",()=>{const draft=
   if(button){button.click();document.getElementById("assistant")?.scrollIntoView({behavior:"smooth",block:"start"});}
  });
 })();
+
+
+/* FIR support center: build a local complaint draft; nothing is submitted or transmitted. */
+(()=>{
+ const form=document.getElementById("firDraftForm");
+ if(!form)return;
+ const fields=["firOffice","firSubject","firWhen","firWhere","firFacts","firRequest"];
+ const labels={
+  hi:["किसे संबोधित करें","शिकायत का विषय","घटना की तारीख / अनुमानित समय","घटना का सामान्य स्थान (पूरा पता नहीं)","क्या हुआ? तथ्य क्रम से लिखें","पुलिस से क्या अनुरोध है?","शिकायत का ड्राफ्ट बनाएँ"],
+  en:["Addressed to","Complaint subject","Date / approximate time of incident","General location (not full address)","What happened? Describe facts in order","What are you requesting from the police?","Create complaint draft"]
+ };
+ const updateLanguage=()=>{
+  const en=document.documentElement.lang==="en",t=labels[en?"en":"hi"];
+  fields.forEach((id,i)=>{const label=form.querySelector('label[for="'+id+'"]');if(label)label.textContent=t[i]});
+  const button=form.querySelector('button[type="submit"]');if(button)button.textContent=t[6];
+ };
+ form.addEventListener("submit",event=>{
+  event.preventDefault();
+  const values=fields.map(id=>document.getElementById(id).value.trim());
+  const status=document.getElementById("firDraftStatus");
+  if(!values[1]||!values[4]||!values[5]){
+   status.textContent=document.documentElement.lang==="en"?"Please complete the subject, facts and request.":"कृपया विषय, घटना के तथ्य और अनुरोध भरें।";
+   status.hidden=false;return;
+  }
+  const en=document.documentElement.lang==="en";
+  const facts=[en?"Incident date / time: ":"घटना की तारीख / समय: ",values[2]|| (en?"Not specified":"उल्लेख नहीं"),en?"General location: ":"सामान्य स्थान: ",values[3]|| (en?"Not specified":"उल्लेख नहीं"),en?"Facts as provided: ":"दिए गए तथ्य: ",values[4]].join("\n");
+  document.getElementById("draftType").value="police";
+  document.getElementById("draftOffice").value=values[0]||(en?"Concerned Police Station":"संबंधित थाना प्रभारी");
+  document.getElementById("draftSubject").value=values[1];
+  document.getElementById("draftFacts").value=facts;
+  document.getElementById("draftRequest").value=values[5];
+  document.getElementById("draftEnclosures").value="";
+  ["draftType","draftOffice","draftSubject","draftFacts","draftRequest","draftEnclosures"].forEach(id=>{
+   const el=document.getElementById(id);el.dispatchEvent(new Event(id==="draftType"?"change":"input",{bubbles:true}));
+  });
+  document.getElementById("generateDraft").click();
+  status.textContent=en?"Draft prepared below. Review it carefully; it has not been submitted.":"नीचे शिकायत का ड्राफ्ट तैयार है। ध्यान से जाँचें; यह जमा नहीं हुआ है।";
+  status.hidden=false;
+  document.getElementById("drafts").scrollIntoView({behavior:"smooth",block:"start"});
+ });
+ new MutationObserver(updateLanguage).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});
+ updateLanguage();
+})();
