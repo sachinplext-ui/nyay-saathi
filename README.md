@@ -21,7 +21,7 @@ This release is a public educational prototype only. No real accounts, case data
 - Responsive dark-navy and gold interface
 - Hindi/English interface toggle
 - Expanded Hindi/English general guidance on FIR procedure under BNSS Section 173, disputed allegations, cyber-fraud reporting and NALSA legal aid, with official references
-- Fictional sample-case manager with edit, delete and draft/review/closed status transitions (session memory only)
+- Fictional sample-case manager with search, status filters, edit, delete and draft/review/closed transitions (session memory only)
 - Interactive case-preparation checklist with live completion percentage
 - Browser-side application draft generator
 - Copy application text
