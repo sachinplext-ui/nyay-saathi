@@ -96,3 +96,10 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Scope:** This confirms navigation and form visibility only. Form generation, copy/print controls and output accuracy have not yet been tested.
 - **Safety:** Use fictional/sample details only; do not enter real personal or case information.
 
+## Run 6 — Application generation with required subject
+
+- **Observed evidence:** User screenshot shows the generated application preview with the subject “Sample application”, factual description and request populated.
+- **Result:** **PASS — required-field validation clears and application preview is generated when the subject is supplied.**
+- **Scope:** This confirms browser-side text formatting only; it does not submit or file an application.
+- **Next checks:** Copy and PDF/Print controls remain to be tested separately.
+
