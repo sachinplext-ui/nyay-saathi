@@ -267,3 +267,12 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - The first run of the new app contract checker failed in the validation step. Inspection found over-escaped regular expressions in the checker itself; the application source was not the reported cause.
 - Rewrote the checker to use simpler source boundaries and direct print/API assertions, while retaining checks for all seven preset types, input limits and absence of browser storage.
 - The corrected checker has been committed. Its new GitHub Actions run must pass before the contract check is marked successful. The cancelled intermediate runs were superseded by the latest commit.
+
+
+## Corrected automated checks — 28 November 2026
+
+- The corrected app contract checker passed in GitHub Actions run `46053440385` on commit `acbcc10c91db6239b1d472b44f47455a76ec7909`.
+- The `validate` job completed successfully, including JavaScript syntax checks, JSON parsing, the HTML source checker and the app contract checker.
+- The `deploy` job also completed successfully; GitHub Pages deployment for that commit is confirmed by the workflow result.
+- This supersedes the pending status above: the corrected contract checker is now CI-verified. The earlier failed checker attempt and cancelled intermediate run remain part of the audit history.
+- The checks are source-level safeguards only. They do not establish browser interaction correctness, legal accuracy, secure case storage, live AI functionality, accessibility conformance or production readiness.
