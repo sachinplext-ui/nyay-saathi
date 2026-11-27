@@ -31,6 +31,7 @@ This release is a public educational prototype only. No real accounts, case data
 
 ## Important limitations
 - The assistant is a rules-based demo, not a connected AI model and not a lawyer. The optional API endpoint remains disabled until verified legal-source retrieval and citation handling are implemented.
+- Assistant questions are handled by the browser-side rules demo; do not enter real names, contact details, case identifiers or private documents.
 - It does not assess individual cases or predict legal outcomes.
 - My Cases data is held only in page memory and is lost when the page is refreshed or closed; it is not a real case-management database.
 - The draft generator creates a generic editable template, not a legally reviewed pleading.
