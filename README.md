@@ -7,7 +7,7 @@ https://sachinplext-ui.github.io/nyay-saathi/
 
 ## Product security status
 
-This release is a public educational prototype only. No real accounts, case database, document uploads, or secure evidence vault are enabled. Read [SECURITY-ROADMAP.md](SECURITY-ROADMAP.md) and [AUTH-DESIGN.md](AUTH-DESIGN.md) before considering production use. Use fictional sample data only.
+This release is a public educational prototype only. No real accounts, case database, document uploads, or secure evidence vault are enabled. Read [SECURITY-ROADMAP.md](SECURITY-ROADMAP.md), [AUTH-DESIGN.md](AUTH-DESIGN.md), [PRIVACY-POLICY.md](PRIVACY-POLICY.md), and [DATA-RETENTION.md](DATA-RETENTION.md) before considering production use. Use fictional sample data only.
 
 ## Current features
 - Responsive dark-navy and gold interface
