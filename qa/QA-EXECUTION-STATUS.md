@@ -180,3 +180,13 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - Test 6, Hindi — MP Police Citizen Portal / automatic FIR registration: the user's mobile screenshot visibly shows the cautious answer that the source pack does not establish that every portal complaint automatically becomes an FIR, advises checking service-specific portal instructions or the local police authority, and distinguishes an ordinary online complaint from FIR registration. Official portal URL and privacy warning are visible. **Manual screenshot content check: expected route displayed.** Link click behaviour and current official procedure remain unverified.
 
 - Test 6, English — MP Police Citizen Portal / automatic FIR registration: the user's mobile screenshot visibly shows the expected cautious answer, distinguishes a general online grievance from FIR registration, and advises checking the specific service instructions or confirming with local police. The official portal and Indore Police URLs are displayed, along with the privacy warning. **Manual screenshot content check: expected route displayed.** UI issue: the MP Police Citizen Portal URL is repeated twice in the answer; remove the duplicate. Link click behaviour and current official procedure remain unverified.
+
+
+## Police answer duplicate-link cleanup (27 November 2026)
+
+- The English police portal screenshot showed the correct FIR qualification, but repeated the MP Police Citizen Portal URL twice before the Indore Police link.
+- Removed the duplicate portal URL from the English answer.
+- Bumped the app script reference from `app.js?v=41` to `app.js?v=42` and service-worker cache from `nyay-saathi-v48` to `nyay-saathi-v49`.
+- Code cleanup commit: `df663f6`; cache-bust commits: `b32a1fe` and `aa8d8f9`.
+
+**Pending:** Verify the updated English answer after Pages deployment and confirm the duplicate URL no longer appears. The Hindi and English content checks for the police/FIR distinction are recorded separately above.
