@@ -144,3 +144,14 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - Test 4, Hindi — Lokayukta ₹25 fee: after the priority fix, the user's refreshed mobile screenshot visibly shows the dedicated fee answer (not the broad jurisdiction answer), distinguishes the ₹25 judicial stamp reference for complaints against a Minister or Secretary from other categories, includes the 18 May 2022 source-page date and warns to recheck current filing information. **Manual screenshot content check: correct fee-specific route now displayed.** The linked filing URL is visible as plain text; click behaviour and current fee rules remain unverified.
 
 - Test 4, English — MP Lokayukta ₹25 fee: the user's refreshed mobile screenshot visibly shows the dedicated English fee answer, distinguishes the ₹25 judicial stamp reference for complaints against a Minister or Secretary from other categories, gives the 18 May 2022 source-page date, and advises checking current official filing information. **Manual screenshot content check: correct fee-specific route now displayed.** Link click behaviour and current fee rules remain unverified.
+
+
+## Advocate complaint Hindi-routing correction (27 November 2026)
+
+- A user screenshot showed a Hindi question about a lawyer's “गलत व्यवहार” while the page language toggle was set to English. The app selected the English topic list and fell through to generic legal-aid guidance.
+- Updated `showGuidance()` to detect Devanagari script in the entered question and use Hindi answer topics for Hindi-script questions, even if the page toggle is currently English.
+- Added Hindi matching phrases for “वकील के गलत व्यवहार” and “वकील के व्यवहार की शिकायत”.
+- Confirmed at source level that the exact screenshot prompt detects Hindi and matches the advocate-conduct topic. The corrected Devanagari regex is present in the current source.
+- Code commits: `d6ece93`, `b47647a`.
+
+**Pending:** Refresh the published site and repeat the same Hindi prompt. The screenshot supplied before this correction is a failed route, not a pass. English-language advocate prompt still requires its separate manual screenshot check.
