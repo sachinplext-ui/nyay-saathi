@@ -407,3 +407,19 @@ button:disabled{opacity:.55;cursor:not-allowed}
   text-decoration:none;box-shadow:0 4px 16px #0004;
 }
 .skip-link:focus{transform:translateY(0);outline:3px solid #fff;outline-offset:3px}
+
+
+/* FIR support center and complaint-draft builder */
+.fir-center{background:linear-gradient(145deg,#0d2038,#081629)!important;border-top:1px solid #d9b66f44}
+.fir-intro-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:20px 0}
+.fir-info-card{padding:19px;background:#122b46;border:1px solid #d9b66f55;border-radius:10px}
+.fir-info-card b{color:#f0d9a5;font-size:15px}
+.fir-info-card p{color:#b8c7d8;font-size:12px;line-height:1.7}
+.fir-info-card a{color:#e4c37b;font-size:12px}
+.fir-builder{max-width:820px;margin:24px auto 0;padding:22px;background:#f7f8fa;border:1px solid #d9b66f88;border-radius:12px;color:#172338}
+.fir-builder h3{margin:0 0 10px;color:#0b1b30;font-size:21px}
+.fir-builder label{display:block;margin:16px 0 7px;font-size:13px;font-weight:800;color:#26364d}
+.fir-builder input,.fir-builder textarea{display:block;width:100%;min-height:46px;padding:12px;border:1px solid #d5dce6;border-radius:7px;background:#fff;color:#172338;font:inherit;font-size:16px}
+.fir-builder textarea{resize:vertical;line-height:1.6}
+.fir-builder button{margin-top:18px;min-height:48px}
+@media(max-width:760px){.fir-intro-grid{grid-template-columns:1fr}.fir-builder{padding:16px}.fir-builder button{width:100%}}
