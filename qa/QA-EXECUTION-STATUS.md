@@ -120,3 +120,13 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - Test 3, Hindi — private-shopkeeper dispute / MP Lokayukta scope: the shared mobile screenshot visibly shows the limited statutory-scope explanation, says a private person/dispute is not automatically within the Lokayukta route, links the official Scope and Jurisdiction page and government-hosted Act copy, and advises confirming current scope with the official office. **Manual screenshot content check: consistent with the expected answer.** Link click behaviour and legal-source currentness remain unverified.
 
 - Test 3, English — private-shopkeeper dispute / MP Lokayukta scope: the shared mobile screenshot visibly shows the limited statutory-scope explanation, does not treat every private dispute as a Lokayukta matter, links the official scope page and government-hosted Act copy, and qualifies current amendments/procedure as unverified. **Manual screenshot content check: consistent with the expected answer.** Link click behaviour and legal-source currentness remain unverified.
+
+
+## Lokayukta fee route defect found in mobile check (27 November 2026)
+
+- The user's Hindi mobile screenshot for the prompt “क्या MP Lokayukta में हर शिकायत के लिए ₹25 देना जरूरी है?” displayed the broad Lokayukta scope answer instead of the fee-specific answer. This is a real observed route failure; Test 4 Hindi is not visually passed.
+- Root cause: the short key `₹25` has length 3 and is excluded by the first matching pass (`key.length > 3`). The broad `लोकायुक्त` key therefore wins before the fallback pass can select the fee topic.
+- Fixed `app.js` by adding longer Hindi fee phrases (`₹25 देना`, `₹25 फीस`, `₹25 शुल्क`, and `25 देना जरूरी`) to the fee-specific topic.
+- Re-ran source-level matching for the exact screenshot prompt, the original Hindi synthetic prompt, and the English synthetic prompt: all three now select the fee-specific answer, including the ₹25 judicial-stamp distinction and 18 May 2022 source-page date.
+- Code commit: `e52e4c65ddc721bedfb3d945f0622472fcab614d`.
+- **Next required check:** refresh/reopen the published mobile site after GitHub Pages deployment and repeat the Hindi ₹25 question. Do not mark Test 4 Hindi as visually passed until the fee-specific answer appears on screen. Then perform the English visual check.
