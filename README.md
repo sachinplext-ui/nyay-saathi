@@ -5,6 +5,14 @@ A responsive Hindi/English educational legal-information website and document-te
 ## Live website
 https://sachinplext-ui.github.io/nyay-saathi/
 
+## Development and QA plans
+
+- [AI Legal Assistant Blueprint](AI-LEGAL-ASSISTANT-BLUEPRINT.md)
+- [API Integration Plan](API-INTEGRATION-PLAN.md)
+- [QA Execution Status](qa/QA-EXECUTION-STATUS.md)
+- [MP Synthetic Test Set](qa/MP-SYNTHETIC-TEST-SET.md)
+- [MP Expected Answers](qa/MP-EXPECTED-ANSWERS.md)
+
 ## Product security status
 
 This release is a public educational prototype only. No real accounts, case database, document uploads, or secure evidence vault are enabled. Read [SECURITY-ROADMAP.md](SECURITY-ROADMAP.md), [AUTH-DESIGN.md](AUTH-DESIGN.md), [PRIVACY-POLICY.md](PRIVACY-POLICY.md), and [DATA-RETENTION.md](DATA-RETENTION.md) before considering production use. Use fictional sample data only.
