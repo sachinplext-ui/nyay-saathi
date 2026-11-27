@@ -40,7 +40,8 @@ function applyDraftLanguage(){
  setText("draftOfficeAddressLabel",'label[for="draftOfficeAddress"]',t.officeAddressLabel);
  setText("draftApplicantAddressLabel",'label[for="draftApplicantAddress"]',t.applicantAddressLabel);
  setText("draftPhoneLabel",'label[for="draftPhone"]',t.phoneLabel);
- setText("draftEmailLabel",'label[for="draftEmail"]',t.emailLabel);\n setText("draftNameLabel",'label[for="draftName"]',t.nameLabel);
+ setText("draftEmailLabel",'label[for="draftEmail"]',t.emailLabel);
+ setText("draftNameLabel",'label[for="draftName"]',t.nameLabel);
  setText("draftSubjectLabel",'label[for="draftSubject"]',t.subjectLabel);
  setText("draftFactsLabel",'label[for="draftFacts"]',t.factsLabel);
  setText("draftRequestLabel",'label[for="draftRequest"]',t.requestLabel);
