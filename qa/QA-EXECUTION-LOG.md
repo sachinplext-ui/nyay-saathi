@@ -76,3 +76,10 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Cache refresh:** Updated the script URL to `app.js?v=39` and service-worker cache to `nyay-saathi-v45`.
 - **Status:** Fix committed. Live deployment and mobile retest pending.
 
+## Retest after JavaScript syntax correction — Hindi FIR prompt
+
+- **Observed evidence:** User screenshot shows the FIR guidance answer rendered in the assistant response panel after submitting a Hindi FIR question.
+- **Result:** **PASS — AI Assistant button and answer rendering are responding in the live mobile page.**
+- **Scope:** This confirms the assistant interaction shown in this screenshot only. It does not confirm every navigation, dashboard, generator, copy, print or language control.
+- **AI status:** Still a local rules-based demo, not connected generative AI.
+
