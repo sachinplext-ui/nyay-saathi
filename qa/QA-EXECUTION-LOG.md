@@ -121,3 +121,9 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Result:** **PASS — My Cases dashboard tab switches to and displays its sample panel.**
 - **Scope:** Confirms tab selection and panel rendering only. The entries are demo placeholders; no real case storage or case-management capability is implied.
 
+## Run 10 — Case Analyzer / preparation checklist panel
+
+- **Observed evidence:** User screenshot shows the “CASE REVIEW WORKSPACE / केस तैयारी चेकलिस्ट” panel with four checklist items and a warning that it is not AI analysis or legal advice.
+- **Result:** **PASS — case preparation checklist panel is visible after selecting the Case Analyzer dashboard tab.**
+- **Scope:** This verifies panel navigation/rendering only. It does not perform AI case analysis, store uploaded documents, or provide legal advice.
+
