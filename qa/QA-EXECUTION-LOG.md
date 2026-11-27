@@ -69,3 +69,10 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Cache refresh:** Updated the app.js query version and service-worker cache name to force the corrected script to load.
 - **Status:** Code change saved; deployment and mobile retest still pending. Do not mark buttons fixed until the live page is checked.
 
+## Follow-up diagnosis — assistant still unresponsive
+
+- **Root cause confirmed:** The previous CM Helpline topic insertion left the literal characters `\n` between two JavaScript object entries (Hindi and English topic lists). This made the entire `app.js` file fail JavaScript parsing, so none of its click handlers could initialize.
+- **Correction:** Replaced both malformed separators with actual line breaks. The complete script now passes a JavaScript syntax parse check.
+- **Cache refresh:** Updated the script URL to `app.js?v=39` and service-worker cache to `nyay-saathi-v45`.
+- **Status:** Fix committed. Live deployment and mobile retest pending.
+
