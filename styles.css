@@ -360,3 +360,7 @@ footer{background:#030a14;border-top:1px solid #d9b66f33}
 .case-tools input,.case-tools select{width:100%;min-height:44px;padding:10px 12px;border:1px solid #425a72;border-radius:7px;background:#08182b;color:#f2f5f9;font:inherit;font-size:14px}
 .case-empty{padding:16px;border:1px dashed #9d824d88;border-radius:8px;color:#c7d2df;font-size:13px}
 @media(max-width:520px){.case-tools{grid-template-columns:1fr}}
+
+
+/* Assistant prompt privacy hint and character counter */
+.question-meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:7px 0 12px;color:#aab5c5;font-size:11px;line-height:1.5}.question-meta .question-limit{color:#b56b32;font-weight:700}
