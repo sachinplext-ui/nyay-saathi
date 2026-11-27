@@ -127,3 +127,9 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Result:** **PASS — case preparation checklist panel is visible after selecting the Case Analyzer dashboard tab.**
 - **Scope:** This verifies panel navigation/rendering only. It does not perform AI case analysis, store uploaded documents, or provide legal advice.
 
+## Run 11 — Deadline Alerts dashboard tab
+
+- **Observed evidence:** User screenshot shows the “डेडलाइन अलर्ट” tab selected and the “महत्वपूर्ण तारीखें” reminders panel rendered with two sample reminder cards.
+- **Result:** **PASS — Deadline Alerts tab switches to and displays its sample reminders panel.**
+- **Scope:** Confirms navigation/rendering only. Dates are explicitly labelled fictional; no real reminders, notifications, or deadline calculations are active.
+
