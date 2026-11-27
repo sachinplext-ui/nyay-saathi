@@ -115,3 +115,6 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - The official URLs render as plain text rather than visibly clickable links.
 - Long URLs wrap across lines; this is readable but visually untidy.
 - The navigation bar is crowded on the narrow mobile viewport and some labels appear mixed between languages in the English screenshot. Review responsive navigation and language translation coverage.
+
+
+- Test 3, Hindi — private-shopkeeper dispute / MP Lokayukta scope: the shared mobile screenshot visibly shows the limited statutory-scope explanation, says a private person/dispute is not automatically within the Lokayukta route, links the official Scope and Jurisdiction page and government-hosted Act copy, and advises confirming current scope with the official office. **Manual screenshot content check: consistent with the expected answer.** Link click behaviour and legal-source currentness remain unverified.
