@@ -217,19 +217,19 @@
     },
     {
       "source_id": "MP-GOV-DEPARTMENT-DIRECTORY",
-      "name": "Madhya Pradesh Government Departments — Integrated Government Online Directory",
-      "authority": "National Informatics Centre, Government of India (IGOD)",
+      "name": "Madhya Pradesh Department Enquiry System — Department Admin Directory",
+      "authority": "Government of Madhya Pradesh, MPSEDC",
       "jurisdiction": "Madhya Pradesh",
       "source_type": [
         "government_department_directory"
       ],
-      "official_url": "https://igod.gov.in/sg/MP/E003/organizations",
+      "official_url": "https://hrms.mp.gov.in/s_a_p/DE/Home/departmentAdmin",
       "related_urls": [
-        "https://mp.gov.in/department",
-        "https://hrms.mp.gov.in/s_a_p/DE/Home/departmentAdmin"
+        "https://www.mp.gov.in/web/guest/government-departments1",
+        "https://igod.gov.in/sg/MP/E003/organizations"
       ],
-      "verification_status": "directory_listing_found",
-      "scope_note": "The IGOD Madhya Pradesh departments listing includes Home Department. This is a directory, not a Home Department complaint portal. The older mp.gov.in/web/guest/government-departments1 URL returned a 404 in the user's screenshot and has been replaced."
+      "verification_status": "department_listing_confirmed",
+      "scope_note": "The official MP Department Enquiry System page lists Home Department and its departmental administrative contact. This is for departmental enquiry administration, not a public grievance or citizen complaint filing portal. The user reported that the previous mp.gov.in and IGOD pages did not load; retain those only as historical references, not as active user links."
     }
   ],
   "state_and_ut_register": {
@@ -278,13 +278,13 @@
           "Integrated Government Online Directory (Government of India) Madhya Pradesh department listing, which includes Home Department as a listed department"
         ],
         "unresolved_fields": [
-          "A dedicated Madhya Pradesh Home Department public website and complaint-procedure page have not yet been directly confirmed"
+          "Dedicated Home Department public website and public grievance procedure not confirmed"
         ],
-        "caution": "Police citizen portal use may require registration. Complaint routes and jurisdiction depend on facts and applicable rules. Do not represent Lokayukta as the correct forum for every allegation or every public official. The government departments directory is not itself a Home Department complaint channel; do not treat it as one. The IGOD page is a department directory, not a complaint portal.",
+        "caution": "The HRMS Department Enquiry System is a departmental-enquiry administration directory, not a citizen complaint portal. Do not advise citizens to use it to file a public grievance.",
         "state_bar_council_rules_url": "https://www.sbcofmp.org.in/Gen%20Rules%20SBC.htm",
         "state_gazette_search_url": "https://govtpressmp.nic.in/gazette.html",
-        "home_department_directory_url": "https://igod.gov.in/sg/MP/E003/organizations",
-        "home_department_contact_directory_reference": "https://hrms.mp.gov.in/s_a_p/DE/Home/departmentAdmin"
+        "home_department_directory_url": "https://hrms.mp.gov.in/s_a_p/DE/Home/departmentAdmin",
+        "home_department_contact_directory_reference": "Home Department is listed in the MP Department Enquiry System directory; the page displays the department's official email contact."
       }
     ]
   }
