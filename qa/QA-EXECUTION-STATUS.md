@@ -301,3 +301,11 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - Labels now identify the actual scope: case-preparation preview, case-progress preview, sample deadline reminders and document categories with no uploads.
 - This is a wording/expectation correction; the underlying screens remain sample UI and are not real case-management or evidence-storage services.
 - Cache version updated to `nyay-saathi-v85`. GitHub Actions validation and deployment for this latest wording change are pending.
+
+
+## Assistant answer-language isolation — 28 November 2026
+
+- Refactored the rules-based assistant to calculate a local `answerLanguage` for each question instead of mutating the shared interface/draft-generator `language` state.
+- This prevents an English or Hindi question from silently changing the language state used by the page controls and document generator. The page language remains controlled by the visible language toggle.
+- Cache-busted `app.js?v=65` and service-worker cache `nyay-saathi-v86`.
+- Source-level syntax and deployment checks for this change are pending; this is not yet a browser interaction test.
