@@ -77,3 +77,13 @@ This is a QA status record, not a security certification or legal review.
 - Changed unknown-topic fallbacks to ask for the broad complaint topic and State/UT without requesting identifying details.
 
 **Verification status:** The exact synthetic prompt phrases for the previously affected routes were checked against the updated topic keys by static inspection. This is not a browser/runtime test. Do not mark the 16 variants passed yet; rendered-output checks, current official-source revalidation and qualified legal review remain outstanding.
+
+
+## Keyword-route regression result (27 November 2026)
+
+- Ran a static keyword-routing matrix using the exact 8 synthetic prompts in Hindi and English.
+- The first follow-up exposed two additional Hindi matching gaps; the MP Lokayukta and advocate-behaviour keys were corrected.
+- After the corrections, all 16 prompt variants select the intended topic answer or the intended missing-topic/jurisdiction clarification fallback.
+- `app.js` passes a JavaScript syntax parse check.
+
+**Important:** This verifies source-code syntax and topic selection only. It is not a browser test, not a legal-content pass, and not a live AI test. Do not record the 16 variants as passed until actual rendered answers are checked, official sources are revalidated, and qualified legal review is completed.
