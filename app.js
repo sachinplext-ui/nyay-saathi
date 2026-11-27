@@ -32,7 +32,7 @@ function showGuidance(){
 document.getElementById("askBtn").addEventListener("click",showGuidance);
 const draftLabels={hi:{general:"सामान्य आवेदन",police:"पुलिस को शिकायत/निवेदन",records:"दस्तावेज़/रिकॉर्ड की प्रति हेतु अनुरोध",fircopy:"FIR की कॉपी हेतु अनुरोध",cyber:"साइबर शिकायत का फॉलो-अप"},en:{general:"General application",police:"Complaint / representation to police",records:"Request for a copy of records",fircopy:"Request for a copy of an FIR",cyber:"Cyber complaint follow-up"}};
 function applyDraftLanguage(){
- const t=translations[language];
+ const t=language==="hi"?{...translations.en,...hi}:translations.en;
  const setText=(id,selector,value)=>{const el=document.getElementById(id)||document.querySelector(selector);if(el)el.textContent=value};
  setText("draftGeneratorTitle","#drafts .generator h3",t.generatorTitle);
  setText("draftTypeLabel",'label[for="draftType"]',t.typeLabel);
