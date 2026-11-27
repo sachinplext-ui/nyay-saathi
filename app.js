@@ -109,6 +109,23 @@ function applyDraftLanguage(){
  const type=document.getElementById("draftType");if(type)[...type.options].forEach(o=>{o.textContent=draftLabels[language][o.value]||o.textContent});
  buildDraft();
 }
+const draftPresets={
+ general:{hi:{subject:"[आवेदन का संक्षिप्त विषय]",facts:"[घटनाओं का क्रम, अनुमानित तारीख़ें और केवल अपनी जानकारी के तथ्य लिखें। निजी पहचान न लिखें।]",request:"[कार्यालय से किया जाने वाला स्पष्ट अनुरोध लिखें।]"},en:{subject:"[Brief application subject]",facts:"[Describe the sequence of events, approximate dates and facts within your own knowledge. Do not include identifying details.]",request:"[State the specific action or information requested from the office.]"}},
+ police:{hi:{subject:"संज्ञेय अपराध संबंधी सूचना / पुलिस शिकायत",facts:"[घटना का सामान्य विवरण, तारीख़/समय का अनुमान, स्थान का सामान्य क्षेत्र और आपको जानकारी कैसे हुई—केवल सत्यापित तथ्य लिखें। अनुमान या सुनी हुई बात को अलग बताएं।]",request:"[सूचना प्राप्त कर कानून के अनुसार उचित कार्रवाई करने और लागू प्रक्रिया के अनुसार प्राप्ति/संदर्भ संख्या देने का अनुरोध।]"},en:{subject:"Information about a suspected cognizable offence / police complaint",facts:"[Give a general account, approximate date/time, broad location and how you learned of it. Include only truthful facts; label estimates or second-hand information clearly.]",request:"[Request that the information be received and dealt with according to law, and that an acknowledgement/reference be provided as applicable.]"}},
+ fircopy:{hi:{subject:"FIR की प्रति प्राप्त करने हेतु अनुरोध",facts:"[यदि आप सूचनाकर्ता या पीड़ित हैं तो अपनी भूमिका सामान्य रूप से बताएं। संबंधित FIR की पहचान हेतु आवश्यक जानकारी वास्तविक आवेदन में ऑफलाइन दें; यहाँ कोई FIR नंबर या निजी विवरण न लिखें।]",request:"BNSS की धारा 173(2) के अनुसार सूचनाकर्ता या पीड़ित को दर्ज सूचना की प्रति निःशुल्क देने का प्रावधान है। कृपया लागू प्रक्रिया के अनुसार प्रति उपलब्ध कराने का अनुरोध है।"},en:{subject:"Request for a copy of recorded FIR information",facts:"[State generally whether you are the informant or victim. Supply any identifying particulars required for the actual request offline; do not enter an FIR number or private details here.]",request:"BNSS Section 173(2) provides for a free copy of the recorded information to be given to the informant or victim. Please provide the copy in accordance with the applicable procedure."}},
+ zeroFir:{hi:{subject:"BNSS धारा 173(1) के अंतर्गत सूचना प्राप्त करने हेतु निवेदन",facts:"[संदिग्ध संज्ञेय अपराध का सामान्य विवरण, तारीख़/समय का अनुमान और घटना का सामान्य क्षेत्र लिखें। वास्तविक पहचान या निजी विवरण यहाँ न लिखें।]",request:"कृपया क्षेत्राधिकार के आधार पर सूचना लेने से मना किए बिना, BNSS की धारा 173(1) के अनुसार सूचना प्राप्त कर लागू कानून के अनुसार आगे की कार्रवाई करें।"},en:{subject:"Request to receive information under BNSS Section 173(1)",facts:"[Describe the suspected cognizable offence in general terms, with approximate date/time and broad area. Do not enter identifying or private details here.]",request:"Please receive the information under BNSS Section 173(1) without declining solely on territorial-jurisdiction grounds, and proceed in accordance with applicable law."}},
+ refusal:{hi:{subject:"BNSS धारा 173(4) के अंतर्गत पुलिस अधीक्षक को निवेदन",facts:"[पहले किस थाने/कार्यालय में, लगभग कब सूचना देने का प्रयास किया और क्या जवाब मिला—सही-सही लिखें। यदि लिखित प्रति/प्राप्ति नहीं मिली तो स्पष्ट लिखें।]",request:"कृपया BNSS की धारा 173(4) के अनुसार इस सूचना के सार पर विचार कर कानून के अनुसार आवश्यक कार्रवाई करें। वास्तविक आवेदन संबंधित पुलिस अधीक्षक को डाक से भेजने की प्रक्रिया और आगे के कदम योग्य वकील/DLSA से जाँचें।"},en:{subject:"Representation to the Superintendent of Police under BNSS Section 173(4)",facts:"[State accurately which police station/office you approached, approximately when, and what response was given. If no written acknowledgement was provided, say so.]",request:"Please consider the substance of this information under BNSS Section 173(4) and take action according to law. Confirm the correct SP recipient, postal process and next steps with a qualified lawyer/DLSA before sending."}}
+};
+let lastDraftPreset={};
+function applyDraftPreset(){
+ const type=document.getElementById("draftType").value, lang=language==="en"?"en":"hi";
+ const preset=(draftPresets[type]||draftPresets.general)[lang];
+ ["subject","facts","request"].forEach(key=>{
+  const field=document.getElementById("draft"+key.charAt(0).toUpperCase()+key.slice(1));
+  if(field&&(!field.value.trim()||field.value===lastDraftPreset[key]))field.value=preset[key];
+  lastDraftPreset[key]=preset[key];
+ });
+}
 function buildDraft(){
  const en=language==="en", typeKey=document.getElementById("draftType").value;
  const office=document.getElementById("draftOffice").value.trim()||(en?"[Relevant officer / office]":"[संबंधित अधिकारी/कार्यालय]");
@@ -136,6 +153,7 @@ draftFieldIds.forEach(id=>{
  const field=document.getElementById(id);
  if(!field)return;
  field.addEventListener(id==="draftType"?"change":"input",()=>{
+  if(id==="draftType")applyDraftPreset();
   buildDraft();
   const status=document.getElementById("draftStatus");
   if(status){status.textContent="";status.hidden=true;}
@@ -152,6 +170,7 @@ document.getElementById("generateDraft").addEventListener("click",()=>{
 document.getElementById("clearDraft").addEventListener("click",()=>{
  ["draftOffice","draftSubject","draftFacts","draftRequest","draftEnclosures"].forEach(id=>document.getElementById(id).value="");
  document.getElementById("draftType").value="general";
+ lastDraftPreset={};applyDraftPreset();
  document.getElementById("draftStatus").textContent=translations[language].cleared;
  document.getElementById("draftStatus").hidden=false;
  document.getElementById("generateDraft").textContent=translations[language].generate;
