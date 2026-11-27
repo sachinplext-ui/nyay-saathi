@@ -205,3 +205,14 @@ footer{background:#030a14;border-top:1px solid #d9b66f33}
  .orbit-one{width:300px;height:90px}.orbit-two{width:330px;height:110px}
  .art-caption{bottom:3px;font-size:8px;letter-spacing:2px}
 }
+
+/* Compact mobile hero artwork after visual review */
+@media(max-width:760px){
+ .hero{padding-bottom:22px!important}
+ .hero-art{height:205px!important;min-height:205px!important}
+ .globe{width:185px!important;height:185px!important;min-width:185px!important;min-height:185px!important}
+ .justice-statue{font-size:88px!important;transform:translateY(-10px)}
+ .justice-pedestal{width:122px;bottom:19px;padding:7px 8px;font-size:9px}
+ .orbit-one{width:255px;height:75px}.orbit-two{width:280px;height:92px}
+ .art-caption{bottom:0;font-size:7px;letter-spacing:1.5px}
+}
