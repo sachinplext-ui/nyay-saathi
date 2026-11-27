@@ -233,3 +233,10 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - A user confirmed that the official MP Police Citizen Portal link opened from an assistant answer. Other external links still need individual checking.
 - No live AI assistant is enabled. The optional API remains fail-closed until verified legal-source retrieval, citation output, privacy/security review and qualified legal review are complete.
 - Do not describe the project as production-ready or fully tested. The remaining end-to-end mobile checks, official-source revalidation, accessibility review and qualified Indian legal-professional review are still required.
+
+## Automated repository checks and navigation sweep — 28 November 2026
+
+- Added a GitHub Actions validation job that runs `node --check` on `app.js`, `cases.js`, `server/index.js` and `api-config.js`, and parses the PWA manifest and server package JSON before Pages deployment.
+- The first run of the new validation job completed its JavaScript syntax and JSON validation steps successfully. The deployment job was still waiting when this note was written; this does not prove the latest commit is deployed.
+- A source-level sweep of `index.html` found one brand link pointing to `#` with no target. It has been corrected to `#home`. Other internal hash links in that sweep resolved to existing IDs; no duplicate IDs were found.
+- This was a source-level HTML reference check, not browser interaction, accessibility conformance or a full link check.
