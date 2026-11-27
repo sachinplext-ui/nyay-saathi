@@ -164,6 +164,25 @@ document.querySelectorAll("[data-dashboard-tab]").forEach(tab=>{
  });
 });
 
+/* Interactive preparation checklist progress (session-only; no data is transmitted). */
+(()=>{
+ const box=document.querySelector(".checklist");
+ if(!box)return;
+ const checks=[...box.querySelectorAll('input[type="checkbox"]')];
+ const text=document.getElementById("checklistProgressText");
+ const percent=document.getElementById("checklistProgressPercent");
+ const bar=document.getElementById("checklistProgressBar");
+ const update=()=>{
+  const done=checks.filter(item=>item.checked).length;
+  const en=document.documentElement.lang==="en";
+  if(text)text.textContent=en?done+" of "+checks.length+" complete":done+"/"+checks.length+" पूरे";
+  if(percent)percent.textContent=Math.round(done/checks.length*100)+"%";
+  if(bar)bar.style.width=(done/checks.length*100)+"%";
+ };
+ checks.forEach(item=>item.addEventListener("change",update));
+ new MutationObserver(update).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});
+ update();
+})();
 if("serviceWorker" in navigator && location.protocol!=="file:"){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}
 document.getElementById("printDraft").addEventListener("click",()=>{const draft=document.getElementById("draftText").textContent.trim()||buildDraft();const printWindow=window.open("","_blank");if(!printWindow){alert(language==="hi"?"पॉप-अप अनुमति दें और फिर PDF / प्रिंट करें दबाएँ।":"Allow pop-ups, then press PDF / Print again.");return;}const safeText=draft.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");printWindow.document.open();printWindow.document.write('<!doctype html><html lang="'+language+'"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NYAY SAATHI - आवेदन</title><style>@page{size:210mm 297mm;margin:20mm 18mm}*{box-sizing:border-box}html,body{margin:0!important;padding:0!important;width:100%;background:#fff;color:#111}body{font-family:"Noto Serif Devanagari","Nirmala UI",serif;font-size:14pt;line-height:1.7;font-weight:400}pre{font:inherit;white-space:pre-wrap;overflow-wrap:anywhere;word-break:normal;margin:0;padding:0;widows:3;orphans:3;break-inside:avoid-page}@media screen{body{max-width:794px;margin:24px auto!important;padding:24px!important}pre{border:1px solid #ddd;padding:28px;border-radius:8px}}</style></head><body><pre>'+safeText+'</pre></body></html>');printWindow.document.close();printWindow.onload=()=>{printWindow.focus();printWindow.print();};});
 
