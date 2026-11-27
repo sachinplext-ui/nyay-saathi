@@ -62,3 +62,10 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 
 **Retest status:** Pending. The correction must be checked on the deployed website after the Pages workflow completes. Do not count Run 3 as passed until retested.
 
+## Interactive controls — root-cause fix (27 November 2026)
+
+- **Root cause found:** During initial Hindi page setup, `applyDraftLanguage()` selected `translations["hi"]`, but the Hindi dictionary is stored separately as `hi`. This produced an undefined dictionary and a JavaScript error while initializing the page, stopping later event handlers from being registered.
+- **Correction:** The language initializer now merges the English fallback dictionary with the Hindi dictionary when Hindi is active. This allows the document-generator controls and later dashboard/print handlers to initialize.
+- **Cache refresh:** Updated the app.js query version and service-worker cache name to force the corrected script to load.
+- **Status:** Code change saved; deployment and mobile retest still pending. Do not mark buttons fixed until the live page is checked.
+
