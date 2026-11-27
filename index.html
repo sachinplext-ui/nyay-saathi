@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b1424">
   <meta name="description" content="NYAY SAATHI — भारतीय कानून की सामान्य जानकारी और उपयोगी दस्तावेज़ टेम्पलेट।">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=24">
+  <link rel="stylesheet" href="styles.css?v=25">
   <title>NYAY SAATHI | न्याय का साथ</title>
   <style id="print-only-application">
     @media print {
@@ -20,15 +20,15 @@
 <body>
   <header class="topbar">
     <a class="brand" href="#" aria-label="NYAY SAATHI home"><span class="brand-mark">⚖</span><span><b>NYAY SAATHI</b><small>न्याय का साथ</small></span></a>
-    <nav><a href="#home" data-i18n="navHome">होम</a><a href="#assistant" data-i18n="navAssistant">AI सहायक</a><a href="legal-rights.html">अधिकार गाइड</a><a href="#case-preview" data-i18n="navCases">माय केस</a><a href="#guides" data-i18n="navGuides">लीगल लाइब्रेरी</a><a href="#lawyer-connect" data-i18n="navLawyer">वकील सहायता</a></nav>
-    <button id="langToggle" class="lang-btn" type="button" aria-label="Change language">EN</button>
+    <nav><a href="#home" data-i18n="navHome">होम</a><a href="#assistant" data-i18n="navAssistant">AI Legal Assistant</a><a href="#case-preview" data-i18n="navCases">My Cases</a><a href="#guides" data-i18n="navGuides">Legal Library</a><a href="#lawyer-connect" data-i18n="navLawyer">Lawyer Connect</a><a href="#platform-preview">More ▾</a></nav>
+    <div class="topbar-actions"><button id="langToggle" class="lang-btn" type="button" aria-label="Change language">English</button><a class="nav-login" href="#assistant">Login</a><a class="nav-signup" href="#case-preview">Sign Up</a></div>
   </header>
   <main>
     <section id="home" class="hero">
       <div class="hero-copy"><span class="eyebrow" data-i18n="eyebrow">जानकारी • मार्गदर्शन • सहायता</span>
         <h1 data-i18n="heroTitle">आपके अधिकारों की जानकारी,<br><em>आपकी भाषा में।</em></h1>
         <p data-i18n="heroText">कानूनी प्रक्रिया को समझने, सही सवाल पूछने और ज़रूरी दस्तावेज़ तैयार करने में मदद।</p>
-        <div class="hero-actions"><a class="btn gold" href="#guides" data-i18n="explore">जानकारी देखें</a><a class="btn outline" href="#assistant" data-i18n="ask">सहायक से पूछें</a></div>
+        <div class="hero-actions"><a class="btn gold" href="#guides" data-i18n="explore">जानकारी देखें</a><a class="btn outline" href="#assistant" data-i18n="ask">सहायक से पूछें</a></div><form class="hero-chat" id="heroChatForm"><label for="heroQuestion">अपनी कानूनी समस्या पूछें</label><div><input id="heroQuestion" maxlength="300" placeholder="जैसे: FIR की कॉपी कैसे मिलेगी?"><button type="submit" aria-label="Ask assistant">➤</button></div><small>हिंदी और English में सामान्य कानूनी जानकारी</small></form>
       </div>
       <div class="hero-art" aria-hidden="true">
         <div class="globe"><div class="globe-grid"></div><div class="globe-shine"></div></div>
@@ -45,6 +45,7 @@
       <div><span>◎</span><b data-i18n="ribbonLanguage">हिंदी + English</b></div>
       <div><span>⌂</span><b data-i18n="ribbonResources">आधिकारिक संसाधन</b></div>
     </section>
+    <section id="platform-preview" class="platform-preview section"><div class="section-head"><div><span class="eyebrow">NYAY SAATHI • PRODUCT EXPERIENCE</span><h2>एक ही जगह पर पूरी कानूनी सहायता</h2></div><p>डैशबोर्ड, केस रिव्यू और मोबाइल अनुभव का डिज़ाइन प्रीव्यू</p></div><div class="preview-grid"><article class="preview-window preview-dashboard"><div class="preview-top"><span>◉ NYAY SAATHI</span><span class="preview-live">● SAMPLE DASHBOARD</span></div><div class="preview-body"><aside><b>Workspace</b><span>▦ Dashboard</span><span>▤ My Cases</span><span>✦ AI Assistant</span><span>⚖ Legal Library</span><span>◷ Deadlines</span></aside><div class="preview-content"><div class="preview-welcome"><small>GOOD EVENING</small><h3>Welcome to your Justice Workspace</h3><p>Understand your rights. Organize your next steps.</p></div><div class="preview-metrics"><div><small>My Cases</small><b>03</b></div><div><small>Documents</small><b>12</b></div><div><small>Guides</small><b>05</b></div></div><div class="preview-case"><b>Active Case • Sample FIR Defence</b><span>Case preparation progress</span><div class="progress-track"><i></i></div><small>Next step: Review your checklist</small></div></div></div></article><article class="preview-window preview-analysis"><div class="preview-top"><span>✦ AI LEGAL ASSISTANT</span><span class="preview-live">SAMPLE</span></div><div class="analysis-card"><div class="analysis-label">FIR DEFENCE ANALYSIS</div><h3>आपकी जानकारी का सार</h3><p>आपके सवाल के आधार पर सामान्य कानूनी प्रक्रिया और उपलब्ध आधिकारिक संसाधनों की जानकारी।</p><div class="analysis-tabs"><span>Analysis Report</span><span>Legal Options</span><span>Next Steps</span></div><div class="analysis-note"><b>Key information</b><p>तथ्यों और तारीख़ों का क्रम तैयार रखें। किसी निष्कर्ष से पहले मूल रिकॉर्ड और योग्य वकील की सलाह ज़रूरी है।</p></div><div class="analysis-foot">सामान्य जानकारी • कानूनी सलाह नहीं</div></div></article><article class="preview-window preview-phone"><div class="phone-frame"><div class="phone-speaker"></div><div class="phone-brand">⚖ NYAY SAATHI</div><div class="phone-greeting">आपके अधिकार,<br><b>आपकी भाषा में।</b></div><div class="phone-search">अपना सवाल यहाँ लिखें…　➤</div><div class="phone-shortcuts"><span>✦<small>AI Help</small></span><span>▤<small>My Cases</small></span><span>⚖<small>Lawyer</small></span><span>▧<small>Library</small></span></div><div class="phone-bottom">Home　 Cases　 Help　 Profile</div></div></article><article class="preview-window preview-case"><div class="preview-top"><span>▤ MY CASES</span><span class="preview-live">DEMO</span></div><h3>माय केस • Case Overview</h3><div class="case-step"><i>✓</i><div><b>Case created</b><small>Sample record added</small></div></div><div class="case-step"><i>✓</i><div><b>Documents checklist</b><small>Preparation in progress</small></div></div><div class="case-step"><i>●</i><div><b>Review stage</b><small>Next suggested step</small></div></div><div class="case-strength"><span>Case readiness</span><b>78%</b><div class="progress-track"><i></i></div><small>Illustrative demo score only</small></div></article></div><p class="preview-disclaimer">ऊपर दिखाए गए नाम, केस, स्कोर और डैशबोर्ड डेटा केवल काल्पनिक डिज़ाइन उदाहरण हैं। वास्तविक लॉगिन, AI कानूनी विश्लेषण या सुरक्षित केस स्टोरेज का दावा नहीं।</p></section>
     <section class="notice"><span>ⓘ</span><p data-i18n="notice">यह प्लेटफ़ॉर्म केवल सामान्य शैक्षिक जानकारी देता है। यह कानूनी सलाह या सरकारी सेवा नहीं है। अपने मामले के लिए योग्य वकील से सलाह लें।</p></section>
     <section id="case-preview" class="showcase section">
       <div class="section-head"><div><span class="eyebrow" data-i18n="dashboardEyebrow">NYAY SAATHI WORKSPACE</span><h2 data-i18n="dashboardTitle">आपका कानूनी सहायता डैशबोर्ड</h2></div><p data-i18n="dashboardSub">सुविधाओं का नमूना दृश्य • काल्पनिक जानकारी</p></div>
@@ -154,6 +155,6 @@
   </main>
   <footer><span>⚖ NYAY SAATHI</span><span data-i18n="footer">सामान्य जानकारी के लिए • कानूनी सलाह का विकल्प नहीं</span><nav class="footer-links" aria-label="Help and policies"><a href="help-contact.html">Help & Contact / सहायता</a><a href="privacy.html">Privacy Policy / गोपनीयता नीति</a><a href="data-retention.html">Data Retention / डेटा हटाने की नीति</a></nav></footer>
   <script src="app.js?v=45"></script>
-  <script src="cases.js?v=3"></script>
+  <script src="cases.js?v=4"></script>
 </body>
 </html>
