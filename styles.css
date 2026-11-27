@@ -396,3 +396,14 @@ button:disabled{opacity:.55;cursor:not-allowed}
     transition-duration:.01ms!important;
   }
 }
+
+
+/* Keyboard skip navigation */
+.skip-link{
+  position:fixed;left:12px;top:10px;z-index:20;
+  transform:translateY(-160%);
+  padding:11px 15px;border-radius:6px;
+  background:#d7b56d;color:#101a29;font-weight:800;
+  text-decoration:none;box-shadow:0 4px 16px #0004;
+}
+.skip-link:focus{transform:translateY(0);outline:3px solid #fff;outline-offset:3px}
