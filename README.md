@@ -5,6 +5,10 @@ A responsive Hindi/English educational legal-information website and document-te
 ## Live website
 https://sachinplext-ui.github.io/nyay-saathi/
 
+## Product security status
+
+This release is a public educational prototype only. No real accounts, case database, document uploads, or secure evidence vault are enabled. Read [SECURITY-ROADMAP.md](SECURITY-ROADMAP.md) before considering production use. Use fictional sample data only.
+
 ## Current features
 - Responsive dark-navy and gold interface
 - Hindi/English interface toggle
