@@ -133,3 +133,9 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Result:** **PASS — Deadline Alerts tab switches to and displays its sample reminders panel.**
 - **Scope:** Confirms navigation/rendering only. Dates are explicitly labelled fictional; no real reminders, notifications, or deadline calculations are active.
 
+## Run 12 — Evidence Vault dashboard tab
+
+- **Observed evidence:** User screenshot shows “एविडेंस वॉल्ट” selected and the “दस्तावेज़ सूची” panel with three sample document categories.
+- **Result:** **PASS — Evidence Vault tab switches to and displays the document-category demo panel.**
+- **Scope:** Confirms navigation/rendering only. The page explicitly says it is not a secure cloud vault and does not upload or save files.
+
