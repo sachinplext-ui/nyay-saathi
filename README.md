@@ -24,7 +24,7 @@ This release is a public educational prototype only. No real accounts, case data
 - Fictional sample-case manager with search, status filters, edit, delete and draft/review/closed transitions (session memory only)
 - Interactive case-preparation checklist with live completion percentage
 - FIR Support Center with a browser-side police-complaint draft form (local formatting only; it does not submit a complaint or register an FIR)
-- Browser-side bilingual application templates, including FIR-copy requests, Zero FIR representations and representations after refusal to record information, with factual-accuracy reminders and acknowledgement wording
+- Browser-side bilingual application templates with type-specific subject, fact prompts and request presets for police complaints, FIR-copy requests, Zero FIR representations and police-refusal representations; user edits are preserved, with factual-accuracy reminders and acknowledgement wording
 - Copy application text
 - Standalone A4-oriented print page for saving as PDF
 - PWA manifest and service worker for basic offline support
