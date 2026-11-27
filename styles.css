@@ -40,3 +40,71 @@
 .form-status{margin:12px 0;padding:12px 14px;border-radius:8px;background:#fff7e6;border:1px solid #dfc27a;color:#5b4820;font-weight:600;line-height:1.5}
 .form-status[hidden]{display:none}
 #clearDraft{margin-top:8px}
+
+
+/* NYAY SAATHI premium justice-inspired visual refresh */
+:root{--navy:#071426;--navy2:#0d2038;--gold:#d9b66f;--cream:#f3ead6;--muted:#aebbd0;--ink:#e9edf4}
+html{scroll-padding-top:92px}
+body{background:#081426;color:#e9edf4}
+.topbar{height:76px;padding:0 clamp(18px,5vw,76px);background:rgba(5,16,31,.97);border-bottom:1px solid #d9b66f38;box-shadow:0 8px 28px #0003}
+.brand-mark{font-size:37px;text-shadow:0 0 18px #d9b66f55}
+.brand b{font-size:15px;letter-spacing:2.4px}
+.brand small{font-size:10px;letter-spacing:.7px}
+.topbar nav a{transition:color .2s}.topbar nav a:hover{color:var(--gold)}
+.lang-btn{border-radius:20px;padding:8px 16px;font-weight:700}
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:560px;padding:72px clamp(24px,8vw,120px);grid-template-columns:1.05fr .95fr;background:radial-gradient(ellipse at 76% 48%,#183b60 0,#102743 27%,#09182d 61%,#061222 100%)}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.16;background-image:linear-gradient(#d9b66f22 1px,transparent 1px),linear-gradient(90deg,#d9b66f22 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(90deg,transparent,#000)}
+.hero:after{content:"";position:absolute;width:520px;height:520px;border:1px solid #d9b66f22;border-radius:50%;right:7%;top:2%;z-index:-1;box-shadow:0 0 0 35px #d9b66f08,0 0 0 85px #d9b66f06}
+.eyebrow{color:#e1c27e;letter-spacing:2.4px}
+.hero h1{font-size:clamp(36px,4.6vw,60px);text-shadow:0 4px 24px #0005}
+.hero-copy p{color:#c3cede;font-size:15px;max-width:510px}
+.hero-actions .btn{min-height:48px;padding:13px 21px;border-radius:7px}
+.hero-art{min-height:380px;overflow:hidden}
+.globe{position:absolute;width:min(33vw,340px);height:min(33vw,340px);min-width:245px;min-height:245px;border-radius:50%;background:radial-gradient(circle at 34% 28%,#55a8d4 0,#1c5b88 24%,#102e55 58%,#06162e 78%);border:1px solid #74c5ed99;box-shadow:inset -22px -18px 45px #020a1b,0 0 55px #248bd477,0 0 0 13px #65b9e522;overflow:hidden}
+.globe-grid{position:absolute;inset:-15%;border-radius:50%;background:repeating-linear-gradient(0deg,transparent 0 29px,#8dd5ef44 30px 31px),repeating-linear-gradient(90deg,transparent 0 29px,#8dd5ef44 30px 31px);transform:rotate(-18deg) scale(1.1)}
+.globe-shine{position:absolute;inset:0;border-radius:50%;background:linear-gradient(120deg,#ffffff55,transparent 36%,transparent 72%,#02081799)}
+.justice-statue{position:relative;z-index:2;font-size:clamp(105px,15vw,175px);color:#e5c47e;filter:drop-shadow(0 8px 15px #000b);transform:translateY(-8px)}
+.justice-pedestal{position:absolute;z-index:3;bottom:43px;display:grid;gap:3px;width:158px;padding:10px 14px;background:linear-gradient(100deg,#101a2b,#4b3b25,#101a2b);border:1px solid #d9b66f88;box-shadow:0 12px 25px #0009;text-align:center;color:#e8c77e;font-family:Georgia,serif;font-size:12px;letter-spacing:2px}
+.orbit{position:absolute;border:1px solid #d9b66f66;border-radius:50%;transform:rotate(-22deg)}
+.orbit-one{width:390px;height:115px}.orbit-two{width:430px;height:145px;transform:rotate(28deg);border-color:#68bde655}
+.art-caption{bottom:8px;color:#c2cbd8;letter-spacing:3px}
+.feature-ribbon{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;padding:17px clamp(20px,6vw,90px);background:#0b1b30;border-top:1px solid #d9b66f33;border-bottom:1px solid #d9b66f33}
+.feature-ribbon>div{display:flex;align-items:center;justify-content:center;gap:9px;color:#d5deeb;font-size:12px;text-align:center}
+.feature-ribbon span{font-size:20px;color:var(--gold)}
+.notice{background:#172b43;border-bottom:1px solid #d9b66f55;color:#e5d5ae;padding:15px clamp(24px,8vw,120px)}
+.section{background:#09172a;padding:72px clamp(24px,8vw,120px)}
+.section:nth-of-type(even){background:#0d1e33}
+.section h2,.official h2{color:#f2e8d2}
+.section-head p,.section-head>p{color:#aebbd0}
+.cards{gap:18px}
+.card{background:linear-gradient(145deg,#122943,#0d1d32);border:1px solid #d9b66f3d;border-radius:12px;box-shadow:0 14px 34px #0003;color:#eaf0f7;transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-4px);border-color:#d9b66f99}
+.card h3{color:#f0d9a5}.card p{color:#b8c5d5}.card a{color:#e4c37b}
+.assistant{background:#0d2037!important}
+.assistant p{color:#b9c7d8}.ask-box{background:#122943;border:1px solid #d9b66f44;color:#f0e7d6;box-shadow:0 15px 35px #0004}
+.ask-box label{color:#f0d9a5}
+.ask-box textarea{background:#091a2e;border-color:#456078;color:#f4f6fa}
+.answer{background:#0a1b2e;color:#d6e0eb;border-left-color:var(--gold)}
+#drafts{background:#09172a}
+.draft-panel{background:linear-gradient(110deg,#10243d,#182f4b);border:1px solid #d9b66f44}
+.draft-panel p{color:#bdc9d8}
+.generator{background:#10243b;border-color:#d9b66f44;color:#e8edf5}
+.generator h3{color:#f0d9a5}
+.generator label{color:#e5d5b4}
+.generator-note{background:#2a281f;border-color:#78633b;color:#f0d9a5}
+.generator input,.generator select,.generator textarea{background:#08182b!important;border-color:#425a72!important;color:#f2f5f9!important}
+.generator input::placeholder,.generator textarea::placeholder{color:#8798ad}
+.generator .draft-text{background:#fff!important;color:#26364d!important}
+.generator-actions .outline{color:#e4c37b}
+.official{background:#050f1d;border-top:1px solid #d9b66f44}
+.resource-links a{color:#e4c37b}
+footer{background:#030a14;border-top:1px solid #d9b66f33}
+@media(max-width:760px){
+ .topbar{min-height:66px}.hero{min-height:auto;padding:48px 22px 34px;gap:5px}.hero-art{min-height:280px}
+ .globe{width:250px;height:250px}.justice-statue{font-size:122px}.justice-pedestal{bottom:27px}
+ .feature-ribbon{grid-template-columns:repeat(2,minmax(0,1fr));padding:15px 14px;gap:14px}
+ .feature-ribbon>div{justify-content:flex-start;font-size:11px}
+ .feature-ribbon>div:last-child{grid-column:1/-1;justify-content:center}
+ .section{padding:50px 19px}.section h2,.official h2{font-size:28px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}}
