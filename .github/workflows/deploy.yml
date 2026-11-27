@@ -30,6 +30,8 @@ jobs:
           node --check cases.js
           node --check server/index.js
           node --check api-config.js
+          node --check sw.js
+          node --check qa/check-html.mjs
       - name: Validate JSON files
         run: |
           node -e "JSON.parse(require('fs').readFileSync('manifest.webmanifest','utf8'))"
