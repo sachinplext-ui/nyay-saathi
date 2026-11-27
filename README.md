@@ -23,6 +23,7 @@ This release is a public educational prototype only. No real accounts, case data
 - Expanded Hindi/English general guidance on FIR procedure under BNSS Section 173, disputed allegations, cyber-fraud reporting and NALSA legal aid, with official references
 - Fictional sample-case manager with search, status filters, edit, delete and draft/review/closed transitions (session memory only)
 - Interactive case-preparation checklist with live completion percentage
+- FIR Support Center with a browser-side police-complaint draft form (local formatting only; it does not submit a complaint or register an FIR)
 - Browser-side application draft generator
 - Copy application text
 - Standalone A4-oriented print page for saving as PDF
@@ -34,7 +35,7 @@ This release is a public educational prototype only. No real accounts, case data
 - Assistant questions are handled by the browser-side rules demo; do not enter real names, contact details, case identifiers or private documents.
 - It does not assess individual cases or predict legal outcomes.
 - My Cases data is held only in page memory and is lost when the page is refreshed or closed; it is not a real case-management database.
-- The draft generator creates a generic editable template, not a legally reviewed pleading.
+- The FIR Support Center and draft generator create generic editable templates only; they do not submit complaints, register FIRs, or provide a legally reviewed pleading.
 - Do not enter sensitive personal information, identity numbers, private case documents, passwords or financial details.
 - Review all facts and documents with a qualified lawyer or eligible legal-aid service before submitting anything.
 - This is not a government service and does not create an advocate-client relationship.
