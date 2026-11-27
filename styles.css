@@ -108,3 +108,57 @@ footer{background:#030a14;border-top:1px solid #d9b66f33}
  .section{padding:50px 19px}.section h2,.official h2{font-size:28px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}}
+
+
+/* Dashboard preview and expanded navigation */
+#home{scroll-margin-top:80px}
+.topbar nav{gap:clamp(10px,1.8vw,25px)}
+.topbar nav a{font-size:12px;white-space:nowrap}
+.feature-ribbon{position:relative;z-index:1;min-height:76px;display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;padding:16px clamp(14px,5vw,70px);background:linear-gradient(90deg,#071426,#132c48,#071426);border-top:1px solid #d9b66f55;border-bottom:1px solid #d9b66f66}
+.feature-ribbon>div{display:flex;align-items:center;justify-content:center;gap:8px;color:#e8edf5;font-size:12px}
+.feature-ribbon span{color:#e0bd72;font-size:21px}
+.showcase{background:linear-gradient(145deg,#08172a,#10243c)!important}
+.dashboard-grid{display:grid;grid-template-columns:190px minmax(0,1fr);background:#0a192c;border:1px solid #d9b66f66;border-radius:13px;overflow:hidden;box-shadow:0 22px 55px #0006}
+.dash-sidebar{padding:20px 13px;background:#061222;border-right:1px solid #d9b66f33;display:flex;flex-direction:column;gap:9px;color:#aebbd0;font-size:12px}
+.dash-brand{color:#e4c37b;letter-spacing:1px;font-size:11px;padding:4px 6px 18px;border-bottom:1px solid #ffffff18;margin-bottom:7px}
+.dash-sidebar>div:not(.dash-brand){padding:11px 9px;border-radius:6px}.dash-sidebar .dash-active{background:#1a3450;color:#f1d18a;border:1px solid #d9b66f55}
+.dash-main{padding:22px;min-width:0}
+.dash-welcome{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.dash-welcome small{color:#dfbd75;letter-spacing:2px;font-size:9px}
+.dash-welcome h3{color:#f5ead4;font-size:21px;margin:8px 0 4px}
+.dash-welcome p,.dash-panel p{color:#9eafc4;font-size:11px;line-height:1.6;margin:0}
+.sample-pill{border:1px solid #d9b66f88;color:#e4c37b;border-radius:20px;padding:6px 12px;font-size:10px}
+.dash-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px;margin:20px 0}
+.dash-stats article,.dash-panel{background:linear-gradient(145deg,#132b46,#0e2036);border:1px solid #d9b66f33;border-radius:9px;padding:15px}
+.dash-stats small,.dash-stats span{display:block;color:#aab8ca;font-size:10px}
+.dash-stats b{display:block;color:#f1d28d;font-size:27px;margin:8px 0}
+.dash-stats span{color:#7fc9a2}
+.dash-lower{display:grid;grid-template-columns:1.2fr .8fr;gap:12px}
+.dash-panel h4{color:#efd8a6;margin:0 0 17px;font-size:13px}
+.timeline{display:flex;align-items:center;justify-content:space-between;gap:7px;color:#e4c37b;font-size:10px}
+.timeline i{height:1px;background:#9d824d;flex:1}
+.timeline b{color:#dce5ef;font-weight:500}
+.dash-panel p{margin-top:16px}
+.quick-panel{display:flex;flex-direction:column;gap:11px}
+.quick-panel h4{margin-bottom:4px}
+.quick-panel a{color:#d9bd81;text-decoration:none;font-size:11px}
+.lawyer-strip{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:40px clamp(24px,8vw,120px);background:#10243b;border-top:1px solid #d9b66f44;border-bottom:1px solid #d9b66f44}
+.lawyer-strip h2{color:#f3e6c9;font-size:25px;margin:8px 0}
+.lawyer-strip p{color:#b6c4d5;font-size:13px;line-height:1.7;margin:0;max-width:640px}
+.lawyer-strip .btn{white-space:nowrap}
+@media(max-width:760px){
+ .topbar nav{overflow-x:auto;justify-content:flex-start;gap:18px;padding-bottom:3px}
+ .topbar nav a{font-size:11px}
+ .feature-ribbon{grid-template-columns:repeat(2,minmax(0,1fr));padding:14px 16px}
+ .feature-ribbon>div{justify-content:flex-start;font-size:11px}
+ .feature-ribbon>div:last-child{grid-column:1/-1;justify-content:center}
+ .dashboard-grid{grid-template-columns:1fr}
+ .dash-sidebar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;padding:10px;border-right:0;border-bottom:1px solid #d9b66f33}
+ .dash-brand{grid-column:1/-1;padding:5px 6px 10px}
+ .dash-sidebar>div:not(.dash-brand){font-size:10px;padding:8px 5px;text-align:center}
+ .dash-main{padding:14px}
+ .dash-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .dash-stats article{padding:12px}
+ .dash-lower{grid-template-columns:1fr}
+ .lawyer-strip{align-items:flex-start;flex-direction:column;padding:32px 22px}
+}
