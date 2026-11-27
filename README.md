@@ -21,6 +21,8 @@ This release is a public educational prototype only. No real accounts, case data
 - Responsive dark-navy and gold interface
 - Hindi/English interface toggle
 - Expanded Hindi/English general guidance on FIR procedure under BNSS Section 173, disputed allegations, cyber-fraud reporting and NALSA legal aid, with official references
+- Fictional sample-case manager with edit, delete and draft/review/closed status transitions (session memory only)
+- Interactive case-preparation checklist with live completion percentage
 - Browser-side application draft generator
 - Copy application text
 - Standalone A4-oriented print page for saving as PDF
@@ -28,8 +30,9 @@ This release is a public educational prototype only. No real accounts, case data
 - Links to official public resources: NALSA, Ministry of Home Affairs, National Cyber Crime Portal and India Code
 
 ## Important limitations
-- The assistant is a rules-based demo, not a connected AI model and not a lawyer.
+- The assistant is a rules-based demo, not a connected AI model and not a lawyer. The optional API endpoint remains disabled until verified legal-source retrieval and citation handling are implemented.
 - It does not assess individual cases or predict legal outcomes.
+- My Cases data is held only in page memory and is lost when the page is refreshed or closed; it is not a real case-management database.
 - The draft generator creates a generic editable template, not a legally reviewed pleading.
 - Do not enter sensitive personal information, identity numbers, private case documents, passwords or financial details.
 - Review all facts and documents with a qualified lawyer or eligible legal-aid service before submitting anything.
@@ -42,7 +45,7 @@ The current prototype is a static site suitable for GitHub Pages. No paid Render
 Open `index.html` through a local static web server. For production changes, test the Hindi/English toggle, mobile layout, application copy, print-to-PDF flow and service-worker refresh on a phone.
 
 ## Next development milestones
-1. Improve and test bilingual document templates.
-2. Add accessible form validation and clearer privacy guidance.
-3. Expand and verify general topic guides with official-source references.
-4. Only later consider an optional backend/AI service with privacy, security and cost controls.
+1. Complete the remaining front-end workflows and accessibility improvements.
+2. Review bilingual document templates and official-source links.
+3. Finish privacy, security and deployment design for any real account or case-data feature.
+4. Only after verified legal-source retrieval, citations, privacy review and QA, consider enabling an optional AI backend.
