@@ -87,3 +87,13 @@ This is a QA status record, not a security certification or legal review.
 - `app.js` passes a JavaScript syntax parse check.
 
 **Important:** This verifies source-code syntax and topic selection only. It is not a browser test, not a legal-content pass, and not a live AI test. Do not record the 16 variants as passed until actual rendered answers are checked, official sources are revalidated, and qualified legal review is completed.
+
+
+## Source-level answer regression harness (27 November 2026)
+
+- Re-read the current `app.js` topic table from the default branch and ran all 8 fictional prompts in both Hindi and English through the same first-match keyword selection order used by `showGuidance()`.
+- Checked the selected answer text for the test-specific required phrases and safeguards (official route/link, fee/date qualification, scope limitation, FIR distinction, emergency routing, and privacy-safe clarification).
+- **Result: 16/16 source-level prompt checks passed** for the expected route/fallback and the selected-answer phrase checks.
+- This is a source-level JavaScript harness, not a real browser session: it does not verify rendered UI, actual tap/typing behaviour, deployed Pages content, screen-reader/mobile layout, or external links.
+- The public site could not be opened by the available page-inspection service, and no interactive browser-control tool is available in this session. Therefore browser/runtime QA remains outstanding.
+- This is not legal verification or a live-AI test. Current official sources and all changeable legal facts still require revalidation, followed by qualified Indian legal-professional review.
