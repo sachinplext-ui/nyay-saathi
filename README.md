@@ -20,7 +20,7 @@ This release is a public educational prototype only. No real accounts, case data
 ## Current features
 - Responsive dark-navy and gold interface
 - Hindi/English interface toggle
-- Expanded Hindi/English general guidance on FIR procedure under BNSS Section 173, disputed allegations, cyber-fraud reporting and NALSA legal aid, with official references
+- Expanded Hindi/English general guidance on FIR procedure under BNSS Sections 173 and 174, including Zero FIR, e-FIR, non-cognizable information, police refusal, FIR copies, disputed allegations, cyber-fraud reporting and NALSA legal aid, with official references
 - Fictional sample-case manager with search, status filters, edit, delete and draft/review/closed transitions (session memory only)
 - Interactive case-preparation checklist with live completion percentage
 - FIR Support Center with a browser-side police-complaint draft form (local formatting only; it does not submit a complaint or register an FIR)
