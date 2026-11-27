@@ -83,3 +83,9 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Scope:** This confirms the assistant interaction shown in this screenshot only. It does not confirm every navigation, dashboard, generator, copy, print or language control.
 - **AI status:** Still a local rules-based demo, not connected generative AI.
 
+## Run 4 — Rights Guide navigation
+
+- **Observed evidence:** User screenshot shows the “NYAY SAATHI / Legal Rights & Justice Guide” page loaded in the mobile browser, including the introductory rights guide content and educational-use disclaimer.
+- **Result:** **PASS — Rights Guide navigation opens the intended page.**
+- **Scope:** This confirms page navigation and visible rendering only; it does not validate every external link or legal statement on the page.
+
