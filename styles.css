@@ -260,6 +260,8 @@ footer{background:#030a14;border-top:1px solid #d9b66f33}
 }
 
 /* My Cases interactive, memory-only demonstration */
+.dash-view[data-dashboard-view="cases"] .case-form{display:block!important;visibility:visible!important;opacity:1!important;}
+.dash-view[data-dashboard-view="cases"] .case-form[hidden]{display:block!important;}
 .case-form{padding:18px;margin:14px 0 22px;background:#0d2038;border:1px solid #d9b66f55;border-radius:10px}
 .case-form h4,.case-list-heading h4{margin:0 0 14px;color:#f0d9a5;font-size:14px}
 .case-form label{display:block;margin:12px 0 6px;color:#dce5ef;font-size:12px;font-weight:700}
