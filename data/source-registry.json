@@ -230,6 +230,26 @@
       ],
       "verification_status": "department_listing_confirmed",
       "scope_note": "The official MP Department Enquiry System page lists Home Department and its departmental administrative contact. This is for departmental enquiry administration, not a public grievance or citizen complaint filing portal. The user reported that the previous mp.gov.in and IGOD pages did not load; retain those only as historical references, not as active user links."
+    },
+    {
+      "source_id": "MP-CM-HELPLINE",
+      "name": "Madhya Pradesh CM Helpline 181",
+      "authority": "Government of Madhya Pradesh, Public Service Management",
+      "jurisdiction": "Madhya Pradesh",
+      "source_type": [
+        "citizen_grievances",
+        "government_scheme_queries",
+        "corruption_related_calls",
+        "complaint_status"
+      ],
+      "official_url": "https://cmhelpline.mp.gov.in/Default.aspx",
+      "related_urls": [
+        "https://www.cmhelpline.mp.gov.in/About.aspx",
+        "https://cmhelpline.mp.gov.in/ContactUs.aspx"
+      ],
+      "phone": "181",
+      "verification_status": "official_portal_and_contact_page_found",
+      "scope_note": "Official state grievance channel. The official About page states that citizens can call 181 or register complaints through the portal/app and check status. It handles government-scheme information, grievances, demands/suggestions and corruption-related calls. Not an emergency service or universal substitute for specialized legal/police procedures."
     }
   ],
   "state_and_ut_register": {
@@ -280,11 +300,16 @@
         "unresolved_fields": [
           "Dedicated Home Department public website and public grievance procedure not confirmed"
         ],
-        "caution": "The HRMS Department Enquiry System is a departmental-enquiry administration directory, not a citizen complaint portal. Do not advise citizens to use it to file a public grievance.",
+        "caution": "The HRMS Department Enquiry System is a departmental-enquiry administration directory, not a citizen complaint portal. Do not advise citizens to use it to file a public grievance. CM Helpline is a general Madhya Pradesh government grievance channel; it is not a substitute for emergency services, an FIR, court process, or every specialized police complaint mechanism. Use with a trusted adult when submitting any personal details.",
         "state_bar_council_rules_url": "https://www.sbcofmp.org.in/Gen%20Rules%20SBC.htm",
         "state_gazette_search_url": "https://govtpressmp.nic.in/gazette.html",
         "home_department_directory_url": "https://hrms.mp.gov.in/s_a_p/DE/Home/departmentAdmin",
-        "home_department_contact_directory_reference": "Home Department is listed in the MP Department Enquiry System directory; the page displays the department's official email contact."
+        "home_department_contact_directory_reference": "Home Department is listed in the MP Department Enquiry System directory; the page displays the department's official email contact.",
+        "citizen_grievance_portal_url": "https://cmhelpline.mp.gov.in/Default.aspx",
+        "citizen_grievance_about_url": "https://www.cmhelpline.mp.gov.in/About.aspx",
+        "citizen_grievance_contact_url": "https://cmhelpline.mp.gov.in/ContactUs.aspx",
+        "citizen_grievance_phone": "181",
+        "citizen_grievance_scope": "CM Helpline 181 accepts citizen calls about government schemes, grievances, demands/suggestions and corruption-related calls; route depends on subject and jurisdiction."
       }
     ]
   }
