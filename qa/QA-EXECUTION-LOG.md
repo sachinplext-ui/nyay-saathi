@@ -109,3 +109,9 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Result:** **PASS — copy action reported success in the mobile browser.**
 - **Scope:** Clipboard contents were not independently pasted into another app for comparison; this confirms the browser's success feedback only.
 
+## Run 8 — PDF / Print output
+
+- **Observed evidence:** User uploaded the PDF produced by the application generator. The uploaded PDF was parsed as a one-page document and contains the sample subject, fictional factual description, request, date and placeholder applicant fields.
+- **Result:** **PASS — PDF output was generated and uploaded successfully; one-page content is readable/extractable.**
+- **Scope:** This verifies PDF creation and basic text content only. It does not certify print layout across devices or legal suitability of the template.
+
