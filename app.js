@@ -41,7 +41,7 @@ function showGuidance(){
  const lower=q.toLowerCase(),topics=legalTopics[language];
  // Give Lokayukta fee questions explicit priority over the broader Lokayukta topic.
  const lokayuktaFeeQuestion=/(lokayukta|लोकायुक्त)/i.test(lower)&&(
-   /(?:₹|rs\\.?\\s*)\\s*25|\\b25\\b\\s*(?:रुपये|रु|rupees?)/i.test(lower)||
+   /(?:₹|rs\.?\s*)\s*25|\b25\b\s*(?:रुपये|रु|rupees?)/i.test(lower)||
    /(फीस|शुल्क|fee|charge)/i.test(lower)
  );
  const feeTopic=lokayuktaFeeQuestion?topics.find(topic=>topic.keys.some(key=>key.includes("₹25")||key.includes("लोकायुक्त फीस")||key.includes("lokayukta fee"))):null;
