@@ -200,3 +200,14 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 **Pending:** Repeat the Hindi prompt once after deployment to confirm the wording correction, then complete the English clarification screenshot check.
 
 - Test 8, English — broad complaint / portal selection: the user's mobile screenshot visibly asks for the complaint topic and State/Union Territory before recommending a portal, and warns against sharing names, addresses, phone numbers, FIR numbers or private documents. **Manual screenshot content check: expected clarification displayed.**
+
+
+## Mobile UI and link improvements (27 November 2026)
+
+- Updated assistant answer rendering so every `https://` URL in guidance is rendered as a real anchor, opened in a new tab with `rel="noopener noreferrer"`. Link text wraps safely on narrow screens.
+- Updated mobile navigation to a compact 3-column, 2-row grid for the six primary navigation links, replacing the crowded single-line horizontal strip.
+- Verified the English Police Citizen Portal answer source contains a single MP Police Citizen Portal URL followed by the Indore Police URL (the prior screenshot had shown the portal URL twice).
+- Code commits: `3ab7deb` (safe link rendering), `3d08452` (mobile navigation/link styles).
+- Cache versions: `styles.css?v=21`, `app.js?v=44`, service-worker cache `nyay-saathi-v51`; update commits: `3b07153` and `4564aec`.
+
+**Pending manual mobile confirmation:** wait for GitHub Pages deployment, reopen/refresh the site, confirm all six nav links fit in two rows, tap at least one official URL to confirm it opens, and rerun the English Police Portal answer to confirm the duplicate URL is absent. These are code-level updates until verified on the phone.
