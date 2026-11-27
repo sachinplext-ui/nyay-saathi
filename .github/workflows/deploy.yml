@@ -37,6 +37,7 @@ jobs:
           node -e "JSON.parse(require('fs').readFileSync('manifest.webmanifest','utf8'))"
           node -e "JSON.parse(require('fs').readFileSync('server/package.json','utf8'))"
           node qa/check-html.mjs
+          node qa/check-app-contract.mjs
 
   deploy:
     needs: validate
