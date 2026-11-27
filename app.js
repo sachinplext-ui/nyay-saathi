@@ -98,14 +98,11 @@ function applyDraftLanguage(){
 }
 function buildDraft(){
  const en=language==="en", typeKey=document.getElementById("draftType").value;
- const applicantAddress=document.getElementById("draftApplicantAddress").value.trim()||(en?"[Applicant mailing address]":"[आवेदक का पत्राचार पता]");
  const office=document.getElementById("draftOffice").value.trim()||(en?"[Relevant officer / office]":"[संबंधित अधिकारी/कार्यालय]");
- const officeAddress=document.getElementById("draftOfficeAddress").value.trim();
  const subject=document.getElementById("draftSubject").value.trim()||(en?"[Application subject]":"[आवेदन का विषय]");
  const facts=document.getElementById("draftFacts").value.trim()||(en?"[Factual description of events]":"[घटनाओं का तथ्यात्मक विवरण]");
  const request=document.getElementById("draftRequest").value.trim()||(en?"[Your request]":"[अपना अनुरोध]");
  const enclosures=document.getElementById("draftEnclosures").value.trim();
- const phone=document.getElementById("draftPhone").value.trim(), email=document.getElementById("draftEmail").value.trim(), name=document.getElementById("draftName").value.trim();
  const date=new Intl.DateTimeFormat(en?"en-IN":"hi-IN",{day:"numeric",month:"long",year:"numeric"}).format(new Date());
  const templates={
   general:{en:"I wish to bring the following facts to your attention:",hi:"मैं निम्न तथ्य आपके संज्ञान में लाना चाहता/चाहती हूँ:"},
@@ -115,12 +112,11 @@ function buildDraft(){
   cyber:{en:"I am submitting a follow-up regarding a cybercrime report and provide these general details:",hi:"मैं साइबर अपराध की पूर्व शिकायत के संबंध में फॉलो-अप प्रस्तुत कर रहा/रही हूँ और निम्न सामान्य विवरण दे रहा/रही हूँ:"}
  };
  const intro=(templates[typeKey]||templates.general)[en?"en":"hi"];
- const contact=(phone?(en?"\nPhone: ":"\nमोबाइल: ")+phone:"")+(email?(en?"\nEmail: ":"\nईमेल: ")+email:"");
- const output=en?"To,\n"+office+(officeAddress?"\n"+officeAddress:"")+"\n\nSubject: "+subject+"\n\nSir/Madam,\n"+intro+"\n\n"+facts+"\n\nI respectfully request that: "+request+"\n\n"+(enclosures?"Enclosures: "+enclosures+"\n\n":"")+"Date: "+date+"\n\nApplicant address:\n"+applicantAddress+contact+"\nName: "+(name||"[Applicant name]")+"\nSignature: __________________":"सेवा में,\n"+office+(officeAddress?"\n"+officeAddress:"")+"\n\nविषय: "+subject+"\n\nमहोदय/महोदया,\n"+intro+"\n\n"+facts+"\n\nअतः निवेदन है कि: "+request+"\n\n"+(enclosures?"संलग्नक: "+enclosures+"\n\n":"")+"दिनांक: "+date+"\n\nआवेदक का पत्राचार पता:\n"+applicantAddress+contact+"\nनाम: "+(name||"[आवेदक का नाम]")+"\nहस्ताक्षर: __________________";
+ const output=en?"To,\\n"+office+"\\n\\nSubject: "+subject+"\\n\\nSir/Madam,\\n"+intro+"\\n\\n"+facts+"\\n\\nI respectfully request that: "+request+"\\n\\n"+(enclosures?"Enclosures: "+enclosures+"\\n\\n":"")+"Date: "+date+"\\n\\nApplicant name: [Fill offline]\\nApplicant address/contact: [Fill offline if required]\\nSignature: __________________":"सेवा में,\\n"+office+"\\n\\nविषय: "+subject+"\\n\\nमहोदय/महोदया,\\n"+intro+"\\n\\n"+facts+"\\n\\nअतः निवेदन है कि: "+request+"\\n\\n"+(enclosures?"संलग्नक: "+enclosures+"\\n\\n":"")+"दिनांक: "+date+"\\n\\nआवेदक का नाम: [ऑफलाइन भरें]\\nपत्राचार पता/संपर्क: [आवश्यक हो तो ऑफलाइन भरें]\\nहस्ताक्षर: __________________";
  document.getElementById("draftText").textContent=output;return output;
 }
 // Keep the preview, copy, and print output synchronized with the latest form values.
-const draftFieldIds=["draftType","draftOffice","draftOfficeAddress","draftApplicantAddress","draftPhone","draftEmail","draftName","draftSubject","draftFacts","draftRequest","draftEnclosures"];
+const draftFieldIds=["draftType","draftOffice","draftSubject","draftFacts","draftRequest","draftEnclosures"];
 draftFieldIds.forEach(id=>{
  const field=document.getElementById(id);
  if(!field)return;
@@ -139,7 +135,7 @@ document.getElementById("generateDraft").addEventListener("click",()=>{
  buildDraft();document.getElementById("generateDraft").textContent=translations[language].generated;
 });
 document.getElementById("clearDraft").addEventListener("click",()=>{
- ["draftOffice","draftSubject","draftFacts","draftRequest","draftEnclosures","draftOfficeAddress","draftApplicantAddress","draftPhone","draftEmail","draftName"].forEach(id=>document.getElementById(id).value="");
+ ["draftOffice","draftSubject","draftFacts","draftRequest","draftEnclosures"].forEach(id=>document.getElementById(id).value="");
  document.getElementById("draftType").value="general";
  document.getElementById("draftStatus").textContent=translations[language].cleared;
  document.getElementById("draftStatus").hidden=false;
