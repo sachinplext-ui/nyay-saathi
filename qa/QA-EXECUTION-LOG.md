@@ -187,3 +187,9 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Result:** **PASS — Lawyer Support navigation opens the legal-support section.**
 - **Scope:** Confirms navigation and page rendering only; the NALSA external button was not tested in this run.
 
+## Run 21 — NALSA external assistance link
+
+- **Observed evidence:** User confirmed “Done” after being asked to tap the NALSA assistance button.
+- **Result:** **PASS — user confirms the NALSA link opened.**
+- **Scope:** Confirmation only; the destination URL and page content were not independently verified in this run.
+
