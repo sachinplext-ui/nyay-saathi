@@ -163,3 +163,9 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Result:** **PASS — the “आवेदन जनरेटर खोलें” quick link navigates to the generator form.**
 - **Scope:** Confirms navigation only; generation, copy and PDF/Print were tested separately above.
 
+## Run 17 — Dashboard quick link: General Assistant
+
+- **Observed evidence:** User screenshot shows the “NYAY SAATHI ASSISTANT / अपना सवाल लिखें” page, with the question field and “सामान्य मार्गदर्शन देखें” button.
+- **Result:** **PASS — the “सामान्य सवाल पूछें” Dashboard quick link navigates to the assistant page.**
+- **Scope:** Confirms navigation only. The page identifies itself as an introductory demo; this does not establish a live AI connection or verify answer quality.
+
