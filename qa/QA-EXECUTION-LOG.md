@@ -103,3 +103,9 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Scope:** This confirms browser-side text formatting only; it does not submit or file an application.
 - **Next checks:** Copy and PDF/Print controls remain to be tested separately.
 
+## Run 7 — Copy application
+
+- **Observed evidence:** User screenshot shows the Copy application control changed to the Hindi success label “कॉपी हो गया ✓” and the browser displayed the “Copied.” confirmation toast.
+- **Result:** **PASS — copy action reported success in the mobile browser.**
+- **Scope:** Clipboard contents were not independently pasted into another app for comparison; this confirms the browser's success feedback only.
+
