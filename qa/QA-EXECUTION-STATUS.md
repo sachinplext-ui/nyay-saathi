@@ -64,3 +64,16 @@ This is a QA status record, not a security certification or legal review.
 - `render.yaml` defines a Node web service with root directory `server`, a `/health` health check, and server-side environment variables. This is deployment configuration only; it does not prove a Render service exists or is running.
 - `server/package.json` and `server/index.js` provide a separate API prototype. The frontend is not yet connected to it.
 - The current site is therefore correctly described as a rules-based static demo. Do not change the UI label to “live AI” until the backend is deployed, health-checked, safely integrated and reviewed.
+
+
+## Bilingual answer routing fixes (27 November 2026)
+
+- Updated `app.js` to add dedicated Hindi/English Lokayukta fee answers with category distinctions, the 18 May 2022 source-page date from the draft source pack, and a current-fee recheck warning.
+- Updated Madhya Pradesh legal-aid answers to avoid presenting an unverified income ceiling as current and to link MPSLSA Legal Aid and directory pages.
+- Added English advocate professional-conduct matching and linked the State Bar Council General Rules; both language answers disclose that the source pack does not establish a complete current complaint procedure.
+- Linked the official Lokayukta scope page in the jurisdiction answers.
+- Simplified police portal guidance to avoid unverified service listings and preserve the portal-submission/FIR distinction.
+- Added trusted-adult wording to both immediate-danger answers.
+- Changed unknown-topic fallbacks to ask for the broad complaint topic and State/UT without requesting identifying details.
+
+**Verification status:** The exact synthetic prompt phrases for the previously affected routes were checked against the updated topic keys by static inspection. This is not a browser/runtime test. Do not mark the 16 variants passed yet; rendered-output checks, current official-source revalidation and qualified legal review remain outstanding.
