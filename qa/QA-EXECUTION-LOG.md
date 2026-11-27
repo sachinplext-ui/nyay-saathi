@@ -24,3 +24,23 @@ The other seven synthetic scenarios, the English variants, API deployment, API h
 ## Safety
 
 Use fictional prompts only. Do not enter real names, addresses, phone numbers, FIR/case numbers, identity numbers or private documents.
+
+## Run 2 — English FIR prompt
+
+- **Test prompt:** `How can I get a copy of an FIR?`
+- **Language:** English
+- **Observed behavior:** The assistant returned the predefined English FIR guidance from the browser-side rules-based topic matcher.
+- **Observed content:** It explains the general FIR recording process under BNSS Section 173, mentions oral/electronic information, the three-day signature requirement for electronic information, reading over oral information, the free copy under Section 173(2), and the written-to-SP route described under Section 173(4) if the station officer refuses to record information. It recommends consulting a qualified advocate for case-specific steps and displays an official-text link.
+- **Privacy reminder:** The response tells users not to enter names, addresses, phone numbers, FIR numbers, identity numbers or private documents.
+- **UI observation:** The answer rendered visibly in English on the mobile page.
+- **Result:** **PASS — basic English rules-based UI response observed.**
+- **Not verified:** The linked PDF was not opened and the statutory summary was not independently reviewed in this run.
+- **AI status:** **NOT TESTED.** The prompt was handled by local browser rules, not the connected AI API.
+
+## QA tally
+
+- Hindi demo UI checks observed: 1/1 passed.
+- English demo UI checks observed: 1/1 passed.
+- Live AI tests: 0 executed.
+- Remaining synthetic scenarios: 7 topics × 2 languages not yet run.
+
