@@ -293,3 +293,11 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - The final cache-busted source state uses `cases.js?v=10` and service-worker cache `nyay-saathi-v84`.
 - GitHub Actions run `46053825343` on commit `082f148d48cb6f799b662edf2c2408eb241a5fc1` completed successfully. Both `validate` and `deploy` jobs passed, including JavaScript syntax, JSON, HTML and app contract checks; Pages deployment succeeded.
 - This confirms repository-level checks and deployment for the source snapshot. It does not prove the browser behaviour visually or functionally; language switching, translated search and edit preservation still require the planned browser/mobile test pass.
+
+
+## Prototype feature-label accuracy — 28 November 2026
+
+- Updated the homepage feature ribbon so preview-only screens are not presented as active AI analysis, case-strength scoring, live deadline alerts or a secure evidence vault.
+- Labels now identify the actual scope: case-preparation preview, case-progress preview, sample deadline reminders and document categories with no uploads.
+- This is a wording/expectation correction; the underlying screens remain sample UI and are not real case-management or evidence-storage services.
+- Cache version updated to `nyay-saathi-v85`. GitHub Actions validation and deployment for this latest wording change are pending.
