@@ -214,6 +214,21 @@
       ],
       "verification_status": "portal_link_recorded",
       "scope_note": "Use the exact Gazette PDF/notification and verify publication date, part, number and issuing department. The legacy Gazette search URL is listed in an official MP district-government directory."
+    },
+    {
+      "source_id": "MP-GOV-DEPARTMENT-DIRECTORY",
+      "name": "Madhya Pradesh Government Departments Directory",
+      "authority": "Government of Madhya Pradesh",
+      "jurisdiction": "Madhya Pradesh",
+      "source_type": [
+        "government_department_directory"
+      ],
+      "official_url": "https://www.mp.gov.in/web/guest/government-departments1",
+      "related_urls": [
+        "https://hrms.mp.gov.in/s_a_p/DE/Home/departmentAdmin"
+      ],
+      "verification_status": "directory_link_recorded",
+      "scope_note": "Official directory reference only. It does not establish a dedicated Home Department complaint process or prove that a particular grievance belongs there."
     }
   ],
   "state_and_ut_register": {
@@ -257,14 +272,17 @@
           "Madhya Pradesh Lokayukta complaint-filing and jurisdiction pages",
           "High Court of Madhya Pradesh official portal and judgment search",
           "State Bar Council of Madhya Pradesh portal, with its rules page; the Bar Council of India directory also lists the MP council and its official site",
-          "Government Press Madhya Pradesh portal and Gazette search destination referenced by an official Madhya Pradesh district government directory"
+          "Government Press Madhya Pradesh portal and Gazette search destination referenced by an official Madhya Pradesh district government directory",
+          "Madhya Pradesh Government departments directory, which is a directory rather than a confirmed dedicated Home Department website"
         ],
         "unresolved_fields": [
-          "State Home Department page not independently confirmed in this pass"
+          "Dedicated Home Department website URL and current public-facing department contact/procedure pages still need direct confirmation"
         ],
-        "caution": "Police citizen portal use may require registration. Complaint routes and jurisdiction depend on facts and applicable rules. Do not represent Lokayukta as the correct forum for every allegation or every public official.",
+        "caution": "Police citizen portal use may require registration. Complaint routes and jurisdiction depend on facts and applicable rules. Do not represent Lokayukta as the correct forum for every allegation or every public official. The government departments directory is not itself a Home Department complaint channel; do not treat it as one.",
         "state_bar_council_rules_url": "https://www.sbcofmp.org.in/Gen%20Rules%20SBC.htm",
-        "state_gazette_search_url": "https://govtpressmp.nic.in/gazette.html"
+        "state_gazette_search_url": "https://govtpressmp.nic.in/gazette.html",
+        "home_department_directory_url": "https://www.mp.gov.in/web/guest/government-departments1",
+        "home_department_contact_directory_reference": "https://hrms.mp.gov.in/s_a_p/DE/Home/departmentAdmin"
       }
     ]
   }
