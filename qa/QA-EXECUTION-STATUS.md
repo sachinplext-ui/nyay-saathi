@@ -276,3 +276,12 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - The `deploy` job also completed successfully; GitHub Pages deployment for that commit is confirmed by the workflow result.
 - This supersedes the pending status above: the corrected contract checker is now CI-verified. The earlier failed checker attempt and cancelled intermediate run remain part of the audit history.
 - The checks are source-level safeguards only. They do not establish browser interaction correctness, legal accuracy, secure case storage, live AI functionality, accessibility conformance or production readiness.
+
+
+## Demo case manager language consistency fix — 28 November 2026
+
+- Source review found that the case-list labels were refreshed when the page language changed, but the already-rendered case cards were not re-rendered. The two built-in sample titles also remained Hindi in English mode.
+- Updated `cases.js` so language changes refresh both labels and case cards, and built-in sample titles use the selected language.
+- Preserved edit behaviour: opening a built-in sample for editing now starts with its visible translated title; saving converts it to a normal user-entered sample title so later language changes do not overwrite it.
+- Updated the case-manager script cache version to `cases.js?v=9` and service-worker cache to `nyay-saathi-v83`.
+- This is a source-level fix and has not yet been exercised in a browser. The latest GitHub Actions run must pass syntax and deployment checks; later mobile/browser testing remains required.
