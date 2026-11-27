@@ -17,7 +17,7 @@ function beginEdit(id){const item=items.find(x=>x.id===id);if(!item)return;editi
 function removeItem(id){if(!window.confirm(t().confirm))return;items=items.filter(x=>x.id!==id);if(editing===id)reset();render();message(t().deleted);}
 root.addEventListener("submit",event=>{
  event.preventDefault();
- const title=$("demoCaseTitle").value.replace(/[\\u0000-\\u001f\\u007f]/g," ").replace(/\\s+/g," ").trim().slice(0,60);
+ const title=$("demoCaseTitle").value.replace(/[\u0000-\u001f\u007f]/g," ").replace(/\s+/g," ").trim().slice(0,60);
  const type=$("demoCaseType").value,status=$("demoCaseStatus").value;
  if(!title){message(t().required);$("demoCaseTitle").focus();return;}
  if(!["police","property","consumer","other"].includes(type)||!["draft","review","closed"].includes(status)){message(t().required);return;}
