@@ -162,3 +162,32 @@ footer{background:#030a14;border-top:1px solid #d9b66f33}
  .dash-lower{grid-template-columns:1fr}
  .lawyer-strip{align-items:flex-start;flex-direction:column;padding:32px 22px}
 }
+
+
+/* Dashboard sub-pages */
+.dash-tab{appearance:none;border:1px solid transparent;background:transparent;color:#aebbd0;text-align:left;padding:11px 9px;border-radius:6px;font:inherit;font-size:12px;cursor:pointer;width:100%;display:flex;align-items:center;gap:7px}
+.dash-tab:hover,.dash-tab.dash-active{background:#1a3450;color:#f1d18a;border-color:#d9b66f55}
+.dash-view[hidden]{display:none!important}
+.view-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:22px}
+.view-heading small{color:#dfbd75;letter-spacing:2px;font-size:9px}
+.view-heading h3{color:#f5ead4;font-size:22px;margin:8px 0}
+.view-heading p{color:#aebbd0;font-size:12px;line-height:1.6;margin:0}
+.case-sample-card,.deadline-item{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px;margin:10px 0;background:#132b46;border:1px solid #d9b66f33;border-radius:8px}
+.case-sample-card b,.deadline-item b{display:block;color:#f0d9a5;font-size:13px}
+.case-sample-card span:not(.status-chip),.deadline-item small{display:block;color:#9eafc4;font-size:11px;margin-top:6px}
+.status-chip{border:1px solid #c5a45f88;color:#e4c37b;border-radius:20px;padding:5px 10px;font-size:10px;white-space:nowrap}
+.demo-warning{padding:12px 14px;background:#2a281f;border:1px solid #78633b;border-radius:7px;color:#f0d9a5;font-size:11px;line-height:1.6;margin-top:18px}
+.checklist{display:grid;gap:11px}
+.checklist label{display:flex;align-items:center;gap:11px;padding:14px;background:#132b46;border:1px solid #d9b66f33;border-radius:8px;color:#dce5ef;font-size:12px}
+.checklist input{accent-color:#d9b66f;width:17px;height:17px}
+.deadline-item{justify-content:flex-start}
+.deadline-item>div{flex:1}
+.deadline-dot{width:10px;height:10px;border-radius:50%;background:#d9b66f;box-shadow:0 0 0 5px #d9b66f20}
+.vault-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.vault-grid>div,.lawyer-option,.settings-note{padding:18px;background:#132b46;border:1px solid #d9b66f33;border-radius:9px;color:#e4c37b}
+.vault-grid b,.vault-grid small{display:block;margin-top:9px}
+.vault-grid small{font-size:10px;color:#9eafc4}
+.lawyer-option p,.settings-note p{color:#b5c3d4;font-size:12px;line-height:1.7}
+.lawyer-option a{display:inline-block;color:#e4c37b;font-size:12px;margin:8px 14px 8px 0}
+.lawyer-option strong{display:block;color:#f0d9a5;font-size:12px}
+@media(max-width:760px){.dash-tab{justify-content:center;text-align:center;font-size:10px;padding:9px 4px}.view-heading h3{font-size:19px}.vault-grid{grid-template-columns:1fr}.case-sample-card{align-items:flex-start}}
