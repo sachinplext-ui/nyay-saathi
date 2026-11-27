@@ -179,6 +179,41 @@
       ],
       "verification_status": "portal_link_recorded",
       "scope_note": "Official High Court portal and judgment search. Verify exact case, bench, date and later treatment before summarizing a judgment."
+    },
+    {
+      "source_id": "MP-STATE-BAR-COUNCIL",
+      "name": "State Bar Council of Madhya Pradesh",
+      "authority": "State Bar Council of Madhya Pradesh",
+      "jurisdiction": "Madhya Pradesh",
+      "source_type": [
+        "advocate_regulation",
+        "professional_conduct",
+        "disciplinary_committee_rules"
+      ],
+      "official_url": "https://sbcofmp.org.in/main.html",
+      "related_urls": [
+        "https://www.sbcofmp.org.in/Gen%20Rules%20SBC.htm",
+        "https://www.barcouncilofindia.org/info/sbc"
+      ],
+      "verification_status": "portal_link_recorded",
+      "scope_note": "The State Bar Council portal publishes council information and rules. Verify the current complaint filing procedure, required documents, fees and jurisdiction directly with the council before advising users."
+    },
+    {
+      "source_id": "MP-GAZETTE",
+      "name": "Madhya Pradesh Government Press and Gazette",
+      "authority": "Government of Madhya Pradesh, Government Press",
+      "jurisdiction": "Madhya Pradesh",
+      "source_type": [
+        "state_gazette",
+        "state_notifications",
+        "state_amendments"
+      ],
+      "official_url": "https://govtpress.mp.gov.in/",
+      "related_urls": [
+        "https://govtpressmp.nic.in/gazette.html"
+      ],
+      "verification_status": "portal_link_recorded",
+      "scope_note": "Use the exact Gazette PDF/notification and verify publication date, part, number and issuing department. The legacy Gazette search URL is listed in an official MP district-government directory."
     }
   ],
   "state_and_ut_register": {
@@ -207,11 +242,11 @@
         "home_department_url": null,
         "state_legal_services_authority_url": "https://madhyapradesh.nalsa.gov.in/",
         "state_legal_services_directory_url": "https://madhyapradesh.nalsa.gov.in/directory/",
-        "state_bar_council_url": null,
+        "state_bar_council_url": "https://sbcofmp.org.in/main.html",
         "anti_corruption_or_vigilance_authority_url": "https://mplokayukt.nic.in/",
         "lokayukta_complaint_guidance_url": "https://mplokayukt.nic.in/complaints-filing",
         "lokayukta_jurisdiction_url": "https://mplokayukt.nic.in/scope-and-jurisdiction",
-        "state_gazette_url": null,
+        "state_gazette_url": "https://govtpress.mp.gov.in/",
         "high_court_url": "https://www.mphc.gov.in/",
         "high_court_judgments_url": "https://www.mphc.gov.in/judgements",
         "last_verified_at": "2026-11-27",
@@ -220,14 +255,16 @@
           "MP Police Citizen Portal and Indore/Bhopal police complaint-lodging information",
           "Madhya Pradesh State Legal Services Authority portal and directory",
           "Madhya Pradesh Lokayukta complaint-filing and jurisdiction pages",
-          "High Court of Madhya Pradesh official portal and judgment search"
+          "High Court of Madhya Pradesh official portal and judgment search",
+          "State Bar Council of Madhya Pradesh portal, with its rules page; the Bar Council of India directory also lists the MP council and its official site",
+          "Government Press Madhya Pradesh portal and Gazette search destination referenced by an official Madhya Pradesh district government directory"
         ],
         "unresolved_fields": [
-          "Official State Bar Council portal and complaint procedure not confirmed in this pass",
-          "Official Madhya Pradesh Gazette portal not confirmed in this pass",
           "State Home Department page not independently confirmed in this pass"
         ],
-        "caution": "Police citizen portal use may require registration. Complaint routes and jurisdiction depend on facts and applicable rules. Do not represent Lokayukta as the correct forum for every allegation or every public official."
+        "caution": "Police citizen portal use may require registration. Complaint routes and jurisdiction depend on facts and applicable rules. Do not represent Lokayukta as the correct forum for every allegation or every public official.",
+        "state_bar_council_rules_url": "https://www.sbcofmp.org.in/Gen%20Rules%20SBC.htm",
+        "state_gazette_search_url": "https://govtpressmp.nic.in/gazette.html"
       }
     ]
   }
