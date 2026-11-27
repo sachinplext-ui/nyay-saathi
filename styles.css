@@ -226,3 +226,35 @@ footer{background:#030a14;border-top:1px solid #d9b66f33}
  .topbar nav a{display:flex;align-items:center;justify-content:center;min-width:0;min-height:34px;padding:6px 3px;text-align:center;white-space:normal;overflow-wrap:anywhere;line-height:1.25;font-size:11px;border:1px solid #ffffff18;border-radius:5px}
  .topbar{align-items:center;row-gap:10px}
 }
+
+
+/* Fix mobile header height: keep the two-row navigation inside the sticky header */
+@media(max-width:760px){
+ .topbar{
+  height:auto!important;
+  min-height:0!important;
+  padding:12px 18px 10px!important;
+  display:flex!important;
+  flex-wrap:wrap!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:10px 12px!important;
+  background:rgba(5,16,31,.99)!important;
+ }
+ .topbar .brand{flex:1 1 auto;min-width:0}
+ .topbar .lang-btn{flex:0 0 auto}
+ .topbar nav{
+  position:static!important;
+  flex:1 0 100%!important;
+  order:3!important;
+  display:grid!important;
+  grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  width:100%!important;
+  margin:0!important;
+  padding:2px 0 0!important;
+  gap:6px 8px!important;
+  overflow:visible!important;
+ }
+ .topbar nav a{min-height:36px!important}
+ .hero{position:relative!important;z-index:0!important;margin-top:0!important}
+}
