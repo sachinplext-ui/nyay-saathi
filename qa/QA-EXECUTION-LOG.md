@@ -139,3 +139,9 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Result:** **PASS — Evidence Vault tab switches to and displays the document-category demo panel.**
 - **Scope:** Confirms navigation/rendering only. The page explicitly says it is not a secure cloud vault and does not upload or save files.
 
+## Run 13 — Lawyer Support dashboard tab
+
+- **Observed evidence:** User screenshot shows “वकील सहायता” selected and the “वकील / कानूनी सहायता” panel rendered with NALSA legal-aid information and helpline 15100.
+- **Result:** **PASS — Lawyer Support tab switches to and displays its legal-aid information panel.**
+- **Scope:** Confirms navigation and display only. The NALSA link/helpline were not independently tested in this run, and eligibility must be checked with the official service.
+
