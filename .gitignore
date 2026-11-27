@@ -1,0 +1,14 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+server/.env
+server/.env.*
+!server/.env.example
+
+# Dependencies and runtime files
+node_modules/
+server/node_modules/
+npm-debug.log*
+*.log
+.DS_Store
