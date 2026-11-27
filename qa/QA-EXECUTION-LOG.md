@@ -115,3 +115,9 @@ A more specific Madhya Pradesh government-scheme / state-grievance topic was add
 - **Result:** **PASS — PDF output was generated and uploaded successfully; one-page content is readable/extractable.**
 - **Scope:** This verifies PDF creation and basic text content only. It does not certify print layout across devices or legal suitability of the template.
 
+## Run 9 — Dashboard My Cases tab
+
+- **Observed evidence:** User screenshot shows the dashboard with “माय केस” selected and the My Cases panel rendered, including two clearly labelled fictional sample entries and a demo-only privacy notice.
+- **Result:** **PASS — My Cases dashboard tab switches to and displays its sample panel.**
+- **Scope:** Confirms tab selection and panel rendering only. The entries are demo placeholders; no real case storage or case-management capability is implied.
+
