@@ -368,6 +368,49 @@
       "related_urls": [],
       "verification_status": "access_issue_reported_user_screenshot",
       "scope_note": "The official portal/domain is identified, but a user-reported browser screenshot on 28 November 2026 showed 'Sorry, this page is not available'. Do not display this as a working user-facing link. Re-verify a stable public State Gazette directory URL and individual destinations before restoring."
+    },
+    {
+      "source_id": "IN-IGOD",
+      "name": "Integrated Government Online Directory",
+      "authority": "National Informatics Centre, Ministry of Electronics and Information Technology, Government of India",
+      "jurisdiction": "National, State and Union Territory government websites",
+      "source_type": [
+        "official_government_website_directory",
+        "department_discovery"
+      ],
+      "official_url": "https://igod.gov.in/",
+      "verification_status": "official_directory_recorded",
+      "scope_note": "Official government website directory. Use it to discover state/UT department websites; verify each destination, department remit and service availability before presenting it as a complaint route."
+    },
+    {
+      "source_id": "IN-CVC",
+      "name": "Central Vigilance Commission",
+      "authority": "Central Vigilance Commission, Government of India",
+      "jurisdiction": "Specified central public servants and covered central organisations",
+      "source_type": [
+        "central_vigilance",
+        "PIDPI",
+        "corruption_complaints"
+      ],
+      "official_url": "https://cvc.gov.in/",
+      "related_urls": [
+        "https://portal.cvc.gov.in/content/documents/chp_pidpi_complaints.pdf"
+      ],
+      "verification_status": "official_scope_notice_recorded",
+      "scope_note": "CVC jurisdiction is limited to covered central public servants/organisations. The official PIDPI notice says State Government personnel and State Government activities/corporations are outside its purview. Check current law, covered categories and complaint rules before use."
+    },
+    {
+      "source_id": "IN-LOKPAL",
+      "name": "Lokpal of India",
+      "authority": "Lokpal of India",
+      "jurisdiction": "Public functionaries specified under the Lokpal and Lokayuktas Act, 2013",
+      "source_type": [
+        "statutory_ombudsman",
+        "public_functionary_complaints"
+      ],
+      "official_url": "https://lokpal.gov.in/",
+      "verification_status": "official_portal_recorded",
+      "scope_note": "The Lokpal's remit depends on the categories and conditions in its governing Act. Do not present it as a universal grievance or corruption complaint channel."
     }
   ],
   "state_and_ut_register": {
