@@ -97,6 +97,30 @@ if (printSource.includes("break-inside:avoid-page")) {
 if (!printSource.includes("widows:3") || !printSource.includes("orphans:3")) {
   errors.push("Print flow should retain widow/orphan controls for readable pagination.");
 }
+
+// Reference-design and navigation integrity checks.
+const htmlIds = [...html.matchAll(/\\bid=["']([^"']+)["']/g)].map(match => match[1]);
+const duplicateIds = htmlIds.filter((id, index) => htmlIds.indexOf(id) !== index);
+for (const id of new Set(duplicateIds)) errors.push("Duplicate HTML id: " + id);
+const internalTargets = [...html.matchAll(/href=["']#([^"']+)["']/g)].map(match => match[1]);
+for (const target of new Set(internalTargets)) {
+  if (!htmlIds.includes(target)) errors.push("Internal navigation target does not exist: #" + target);
+}
+for (const required of [
+  'class="topbar"', 'class="hero"', 'class="hero-art"', 'class="globe"',
+  'class="justice-statue"', 'class="feature-ribbon"', 'class="platform-preview section"',
+  'class="preview-dashboard"', 'class="preview-analysis"', 'class="preview-phone"',
+  'class="preview-case"', 'id="case-preview"', 'id="fir-help"', 'id="assistant"',
+  'id="guides"', 'id="lawyer-connect"', 'id="drafts"'
+]) {
+  if (!html.includes(required)) errors.push("Reference-design structure is missing: " + required);
+}
+for (const required of ["--navy:#071426", "--gold:#d9b66f", ".hero-art", ".feature-ribbon", ".preview-grid"]) {
+  if (!app && !css.includes(required)) errors.push("Premium design token or layout is missing: " + required);
+}
+const unsafeExternalTargets = [...html.matchAll(/<a\\b(?=[^>]*target=["']_blank["'])(?![^>]*rel=["'][^"']*noopener)[^>]*>/gi)];
+if (unsafeExternalTargets.length) errors.push("External links opening new tabs must include rel=noopener.");
+
 if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
