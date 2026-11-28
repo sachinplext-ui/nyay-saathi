@@ -26,7 +26,10 @@ for (const match of html.matchAll(/<(input|select|textarea)\b([^>]*)>/gi)) {
   if (/\btype=["']hidden["']/i.test(attrs)) continue;
   const id = attrs.match(/\bid=["']([^"']+)["']/i)?.[1];
   const hasAriaLabel = /\baria-label=["'][^"']+["']/i.test(attrs);
-  if (!hasAriaLabel && (!id || !labelTargets.has(id))) {
+  const before = html.slice(0, match.index);
+  const after = html.slice(match.index + match[0].length);
+  const wrappedByLabel = before.lastIndexOf("<label") > before.lastIndexOf("</label") && after.indexOf("</label>") >= 0;
+  if (!hasAriaLabel && !wrappedByLabel && (!id || !labelTargets.has(id))) {
     errors.push("Form control is missing an associated label or aria-label: <" + match[1] + "> " + attrs.slice(0, 100));
   }
 }
