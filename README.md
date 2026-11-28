@@ -34,12 +34,13 @@ This release is a public educational prototype only. No real accounts, case data
 - Mobile navigation has larger touch targets, visible keyboard focus and reduced-motion support
 - Standalone A4-oriented print page for saving as PDF
 - PWA manifest and service worker for basic offline support
-- Links to official public resources: NALSA, Ministry of Home Affairs, National Cyber Crime Portal and India Code
+- Links to official public resources: NALSA, Ministry of Home Affairs, National Cyber Crime Portal, India Code, CVC, Lokpal and IGOD
 
 - Pan-India jurisdiction register for all 28 states and 8 Union Territories, including sourced High Court jurisdiction mappings and NALSA State Legal Services Authority directory links
 - State/UT police organisation portal links recorded from the NIA (Ministry of Home Affairs) directory; these are directory references only, not verified complaint/FIR filing routes
-- Searchable Pan-India directory for all 28 states and 8 Union Territories, showing recorded police portal, State Legal Services Authority, High Court jurisdiction and State Gazette discovery resources with explicit link-scope cautions.
-- State/UT Gazette discovery links use the Government of India's e-Gazette homepage; individual portal and publication details still require jurisdiction-specific verification.
+- Searchable Pan-India directory for all 28 states and 8 Union Territories, showing recorded police portal, State Legal Services Authority, High Court jurisdiction and only recorded Lokayukta/Vigilance links with explicit scope cautions.
+- Gazette links are suppressed while the official e-Gazette State Gazette page has a user-reported access failure; no unverified destination is displayed.
+- Anti-corruption guidance distinguishes CVC's limited central-government remit, Lokpal's statutory remit and state-level Lokayukta/ACB channels; only jurisdiction-specific links recorded in the register are displayed.
 
 ## Important limitations
 - The assistant is a rules-based demo, not a connected AI model and not a lawyer. The optional API endpoint remains disabled until verified legal-source retrieval and citation handling are implemented.
