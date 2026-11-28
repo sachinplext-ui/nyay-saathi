@@ -164,6 +164,26 @@ if (!css.includes('@media(prefers-reduced-motion:reduce)') || !css.includes('.ca
   errors.push("Reduced-motion preferences must disable card hover movement.");
 }
 
+
+const generatorEditHandlerStart = app.indexOf('draftFieldIds.forEach(id=>');
+const generatorEditHandlerEnd = app.indexOf('document.getElementById("generateDraft").addEventListener("click"', generatorEditHandlerStart);
+const generatorEditHandler = generatorEditHandlerStart >= 0 && generatorEditHandlerEnd > generatorEditHandlerStart ? app.slice(generatorEditHandlerStart, generatorEditHandlerEnd) : "";
+if (!generatorEditHandler.includes('copyButton.textContent=translations[language].copyDraft')) {
+  errors.push("Editing a generated draft must reset the copy button label.");
+}
+const generatorClearStart = app.indexOf('document.getElementById("clearDraft").addEventListener("click"');
+const generatorClearEnd = app.indexOf('async function copyTextWithFallback', generatorClearStart);
+const generatorClearHandler = generatorClearStart >= 0 && generatorClearEnd > generatorClearStart ? app.slice(generatorClearStart, generatorClearEnd) : "";
+if (!generatorClearHandler.includes('document.getElementById("copyDraft").textContent=translations[language].copyDraft')) {
+  errors.push("Clearing the generator must reset the copy button label.");
+}
+const generatorCopyStart = app.indexOf('document.getElementById("copyDraft").addEventListener("click"');
+const generatorCopyEnd = app.indexOf('applyDraftLanguage();', generatorCopyStart);
+const generatorCopyHandler = generatorCopyStart >= 0 && generatorCopyEnd > generatorCopyStart ? app.slice(generatorCopyStart, generatorCopyEnd) : "";
+if (!generatorCopyHandler.includes('status.textContent=copied?translations[language].copied:translations[language].copyUnavailable') || !generatorCopyHandler.includes('status.hidden=false')) {
+  errors.push("Copy success/failure must be announced through the accessible live status.");
+}
+
 if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
