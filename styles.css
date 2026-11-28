@@ -483,3 +483,58 @@ button:disabled{opacity:.55;cursor:not-allowed}
 .guide-count,.guide-empty{margin:8px 0 0;color:#aebbd0;font-size:12px}
 .guide-empty{padding:12px;border:1px dashed #9d824d88;border-radius:7px}
 #guides .card[hidden]{display:none!important}
+
+
+/* Premium reference refinement: sculpted Lady Justice hero artwork */
+.hero{position:relative;isolation:isolate;overflow:hidden;background:
+ radial-gradient(ellipse at 76% 48%,#1a4569 0,#102b49 27%,transparent 58%),
+ radial-gradient(ellipse at 22% 100%,#102d4a 0,transparent 44%),
+ linear-gradient(115deg,#061222 0%,#0a1a2e 52%,#071426 100%)}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;opacity:.22;background-image:linear-gradient(90deg,#ffffff0b 1px,transparent 1px),linear-gradient(#ffffff0b 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(90deg,transparent,#000 48%,#000)}
+.hero-art{min-height:420px}
+.hero-art .globe{width:min(34vw,390px);height:min(34vw,390px);min-width:280px;min-height:280px;right:2%;top:50%;transform:translateY(-50%)}
+.justice-figure{position:relative;z-index:2;width:min(29vw,315px);height:auto;max-height:390px;overflow:visible;filter:drop-shadow(0 14px 18px #000b);transform:translate(12%,2%)}
+.justice-pedestal{bottom:24px;left:50%;transform:translateX(-50%);width:164px}
+.hero-art .orbit-one{width:min(43vw,490px);height:130px}
+.hero-art .orbit-two{width:min(47vw,530px);height:160px}
+.hero-copy{position:relative;z-index:2}
+.hero-copy h1{letter-spacing:-.025em;text-shadow:0 3px 22px #0005}
+.hero-chat{max-width:590px;margin-top:26px;padding:15px 17px;border:1px solid #d9b66f88;border-radius:12px;background:linear-gradient(145deg,#fff,#f1eee7);box-shadow:0 16px 40px #0005;color:#1b2a3d}
+.hero-chat label{display:block;margin-bottom:8px;font-size:12px;font-weight:800}
+.hero-chat>div{display:flex;gap:8px}
+.hero-chat input{flex:1;min-width:0;min-height:46px;border:1px solid #d9dee7;border-radius:7px;padding:10px 13px;font:inherit;font-size:14px}
+.hero-chat button{width:48px;min-width:48px;border:0;border-radius:8px;background:linear-gradient(135deg,#f1d58e,#c59a4b);color:#172338;font-size:23px;font-weight:900}
+.hero-chat small{display:block;margin-top:8px;color:#778294;font-size:10px}
+.feature-ribbon{background:linear-gradient(90deg,#071426,#102944,#071426)}
+.platform-preview{padding-top:54px!important}
+.preview-grid{grid-template-columns:1.28fr 1.02fr .62fr .9fr}
+.preview-window{box-shadow:0 18px 42px #0008,0 0 0 1px #d9b66f12}
+.preview-dashboard{min-height:285px}
+.preview-analysis{min-height:285px}
+.preview-case{min-height:285px}
+@media(max-width:1100px){
+ .topbar{padding-left:20px;padding-right:20px}
+ .topbar nav{gap:13px}
+ .topbar nav a{font-size:11px}
+ .topbar-actions{gap:7px}
+ .preview-grid{grid-template-columns:1.2fr 1fr .72fr}
+ .preview-case{grid-column:1/-1;min-height:220px}
+}
+@media(max-width:760px){
+ .hero{padding:48px 20px 36px}
+ .hero-art{min-height:270px}
+ .hero-art .globe{width:245px;height:245px;min-width:245px;min-height:245px;right:auto;left:50%;transform:translate(-50%,-50%);top:48%}
+ .justice-figure{width:210px;max-height:270px;transform:translate(7%,0)}
+ .justice-pedestal{bottom:14px;width:142px;padding:8px;font-size:10px}
+ .hero-art .orbit-one{width:300px;height:90px}
+ .hero-art .orbit-two{width:330px;height:112px}
+ .hero-chat{margin-top:22px;padding:13px}
+ .platform-preview{padding-top:42px!important}
+ .preview-grid{grid-template-columns:1fr}
+ .preview-case{grid-column:auto}
+}
+@media(max-width:380px){
+ .justice-figure{width:185px}
+ .hero-art{min-height:245px}
+ .hero-chat input{font-size:13px}
+}
