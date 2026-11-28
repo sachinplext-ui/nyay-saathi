@@ -7,6 +7,10 @@ https://sachinplext-ui.github.io/nyay-saathi/
 
 ## Development and QA plans
 
+- [India National Legal Foundation](knowledge-packs/INDIA-NATIONAL-LEGAL-FOUNDATION.md) — selected central Acts and NALSA official guidance, with territorial and date-of-law cautions.
+- [Pan-India jurisdiction coverage register](data/pan-india-jurisdiction-register.json) — 28 states and 8 Union Territories tracked separately; entries remain unverified until official-source research is completed.
+
+
 - [Pan-India jurisdiction coverage register](data/pan-india-jurisdiction-register.json) — 28 states and 8 Union Territories tracked separately; entries remain unverified until official-source research is completed.
 
 
