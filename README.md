@@ -11,9 +11,6 @@ https://sachinplext-ui.github.io/nyay-saathi/
 - [Pan-India jurisdiction coverage register](data/pan-india-jurisdiction-register.json) — 28 states and 8 Union Territories tracked separately; entries remain unverified until official-source research is completed.
 
 
-- [Pan-India jurisdiction coverage register](data/pan-india-jurisdiction-register.json) — 28 states and 8 Union Territories tracked separately; entries remain unverified until official-source research is completed.
-
-
 - [AI Legal Assistant Blueprint](AI-LEGAL-ASSISTANT-BLUEPRINT.md)
 - [API Integration Plan](API-INTEGRATION-PLAN.md)
 - [QA Execution Status](qa/QA-EXECUTION-STATUS.md)
@@ -41,6 +38,7 @@ This release is a public educational prototype only. No real accounts, case data
 
 - Pan-India jurisdiction register for all 28 states and 8 Union Territories, including sourced High Court jurisdiction mappings and NALSA State Legal Services Authority directory links
 - State/UT police organisation portal links recorded from the NIA (Ministry of Home Affairs) directory; these are directory references only, not verified complaint/FIR filing routes
+- Searchable Pan-India directory for all 28 states and 8 Union Territories, showing recorded police portal, State Legal Services Authority and High Court jurisdiction resources with explicit link-scope cautions.
 
 ## Important limitations
 - The assistant is a rules-based demo, not a connected AI model and not a lawyer. The optional API endpoint remains disabled until verified legal-source retrieval and citation handling are implemented.
