@@ -13,6 +13,8 @@ const required = [
   "anti_corruption_or_vigilance_authority_url",
   "state_gazette_url",
   "high_court_url",
+  "high_court_name",
+  "high_court_jurisdiction_source_url",
   "last_verified_at",
   "verification_status"
 ];
@@ -50,5 +52,7 @@ for (const [kind, entries] of [["state", registry.states], ["UT", registry.union
 }
 
 const linkedStates = registry.states.filter((entry) => entry.state_legal_services_authority_url).length;
+const mappedHighCourts = [...registry.states, ...registry.union_territories].filter((entry) => entry.high_court_name && entry.high_court_jurisdiction_source_url).length;
+if (mappedHighCourts !== expectedStates + expectedUTs) throw new Error("Every state/UT must have a High Court jurisdiction mapping and source.");
 if (linkedStates < 1) throw new Error("No State Legal Services Authority links recorded.");
-console.log(`Pan-India register valid: ${registry.states.length} states, ${registry.union_territories.length} UTs, ${linkedStates} SLSA links.`);
+console.log(`Pan-India register valid: ${registry.states.length} states, ${registry.union_territories.length} UTs, ${linkedStates} SLSA links, ${mappedHighCourts} High Court jurisdiction mappings.`);
