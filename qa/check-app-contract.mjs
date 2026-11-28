@@ -38,9 +38,9 @@ for (const [id, max] of [["heroQuestion", "300"], ["question", "1200"], ["firFac
   if (!tag.includes('maxlength="' + max + '"')) errors.push("Missing expected input limit for " + id);
 }
 const guidanceStart = app.indexOf("function showGuidance()");
-const guidanceEnd = app.indexOf("\\nconst questionInput", guidanceStart);
+const guidanceEnd = app.indexOf("\nconst questionInput", guidanceStart);
 const guidanceSource = guidanceStart >= 0 && guidanceEnd > guidanceStart ? app.slice(guidanceStart, guidanceEnd) : "";
-if (!guidanceSource.includes("const answerLanguage=") || /(^|[^\\w])language\\s*=/.test(guidanceSource)) {
+if (!guidanceSource.includes("const answerLanguage=") || /(^|[^\w])language\s*=/.test(guidanceSource)) {
   errors.push("Assistant answer language must stay local and must not mutate interface language state.");
 }
 if (printSource.includes("break-inside:avoid-page")) {
