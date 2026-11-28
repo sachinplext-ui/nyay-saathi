@@ -565,3 +565,18 @@ button:disabled{opacity:.55;cursor:not-allowed}
  .hero-art-photo{width:100%;margin:12px auto 0}
  .hero-art-photo .hero-reference-image{width:100%;max-height:none}
 }
+
+
+/* Full-width hero artwork: its embedded headline replaces the duplicate HTML headline */
+.hero{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:0!important;padding:0!important;min-height:0!important;overflow:hidden!important}
+.hero-art-photo{order:0!important;display:block!important;width:100%!important;max-width:none!important;min-height:0!important;height:auto!important;margin:0!important;padding:0!important;overflow:hidden!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+.hero-art-photo .hero-reference-image{display:block!important;width:100%!important;max-width:none!important;height:auto!important;max-height:none!important;object-fit:contain!important;border:0!important;border-radius:0!important;box-shadow:none!important;filter:none!important}
+.hero-copy{order:1!important;width:min(100% - 40px,900px)!important;max-width:900px!important;margin:0 auto!important;padding:0 0 28px!important}
+.hero-copy .eyebrow,.hero-copy h1,.hero-copy>p,.hero-copy .hero-actions{display:none!important}
+.hero-chat{width:100%;max-width:720px;margin:0 auto!important}
+@media(max-width:760px){
+ .hero{padding:0!important}
+ .hero-art-photo{width:100%!important;margin:0!important}
+ .hero-copy{width:calc(100% - 32px)!important;padding:0 0 22px!important}
+ .hero-chat{padding:13px!important}
+}
