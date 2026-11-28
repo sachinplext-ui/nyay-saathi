@@ -116,7 +116,7 @@ for (const required of [
   if (!html.includes(required)) errors.push("Reference-design structure is missing: " + required);
 }
 for (const required of ["--navy:#071426", "--gold:#d9b66f", ".hero-art", ".feature-ribbon", ".preview-grid"]) {
-  if (!app && !css.includes(required)) errors.push("Premium design token or layout is missing: " + required);
+  if (!css.includes(required)) errors.push("Premium design token or layout is missing: " + required);
 }
 const unsafeExternalTargets = [...html.matchAll(/<a\\b(?=[^>]*target=["']_blank["'])(?![^>]*rel=["'][^"']*noopener)[^>]*>/gi)];
 if (unsafeExternalTargets.length) errors.push("External links opening new tabs must include rel=noopener.");
