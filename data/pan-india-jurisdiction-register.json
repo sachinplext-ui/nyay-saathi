@@ -7,7 +7,8 @@
     "states_researched": 0,
     "union_territories_researched": 0,
     "states_with_slsa_portal_directory_link": 28,
-    "union_territories_with_slsa_portal_directory_link": 5
+    "union_territories_with_slsa_portal_directory_link": 5,
+    "high_court_jurisdiction_names_mapped": 36
   },
   "national_sources": {
     "status": "starter_directory_only",
@@ -44,8 +45,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Andhra Pradesh High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Arunachal Pradesh",
@@ -58,8 +62,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Gauhati High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Assam",
@@ -72,8 +79,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Gauhati High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Bihar",
@@ -86,8 +96,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Patna High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Chhattisgarh",
@@ -100,8 +113,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Chhattisgarh High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Goa",
@@ -114,8 +130,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Bombay High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Gujarat",
@@ -128,8 +147,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Gujarat High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Haryana",
@@ -142,8 +164,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Punjab and Haryana High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Himachal Pradesh",
@@ -156,8 +181,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Himachal Pradesh High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Jharkhand",
@@ -170,8 +198,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Jharkhand High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Karnataka",
@@ -184,8 +215,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Karnataka High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Kerala",
@@ -198,8 +232,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Kerala High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Madhya Pradesh",
@@ -212,8 +249,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Madhya Pradesh High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Maharashtra",
@@ -226,8 +266,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Bombay High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Manipur",
@@ -240,8 +283,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Manipur High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Meghalaya",
@@ -254,8 +300,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Meghalaya High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Mizoram",
@@ -268,8 +317,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Gauhati High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Nagaland",
@@ -282,8 +334,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Gauhati High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Odisha",
@@ -296,8 +351,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Orissa High Court (official name as shown on Supreme Court jurisdiction page)",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Punjab",
@@ -310,8 +368,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Punjab and Haryana High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Rajasthan",
@@ -324,8 +385,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Rajasthan High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Sikkim",
@@ -338,8 +402,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Sikkim High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Tamil Nadu",
@@ -352,8 +419,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Madras High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Telangana",
@@ -366,8 +436,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Telangana High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Tripura",
@@ -380,8 +453,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Tripura High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Uttar Pradesh",
@@ -394,8 +470,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Allahabad High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Uttarakhand",
@@ -408,8 +487,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Uttarakhand High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "West Bengal",
@@ -422,8 +504,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Calcutta High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     }
   ],
   "union_territories": [
@@ -438,7 +523,10 @@
       "high_court_url": null,
       "last_verified_at": null,
       "verification_status": "not_researched",
-      "notes": "Do not display a jurisdiction-specific route until its official authority, exact service scope and current procedure are verified."
+      "notes": "Do not display a jurisdiction-specific route until its official authority, exact service scope and current procedure are verified. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "high_court_name": "Calcutta High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Chandigarh",
@@ -451,8 +539,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Punjab and Haryana High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Dadra and Nagar Haveli and Daman and Diu",
@@ -465,11 +556,14 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded_legacy_links",
-      "notes": "NALSA's portal directory lists separate legacy DNH and Daman & Diu SLSA sites. Because these territories were merged, do not treat the legacy split as confirmation of the current unified authority or workflow; verify with NALSA/UT administration.",
+      "notes": "NALSA's portal directory lists separate legacy DNH and Daman & Diu SLSA sites. Because these territories were merged, do not treat the legacy split as confirmation of the current unified authority or workflow; verify with NALSA/UT administration. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
       "legacy_legal_services_links": [
         "https://dadraandnagarhaveli.nalsa.gov.in/",
         "http://damananddiu.nalsa.gov.in/"
-      ]
+      ],
+      "high_court_name": "Bombay High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Delhi (NCT)",
@@ -482,8 +576,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Delhi High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Jammu and Kashmir",
@@ -496,8 +593,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Jammu and Kashmir and Ladakh High Court (common High Court)",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Ladakh",
@@ -510,8 +610,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Jammu and Kashmir and Ladakh High Court (common High Court)",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Lakshadweep",
@@ -524,7 +627,10 @@
       "high_court_url": null,
       "last_verified_at": null,
       "verification_status": "not_researched",
-      "notes": "Do not display a jurisdiction-specific route until its official authority, exact service scope and current procedure are verified."
+      "notes": "Do not display a jurisdiction-specific route until its official authority, exact service scope and current procedure are verified. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "high_court_name": "Kerala High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Puducherry",
@@ -537,8 +643,11 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow.",
-      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/"
+      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
+      "high_court_name": "Madras High Court",
+      "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
+      "high_court_jurisdiction_checked": "2026-11-28"
     }
   ],
   "publication_rules": [
@@ -558,6 +667,7 @@
     "Qualified legal review before any public legal-answer release"
   ],
   "source_notes": [
-    "NALSA official homepage's 'Websites of State Legal Services Authorities' directory was checked on 28 November 2026 for SLSA portal links: https://nalsa.gov.in/. The directory has some legacy UT entries; merged-territory mapping requires separate verification."
+    "NALSA official homepage's 'Websites of State Legal Services Authorities' directory was checked on 28 November 2026 for SLSA portal links: https://nalsa.gov.in/. The directory has some legacy UT entries; merged-territory mapping requires separate verification.",
+    "Supreme Court of India jurisdiction page, Annexure A, was checked 28 November 2026 for territorial jurisdiction and principal seats/benches: https://www.sci.gov.in/jurisdiction/. This records the competent High Court name only; it does not verify each court's exact URL, filing process or a case's venue."
   ]
 }
