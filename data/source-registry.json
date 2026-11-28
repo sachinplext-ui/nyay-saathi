@@ -365,11 +365,9 @@
         "gazette_discovery"
       ],
       "official_url": "https://egazette.gov.in/",
-      "related_urls": [
-        "https://egazette.gov.in/(S/rlv5rggstwnx0uoz4wflfj2p)/StateGazette.aspx"
-      ],
-      "verification_status": "official_index_checked",
-      "scope_note": "The official e-Gazette State Gazette index lists State/UT destinations. It is a discovery index only: verify the individual Gazette portal, publication date, document, amendments and completeness before relying on a notification."
+      "related_urls": [],
+      "verification_status": "access_issue_reported_user_screenshot",
+      "scope_note": "The official portal/domain is identified, but a user-reported browser screenshot on 28 November 2026 showed 'Sorry, this page is not available'. Do not display this as a working user-facing link. Re-verify a stable public State Gazette directory URL and individual destinations before restoring."
     }
   ],
   "state_and_ut_register": {
