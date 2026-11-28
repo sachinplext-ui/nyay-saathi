@@ -451,3 +451,26 @@ button:disabled{opacity:.55;cursor:not-allowed}
   .hero{padding-left:16px;padding-right:16px}
   .feature-ribbon{padding-left:10px;padding-right:10px}
 }
+
+
+/* Accessibility and touch improvements for navigation */
+.topbar nav a{display:inline-flex;align-items:center;min-height:40px}
+.topbar nav a:focus-visible,.topbar-actions a:focus-visible,.topbar-actions button:focus-visible,.lang-btn:focus-visible{
+ outline:2px solid #f0d18b;
+ outline-offset:3px;
+ border-radius:5px;
+}
+.topbar nav{overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#d9b66f66 transparent}
+.topbar nav::-webkit-scrollbar{height:4px}
+.topbar nav::-webkit-scrollbar-thumb{background:#d9b66f66;border-radius:8px}
+.topbar-actions .lang-btn,.topbar-actions .nav-login,.topbar-actions .nav-signup{min-height:40px;display:inline-flex;align-items:center;justify-content:center}
+@media(max-width:760px){
+ .topbar nav{scroll-snap-type:x proximity;scroll-padding-inline:8px}
+ .topbar nav a{scroll-snap-align:start;min-height:44px}
+ .topbar-actions{gap:7px}
+ .topbar-actions .lang-btn,.topbar-actions .nav-login,.topbar-actions .nav-signup{min-height:44px;padding-inline:12px}
+}
+@media(prefers-reduced-motion:reduce){
+ .card:hover{transform:none}
+ *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
