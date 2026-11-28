@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b1424">
   <meta name="description" content="NYAY SAATHI — भारतीय कानून की सामान्य जानकारी और उपयोगी दस्तावेज़ टेम्पलेट।">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=34">
+  <link rel="stylesheet" href="styles.css?v=35">
   <title>NYAY SAATHI | न्याय का साथ</title>
   <style id="print-only-application">
     @media print {
@@ -90,6 +90,7 @@
     </section>
     <section id="lawyer-connect" class="lawyer-strip"><div><span class="eyebrow" data-i18n="lawyerEyebrow">LEGAL SUPPORT</span><h2 data-i18n="lawyerTitle">योग्य कानूनी सहायता खोजें</h2><p data-i18n="lawyerText">कानूनी सहायता की पात्रता और उपलब्ध सेवाओं के लिए NALSA की आधिकारिक जानकारी देखें।</p></div><a class="btn gold" href="https://nalsa.gov.in/legal-aid/" target="_blank" rel="noopener" data-i18n="lawyerButton">NALSA सहायता देखें ↗</a></section>
     <section id="guides" class="section"><div class="section-head"><div><span class="eyebrow" data-i18n="learn">सीखें और समझें</span><h2 data-i18n="guidesTitle">कानूनी गाइड</h2></div><p data-i18n="guidesSub">आम कानूनी सवालों पर सरल शुरुआती जानकारी।</p></div>
+      <div class="guide-tools"><label for="guideSearch">गाइड खोजें / Search guides</label><input id="guideSearch" type="search" maxlength="80" placeholder="FIR, साइबर, कानूनी सहायता... / FIR, cyber, legal aid..."><p id="guideCount" class="guide-count" aria-live="polite">5 गाइड उपलब्ध हैं</p><p id="guideEmpty" class="guide-empty" role="status" hidden>कोई मिलती-जुलती गाइड नहीं मिली। / No matching guide found.</p></div>
       <div class="cards">
         <article class="card"><span class="card-icon">01</span><h3 data-i18n="firTitle">FIR क्या है?</h3><p data-i18n="firText">BNSS की धारा 173 में संज्ञेय अपराध की सूचना दर्ज करने की सामान्य प्रक्रिया दी गई है।</p><a href="https://www.indiacode.nic.in/bitstream/123456789/21920/1/the_bharatiya_nagarik_suraksha_sanhita%2C_2023.pdf" target="_blank" rel="noopener" data-i18n="official">BNSS का आधिकारिक पाठ ↗</a></article>
         <article class="card"><span class="card-icon">02</span><h3 data-i18n="falseTitle">FIR में गलत तथ्य हों तो?</h3><p data-i18n="falseText">मूल रिकॉर्ड सुरक्षित रखें, सार्वजनिक रूप से निजी जानकारी साझा न करें और योग्य वकील से दस्तावेज़ों की समीक्षा करवाएँ।</p><a href="https://nalsa.gov.in/legal-aid/" target="_blank" rel="noopener" data-i18n="legalAid">कानूनी सहायता ↗</a></article>
@@ -133,7 +134,10 @@
           <option value="fircopy">FIR की कॉपी हेतु अनुरोध</option>
           <option value="zeroFir">Zero FIR / क्षेत्राधिकार से बाहर सूचना</option>
           <option value="refusal">थाने द्वारा सूचना दर्ज न करने पर आवेदन</option>
-          <option value="cyber">साइबर शिकायत का फॉलो-अप</option>
+          <option value="cyber">साइबर शिकायत का फॉलो-अप / Cyber follow-up</option>
+          <option value="rti">RTI सूचना अनुरोध / RTI information request</option>
+          <option value="consumer">उपभोक्ता शिकायत / Consumer complaint</option>
+          <option value="legalAid">निःशुल्क कानूनी सहायता अनुरोध / Legal aid request</option>
         </select></div>
         <div class="form-field"><label id="draftOfficeLabel" for="draftOffice">किस अधिकारी/कार्यालय को</label>
         <input id="draftOffice" maxlength="100" placeholder="जैसे: संबंधित थाना प्रभारी / कार्यालय"></div>
@@ -170,7 +174,7 @@
     <section class="official"><h2 data-i18n="officialTitle">आधिकारिक संसाधन</h2><div class="resource-links"><a href="https://nalsa.gov.in/" target="_blank" rel="noopener">NALSA ↗</a><a href="https://www.mha.gov.in/" target="_blank" rel="noopener">Ministry of Home Affairs ↗</a><a href="https://cybercrime.gov.in/" target="_blank" rel="noopener">National Cyber Crime Portal ↗</a><a href="https://www.indiacode.nic.in/" target="_blank" rel="noopener">India Code ↗</a></div></section>
   </main>
   <footer><span>⚖ NYAY SAATHI</span><span data-i18n="footer">सामान्य जानकारी के लिए • कानूनी सलाह का विकल्प नहीं</span><nav class="footer-links" aria-label="Help and policies"><a href="help-contact.html">Help & Contact / सहायता</a><a href="privacy.html">Privacy Policy / गोपनीयता नीति</a><a href="data-retention.html">Data Retention / डेटा हटाने की नीति</a><a href="legal-rights.html">Legal Rights Library / कानूनी अधिकार</a></nav></footer>
-  <script src="app.js?v=70"></script>
+  <script src="app.js?v=71"></script>
   <script src="cases.js?v=12"></script>
 </body>
 </html>
