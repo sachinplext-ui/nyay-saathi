@@ -38,7 +38,8 @@ This release is a public educational prototype only. No real accounts, case data
 
 - Pan-India jurisdiction register for all 28 states and 8 Union Territories, including sourced High Court jurisdiction mappings and NALSA State Legal Services Authority directory links
 - State/UT police organisation portal links recorded from the NIA (Ministry of Home Affairs) directory; these are directory references only, not verified complaint/FIR filing routes
-- Searchable Pan-India directory for all 28 states and 8 Union Territories, showing recorded police portal, State Legal Services Authority and High Court jurisdiction resources with explicit link-scope cautions.
+- Searchable Pan-India directory for all 28 states and 8 Union Territories, showing recorded police portal, State Legal Services Authority, High Court jurisdiction and State Gazette discovery resources with explicit link-scope cautions.
+- State/UT Gazette discovery links use the Government of India's e-Gazette homepage; individual portal and publication details still require jurisdiction-specific verification.
 
 ## Important limitations
 - The assistant is a rules-based demo, not a connected AI model and not a lawyer. The optional API endpoint remains disabled until verified legal-source retrieval and citation handling are implemented.
