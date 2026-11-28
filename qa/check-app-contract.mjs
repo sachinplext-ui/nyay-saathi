@@ -148,6 +148,22 @@ if (/fetch\s*\(|XMLHttpRequest|sendBeacon/.test(cases)) {
   errors.push("Sample case manager must remain local-only and must not transmit case entries.");
 }
 
+
+const languageToggleStart = app.indexOf('document.getElementById("langToggle").addEventListener("click"');
+const languageToggleEnd = app.indexOf("\\nconst legalTopics=", languageToggleStart);
+const languageToggleSource = languageToggleStart >= 0 && languageToggleEnd > languageToggleStart ? app.slice(languageToggleStart, languageToggleEnd) : "";
+if (!languageToggleSource.includes('document.documentElement.lang=language')) errors.push("Language toggle must update the document language.");
+if (!languageToggleSource.includes('applyDraftLanguage()')) errors.push("Language toggle must refresh the document generator labels.");
+if (!app.includes('if(field&&(!field.value.trim()||field.value===lastDraftPreset[key]))field.value=preset[key]')) {
+  errors.push("Changing interface language must preserve user-edited draft fields.");
+}
+if (!css.includes('.topbar nav a:focus-visible') || !css.includes('min-height:44px')) {
+  errors.push("Mobile navigation must provide visible keyboard focus and 44px touch targets.");
+}
+if (!css.includes('@media(prefers-reduced-motion:reduce)') || !css.includes('.card:hover{transform:none}')) {
+  errors.push("Reduced-motion preferences must disable card hover movement.");
+}
+
 if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
