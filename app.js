@@ -378,3 +378,67 @@ document.getElementById("printDraft").addEventListener("click",()=>{const draft=
  input.addEventListener("input",update);
  update();
 })();
+
+
+// Searchable Pan-India directory. All displayed links come from the maintained register.
+(()=>{
+ const root=document.getElementById("jurisdiction-directory");
+ if(!root)return;
+ const search=document.getElementById("jurisdictionSearch");
+ const type=document.getElementById("jurisdictionType");
+ const cards=document.getElementById("jurisdictionCards");
+ const count=document.getElementById("jurisdictionCount");
+ const status=document.getElementById("jurisdictionStatus");
+ let records=[];
+ const safeUrl=value=>{
+  if(typeof value!=="string"||!value.trim())return null;
+  try{const u=new URL(value);return ["https:","http:"].includes(u.protocol)?u.href:null}catch{return null}
+ };
+ const makeLink=(label,url)=>{
+  const href=safeUrl(url);if(!href)return null;
+  const a=document.createElement("a");a.href=href;a.textContent=label;a.target="_blank";a.rel="noopener noreferrer";return a;
+ };
+ const render=()=>{
+  const en=document.documentElement.lang==="en";
+  const q=search.value.trim().toLocaleLowerCase();
+  const kind=type.value;
+  const shown=records.filter(r=>(kind==="all"||r.kind===kind)&&(!q||[r.name,r.high_court_name||"",r.kind].join(" ").toLocaleLowerCase().includes(q)));
+  cards.replaceChildren();
+  shown.forEach(r=>{
+   const article=document.createElement("article");article.className="jurisdiction-card";
+   const title=document.createElement("h3");title.textContent=r.name;article.append(title);
+   const label=document.createElement("div");label.className="jurisdiction-kind";label.textContent=r.kind==="state"?(en?"State":"राज्य"):(en?"Union Territory":"केंद्रशासित प्रदेश");article.append(label);
+   if(r.high_court_name){const court=document.createElement("p");court.className="jurisdiction-court";court.textContent=(en?"Territorial High Court: ":"संबंधित उच्च न्यायालय: ")+r.high_court_name;article.append(court)}
+   const links=document.createElement("div");links.className="jurisdiction-links";
+   const police=makeLink(en?"Police portal directory link ↗":"पुलिस पोर्टल लिंक ↗",r.police_authority_url);
+   const slsa=makeLink(en?"Legal Services Authority ↗":"विधिक सेवा प्राधिकरण ↗",r.state_legal_services_authority_url);
+   const court=makeLink(en?"High Court website ↗":"उच्च न्यायालय वेबसाइट ↗",r.high_court_url);
+   const jurisdiction=makeLink(en?"Court jurisdiction source ↗":"न्यायालय क्षेत्राधिकार स्रोत ↗",r.high_court_jurisdiction_source_url);
+   [police,slsa,court,jurisdiction].filter(Boolean).forEach(a=>links.append(a));
+   if(!links.children.length){const none=document.createElement("span");none.textContent=en?"No verified portal link recorded":"कोई सत्यापित पोर्टल लिंक दर्ज नहीं";links.append(none)}
+   article.append(links);
+   const note=document.createElement("p");note.className="jurisdiction-note";
+   note.textContent=en
+    ?"Directory links only. A portal listing does not confirm that FIR filing, complaint submission or a particular service is available online."
+    :"ये केवल निर्देशिका लिंक हैं। पोर्टल सूची में होने से FIR दर्ज करने, शिकायत जमा करने या किसी खास सेवा की ऑनलाइन उपलब्धता सिद्ध नहीं होती।";
+   article.append(note);cards.append(article);
+  });
+  count.textContent=en?shown.length+" of "+records.length+" regions shown":records.length+" में से "+shown.length+" क्षेत्र दिखाए जा रहे हैं";
+  status.textContent=shown.length?"":(en?"No matching region found.":"कोई मिलता-जुलता क्षेत्र नहीं मिला।");
+ };
+ search.addEventListener("input",render);type.addEventListener("change",render);
+ const load=async()=>{
+  try{
+   const response=await fetch("data/pan-india-jurisdiction-register.json",{cache:"no-cache"});
+   if(!response.ok)throw new Error("HTTP "+response.status);
+   const data=await response.json();
+   records=[...(data.states||[]).map(x=>({...x,name:x.state_or_ut,kind:"state"})),...(data.union_territories||[]).map(x=>({...x,name:x.state_or_ut,kind:"ut"}))];
+   render();
+  }catch(error){
+   cards.replaceChildren();status.textContent=document.documentElement.lang==="en"?"The directory could not be loaded. Please try again later.":"निर्देशिका लोड नहीं हो सकी। कृपया बाद में पुनः प्रयास करें।";
+   count.textContent="";
+  }
+ };
+ new MutationObserver(render).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});
+ load();
+})();
