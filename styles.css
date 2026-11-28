@@ -656,3 +656,21 @@ button:disabled{opacity:.55;cursor:not-allowed}
 .ribbon-link:hover>span,.hero-side-panel a:hover>span:first-child{filter:drop-shadow(0 3px 3px #000b) drop-shadow(0 0 8px #f4d889aa);transform:translateY(-1px)}
 .feature-ribbon>.ribbon-link>span,.hero-side-panel a>span:first-child{transition:filter .2s ease,transform .2s ease}
 @media(prefers-reduced-motion:reduce){.feature-ribbon>.ribbon-link>span,.hero-side-panel a>span:first-child{transition:none}}
+
+
+/* Pan-India state and UT resource directory */
+.jurisdiction-tools{display:grid;grid-template-columns:1fr minmax(180px,260px);gap:8px 12px;align-items:center;margin:0 0 18px;padding:16px;background:#0b1b2d;border:1px solid #b9914b55;border-radius:14px}
+.jurisdiction-tools label{font-size:13px;color:#e8ca86;font-weight:700}
+.jurisdiction-tools input,.jurisdiction-tools select{width:100%;min-width:0;padding:11px 12px;border-radius:8px;border:1px solid #536982;background:#091526;color:#f4f6fa}
+.jurisdiction-tools .guide-count,.jurisdiction-tools .guide-empty{grid-column:1/-1;margin:0}
+.jurisdiction-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.jurisdiction-card{min-width:0;padding:16px;background:linear-gradient(145deg,#102943,#09192b);border:1px solid #b9914b66;border-radius:12px;box-shadow:0 8px 22px #0003}
+.jurisdiction-card h3{margin:0 0 5px;color:#f1d38d;font-size:17px}
+.jurisdiction-card .jurisdiction-kind{font-size:11px;color:#9fb3c9;margin-bottom:12px}
+.jurisdiction-card .jurisdiction-court{font-size:13px;margin:0 0 12px}
+.jurisdiction-card .jurisdiction-links{display:flex;flex-wrap:wrap;gap:8px}
+.jurisdiction-card .jurisdiction-links a{display:inline-flex;align-items:center;padding:7px 9px;border:1px solid #c59d5b88;border-radius:7px;color:#f1d38d;font-size:12px;text-decoration:none}
+.jurisdiction-card .jurisdiction-links a:hover,.jurisdiction-card .jurisdiction-links a:focus-visible{background:#d5ad6022;outline:2px solid #e9c36f}
+.jurisdiction-card .jurisdiction-note{font-size:11px;color:#b4c2d1;margin:12px 0 0;line-height:1.5}
+.jurisdiction-disclaimer{margin:16px 0 0;padding:12px 14px;border-left:3px solid #d4ad62;background:#10243a;color:#bdcad8;font-size:12px;line-height:1.6}
+@media(max-width:700px){.jurisdiction-tools{grid-template-columns:1fr}.jurisdiction-tools .guide-count,.jurisdiction-tools .guide-empty{grid-column:1}.jurisdiction-grid{grid-template-columns:1fr}}
