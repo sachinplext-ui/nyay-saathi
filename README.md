@@ -7,6 +7,9 @@ https://sachinplext-ui.github.io/nyay-saathi/
 
 ## Development and QA plans
 
+- [Pan-India jurisdiction coverage register](data/pan-india-jurisdiction-register.json) — 28 states and 8 Union Territories tracked separately; entries remain unverified until official-source research is completed.
+
+
 - [AI Legal Assistant Blueprint](AI-LEGAL-ASSISTANT-BLUEPRINT.md)
 - [API Integration Plan](API-INTEGRATION-PLAN.md)
 - [QA Execution Status](qa/QA-EXECUTION-STATUS.md)
