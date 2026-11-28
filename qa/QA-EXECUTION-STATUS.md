@@ -335,3 +335,14 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - GitHub Actions validation and Pages deployment were initiated for these updates; each run's final status must be checked before release claims.
 
 **Verification boundary:** these checks validate source contracts, JavaScript syntax, HTML and local-link integrity. They do not replace interactive browser testing on physical devices, legal review, or verification of every external service workflow.
+
+
+## Product updates (28 November 2026)
+
+- Added client-side search/filter controls to the five introductory Legal Library cards. The search label, placeholder and empty-state message follow the Hindi/English language switch.
+- Expanded the application generator with RTI information request, consumer complaint and free legal-aid request templates in Hindi and English. These remain local text drafts; they do not submit applications.
+- Added a language-label mapping for all new application types.
+- Added `.github/workflows/validate.yml` to check JavaScript syntax for the static app, case manager, service worker and Express API; parse the API package and source-registry JSON; and check required UI IDs and new application presets.
+- Bumped the service-worker cache to `nyay-saathi-v98`.
+
+**Verification status:** The relevant GitHub files were re-fetched after commits and the expected controls, options, translations, workflow and cache version were confirmed by source inspection. The GitHub Actions run result was not available through the current inspection path. No browser/runtime test, API deployment test, legal-content review or live-AI test is claimed. The backend remains fail-closed until verified legal-source retrieval, structured citations, privacy/security review and QA are complete.
