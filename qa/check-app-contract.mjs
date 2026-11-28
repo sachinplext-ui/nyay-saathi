@@ -108,7 +108,7 @@ for (const target of new Set(internalTargets)) {
 }
 for (const required of [
   'class="topbar"', 'class="hero"', 'class="hero-art"', 'class="globe"',
-  'class="justice-statue"', 'class="feature-ribbon"', 'class="platform-preview section"',
+  'class="justice-figure"', 'class="feature-ribbon"', 'class="platform-preview section"',
   'preview-dashboard', 'preview-analysis', 'preview-phone', 'class="preview-case"',
   'id="case-preview"', 'id="fir-help"', 'id="assistant"', 'id="guides"',
   'id="lawyer-connect"', 'id="drafts"'
