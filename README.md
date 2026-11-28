@@ -39,6 +39,9 @@ This release is a public educational prototype only. No real accounts, case data
 - PWA manifest and service worker for basic offline support
 - Links to official public resources: NALSA, Ministry of Home Affairs, National Cyber Crime Portal and India Code
 
+- Pan-India jurisdiction register for all 28 states and 8 Union Territories, including sourced High Court jurisdiction mappings and NALSA State Legal Services Authority directory links
+- State/UT police organisation portal links recorded from the NIA (Ministry of Home Affairs) directory; these are directory references only, not verified complaint/FIR filing routes
+
 ## Important limitations
 - The assistant is a rules-based demo, not a connected AI model and not a lawyer. The optional API endpoint remains disabled until verified legal-source retrieval and citation handling are implemented.
 - Assistant questions are handled by the browser-side rules demo; do not enter real names, contact details, case identifiers or private documents.
