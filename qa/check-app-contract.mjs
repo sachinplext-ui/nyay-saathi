@@ -43,6 +43,16 @@ if (!cases.includes('new MutationObserver(()=>{labels();render();})')) {
   errors.push("Case manager must refresh translated labels and cards when page language changes.");
 }
 
+const firSupportStart = app.indexOf("/* FIR support center:");
+const firSupportEnd = app.indexOf("\n})();", firSupportStart);
+const firSupportSource = firSupportStart >= 0 && firSupportEnd > firSupportStart ? app.slice(firSupportStart, firSupportEnd) : "";
+for (const required of ['hi:{', 'en:{', 'labels:[', 'placeholders:[', 'new MutationObserver(updateLanguage)', 'label.textContent=t.labels[i]', 'input.placeholder=t.placeholders[i]']) {
+  if (!firSupportSource.includes(required)) errors.push("FIR support center is missing bilingual live-update contract: " + required);
+}
+if (!firSupportSource.includes('status.textContent=copy[en?"en":"hi"].required') || !firSupportSource.includes('status.textContent=copy[en?"en":"hi"].status')) {
+  errors.push("FIR complaint draft status messages must follow the selected language.");
+}
+
 const selectStart = html.indexOf('<select id="draftType"');
 const selectEnd = html.indexOf("</select>", selectStart);
 const selector = selectStart >= 0 && selectEnd > selectStart ? html.slice(selectStart, selectEnd) : "";
