@@ -621,3 +621,13 @@ button:disabled{opacity:.55;cursor:not-allowed}
  .hero-art-photo>.hero-reference-image{grid-column:1!important}
  .hero-art-photo>.hero-side-panel{display:flex!important;width:100%!important}
 }
+
+
+/* Final spacing: keep the question box clearly below both service panels */
+.hero-art-photo{padding-bottom:18px!important;margin-bottom:0!important}
+.hero-copy{position:relative!important;z-index:5!important;margin-top:0!important;padding-top:8px!important}
+.hero-copy .hero-chat{position:relative!important;z-index:6!important;margin:0 auto!important;clear:both!important}
+@media(max-width:760px){
+ .hero-art-photo{padding-bottom:12px!important}
+ .hero-copy{padding-top:4px!important}
+}
