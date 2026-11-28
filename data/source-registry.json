@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "registry_status": "starter_directory_only",
-  "last_reviewed": "2026-11-27",
+  "last_reviewed": "2026-11-28",
   "notice": "This registry lists official source portals for development. It is not a complete legal database, does not verify any specific law or procedure, and must not be presented as live legal retrieval.",
   "sources": [
     {
@@ -250,6 +250,68 @@
       "phone": "181",
       "verification_status": "official_portal_and_contact_page_found",
       "scope_note": "Official state grievance channel. The official About page states that citizens can call 181 or register complaints through the portal/app and check status. It handles government-scheme information, grievances, demands/suggestions and corruption-related calls. Not an emergency service or universal substitute for specialized legal/police procedures."
+    },
+    {
+      "source_id": "IN-BNS-2023",
+      "name": "Bharatiya Nyaya Sanhita, 2023 (Act 45 of 2023)",
+      "authority": "Government of India, Legislative Department; Ministry of Home Affairs commencement notification",
+      "jurisdiction": "Central",
+      "source_type": [
+        "central_legislation",
+        "criminal_law"
+      ],
+      "official_url": "https://www.indiacode.nic.in/indiacode/handle/123456789/20062?view_type=search",
+      "related_urls": [
+        "https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf",
+        "https://www.mha.gov.in/sites/default/files/BhartiyaNyayaSanhita_24022024.pdf"
+      ],
+      "verification_status": "exact_act_and_commencement_notification_located",
+      "scope_note": "India Code records enforcement from 1 July 2024. S.O. 850(E) excludes BNS section 106(2) from commencement. Check later notifications, amendments, savings and date of conduct before answering."
+    },
+    {
+      "source_id": "IN-BNSS-2023",
+      "name": "Bharatiya Nagarik Suraksha Sanhita, 2023 (Act 46 of 2023)",
+      "authority": "Government of India, Legislative Department; Ministry of Home Affairs commencement notification",
+      "jurisdiction": "Central",
+      "source_type": [
+        "central_legislation",
+        "criminal_procedure"
+      ],
+      "official_url": "https://www.indiacode.nic.in/indiacode/handle/123456789/20099?view_type=browse",
+      "related_urls": [
+        "https://egazette.gov.in/WriteReadData/2024/252354.pdf"
+      ],
+      "verification_status": "exact_act_and_commencement_notification_located",
+      "scope_note": "India Code records enforcement from 1 July 2024. Section 1 contains territorial qualifications for Nagaland and specified tribal areas; check applicable State notifications, amendments and savings."
+    },
+    {
+      "source_id": "IN-BSA-2023",
+      "name": "Bharatiya Sakshya Adhiniyam, 2023 (Act 47 of 2023)",
+      "authority": "Government of India, Legislative Department",
+      "jurisdiction": "Central",
+      "source_type": [
+        "central_legislation",
+        "evidence_law"
+      ],
+      "official_url": "https://www.indiacode.nic.in/indiacode/handle/123456789/20063?view_type=search",
+      "verification_status": "india_code_act_record_located",
+      "scope_note": "India Code record states enforcement from 1 July 2024. Retrieve exact current provision and check amendments and transition/savings before answering evidence questions."
+    },
+    {
+      "source_id": "IN-NALSA-LEGAL-AID",
+      "name": "NALSA — Legal Aid and Eligibility",
+      "authority": "National Legal Services Authority",
+      "jurisdiction": "National",
+      "source_type": [
+        "legal_aid",
+        "eligibility_guidance"
+      ],
+      "official_url": "https://nalsa.gov.in/legal-aid/",
+      "related_urls": [
+        "https://nalsa.gov.in/faqs/"
+      ],
+      "verification_status": "official_guidance_pages_located",
+      "scope_note": "NALSA pages describe Section 12 eligibility categories. Do not promise individual eligibility; verify current Act, rules, income criteria where relevant, and State/District Legal Services Authority process."
     }
   ],
   "state_and_ut_register": {
