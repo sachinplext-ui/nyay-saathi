@@ -108,6 +108,12 @@ function applyDraftLanguage(){
  Object.entries(placeholders).forEach(([id,key])=>{const el=document.getElementById(id);if(el)el.placeholder=t[key]});
  const type=document.getElementById("draftType");if(type)[...type.options].forEach(o=>{o.textContent=draftLabels[language][o.value]||o.textContent});
  applyDraftPreset();buildDraft();
+ const guideSearch=document.getElementById("guideSearch");
+ const guideLabel=document.querySelector('label[for="guideSearch"]');
+ const guideEmpty=document.getElementById("guideEmpty");
+ if(guideLabel)guideLabel.textContent=language==="en"?"Search legal guides":"कानूनी गाइड खोजें";
+ if(guideSearch)guideSearch.placeholder=language==="en"?"FIR, cyber, legal aid...":"FIR, साइबर, कानूनी सहायता...";
+ if(guideEmpty)guideEmpty.textContent=language==="en"?"No matching guide found.":"कोई मिलती-जुलती गाइड नहीं मिली।";
 }
 const draftPresets={
  general:{hi:{subject:"[आवेदन का संक्षिप्त विषय]",facts:"[घटनाओं का क्रम, अनुमानित तारीख़ें और केवल अपनी जानकारी के तथ्य लिखें। निजी पहचान न लिखें।]",request:"[कार्यालय से किया जाने वाला स्पष्ट अनुरोध लिखें।]"},en:{subject:"[Brief application subject]",facts:"[Describe the sequence of events, approximate dates and facts within your own knowledge. Do not include identifying details.]",request:"[State the specific action or information requested from the office.]"}},
