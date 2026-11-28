@@ -37,8 +37,20 @@ for (const [id, max] of [["heroQuestion", "300"], ["question", "1200"], ["firFac
   const tag = html.match(new RegExp("<(?:input|textarea)\\b[^>]*id=[\\\"']" + id + "[\\\"'][^>]*>", "i"))?.[0] || "";
   if (!tag.includes('maxlength="' + max + '"')) errors.push("Missing expected input limit for " + id);
 }
+const guidanceStart = app.indexOf("function showGuidance()");
+const guidanceEnd = app.indexOf("\\nconst questionInput", guidanceStart);
+const guidanceSource = guidanceStart >= 0 && guidanceEnd > guidanceStart ? app.slice(guidanceStart, guidanceEnd) : "";
+if (!guidanceSource.includes("const answerLanguage=") || /(^|[^\\w])language\\s*=/.test(guidanceSource)) {
+  errors.push("Assistant answer language must stay local and must not mutate interface language state.");
+}
+if (printSource.includes("break-inside:avoid-page")) {
+  errors.push("Long print drafts must be allowed to paginate across pages.");
+}
+if (!printSource.includes("widows:3") || !printSource.includes("orphans:3")) {
+  errors.push("Print flow should retain widow/orphan controls for readable pagination.");
+}
 if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
-console.log("App contract checks passed: all draft types have presets, print escaping is present, API stays disabled, no browser storage is used, and key input limits exist.");
+console.log("App contract checks passed: bilingual presets, safe print escaping and pagination, isolated assistant language state, disabled API, no browser storage, and key input limits.");
