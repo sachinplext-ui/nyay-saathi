@@ -317,3 +317,9 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 - Removed `break-inside: avoid-page` from the single long `pre` block. Avoiding page breaks on the entire document could force long applications to overflow or paginate poorly; the browser can now split long drafts across A4 pages while retaining widow/orphan controls.
 - Updated cache-busted script to `app.js?v=66` and service-worker cache to `nyay-saathi-v87`.
 - This is a source-level print CSS correction. Actual print preview, page count, Hindi font rendering and PDF output still need browser/device verification.
+
+
+## Expanded regression contract checks — 28 November 2026
+
+- Extended `qa/check-app-contract.mjs` to guard against regressions in assistant/interface language isolation and long-document print pagination, while retaining widow/orphan controls.
+- Corrected the checker source boundaries and regex after reviewing the generated file. The next GitHub Actions run will execute the updated checker; no pass is claimed until that run completes.
