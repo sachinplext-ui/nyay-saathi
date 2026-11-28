@@ -49,7 +49,7 @@ const firSupportSource = firSupportStart >= 0 && firSupportEnd > firSupportStart
 for (const required of ['hi:{', 'en:{', 'labels:[', 'placeholders:[', 'new MutationObserver(updateLanguage)', 'label.textContent=t.labels[i]', 'input.placeholder=t.placeholders[i]']) {
   if (!firSupportSource.includes(required)) errors.push("FIR support center is missing bilingual live-update contract: " + required);
 }
-if (!firSupportSource.includes('status.textContent=copy[en?"en":"hi"].required') || !firSupportSource.includes('status.textContent=copy[en?"en":"hi"].status')) {
+if (!firSupportSource.includes('copy[document.documentElement.lang==="en"?"en":"hi"].required') || !firSupportSource.includes('copy[en?"en":"hi"].status')) {
   errors.push("FIR complaint draft status messages must follow the selected language.");
 }
 
