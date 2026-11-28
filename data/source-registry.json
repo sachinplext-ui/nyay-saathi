@@ -341,6 +341,19 @@
       "official_url": "https://www.sci.gov.in/jurisdiction/",
       "verification_status": "official_jurisdiction_annexure_checked",
       "scope_note": "Annexure A lists High Court territorial jurisdictions, seats and benches. Use it to identify the relevant High Court at a broad level only; it does not establish case venue, court website service availability or filing procedure."
+    },
+    {
+      "source_id": "IN-NIA-STATE-POLICE-DIRECTORY",
+      "name": "National Investigation Agency — State and UT Police Organisations Directory",
+      "authority": "National Investigation Agency, Ministry of Home Affairs, Government of India",
+      "jurisdiction": "National directory of State and UT police organisations",
+      "source_type": [
+        "state_police_directory",
+        "official_police_portal_discovery"
+      ],
+      "official_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "verification_status": "official_directory_links_recorded",
+      "scope_note": "The NIA directory was checked on 28 November 2026 and lists police organisation links for States and UTs. A directory listing confirms only the destination link; it does not establish complaint/FIR filing routes, service availability, police-station jurisdiction, or procedural requirements. Verify the destination and exact service before giving user-facing instructions."
     }
   ],
   "state_and_ut_register": {
