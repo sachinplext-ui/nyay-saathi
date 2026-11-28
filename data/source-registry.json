@@ -354,6 +354,22 @@
       "official_url": "https://nia.mha.gov.in/en/state-police-organisations",
       "verification_status": "official_directory_links_recorded",
       "scope_note": "The NIA directory was checked on 28 November 2026 and lists police organisation links for States and UTs. A directory listing confirms only the destination link; it does not establish complaint/FIR filing routes, service availability, police-station jurisdiction, or procedural requirements. Verify the destination and exact service before giving user-facing instructions."
+    },
+    {
+      "source_id": "IN-EGAZETTE-STATE-INDEX",
+      "name": "Government of India e-Gazette — State Gazette index",
+      "authority": "Department of Publication, Directorate of Printing, Government of India",
+      "jurisdiction": "State and Union Territory Gazette directory",
+      "source_type": [
+        "state_gazette_directory",
+        "gazette_discovery"
+      ],
+      "official_url": "https://egazette.gov.in/",
+      "related_urls": [
+        "https://egazette.gov.in/(S/rlv5rggstwnx0uoz4wflfj2p)/StateGazette.aspx"
+      ],
+      "verification_status": "official_index_checked",
+      "scope_note": "The official e-Gazette State Gazette index lists State/UT destinations. It is a discovery index only: verify the individual Gazette portal, publication date, document, amendments and completeness before relying on a notification."
     }
   ],
   "state_and_ut_register": {
