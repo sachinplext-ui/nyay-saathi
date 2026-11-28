@@ -22,7 +22,8 @@ for (const file of htmlFiles) {
       errors.push(file + ": unsafe link scheme " + href);
       continue;
     }
-    const [pathname, fragment] = href.split("#");
+    const [beforeFragment, fragment] = href.split("#");
+    const pathname = beforeFragment.split("?")[0];
     const targetFile = pathname ? path.posix.normalize(path.posix.join(path.posix.dirname(file), pathname)) : file;
     if (!knownFiles.has(targetFile)) {
       errors.push(file + ": local link target missing: " + href);
