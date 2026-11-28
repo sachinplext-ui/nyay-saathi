@@ -184,6 +184,20 @@ if (!generatorCopyHandler.includes('status.textContent=copied?translations[langu
   errors.push("Copy success/failure must be announced through the accessible live status.");
 }
 
+
+if (!app.includes('function renderGuidance(container,content,answerLanguage=document.documentElement.lang==="en"?"en":"hi")')) {
+  errors.push("Assistant link labels must accept the actual answer language.");
+}
+if (!app.includes('link.setAttribute("aria-label",answerLanguage==="hi"')) {
+  errors.push("Assistant official-link accessibility labels must match the answer language.");
+}
+if (!app.includes('renderGuidance(out,(match?match.answer:') || !app.includes('))+privacy,answerLanguage);')) {
+  errors.push("Assistant guidance must pass its detected answer language to the renderer.");
+}
+if (!cases.includes('search.setAttribute("aria-label",t().searchPlaceholder)') || !cases.includes('filter.setAttribute("aria-label",lang()==="en"?"Filter by status":"स्थिति के अनुसार फ़िल्टर")')) {
+  errors.push("Case search and status-filter accessible labels must follow the selected language.");
+}
+
 if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
