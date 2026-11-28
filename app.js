@@ -414,7 +414,9 @@ document.getElementById("printDraft").addEventListener("click",()=>{const draft=
    const slsa=makeLink(en?"Legal Services Authority ↗":"विधिक सेवा प्राधिकरण ↗",r.state_legal_services_authority_url);
    const court=makeLink(en?"High Court website ↗":"उच्च न्यायालय वेबसाइट ↗",r.high_court_url);
    const jurisdiction=makeLink(en?"Court jurisdiction source ↗":"न्यायालय क्षेत्राधिकार स्रोत ↗",r.high_court_jurisdiction_source_url);
-   [police,slsa,court,jurisdiction,gazette].filter(Boolean).forEach(a=>links.append(a));
+   const gazette=makeLink(en?"State Gazette index ↗":"राज्य राजपत्र निर्देशिका ↗",r.state_gazette_url);
+   const vigilance=makeLink(en?"Lokayukta / Vigilance ↗":"लोकायुक्त / सतर्कता ↗",r.anti_corruption_or_vigilance_authority_url);
+   [police,slsa,court,jurisdiction,gazette,vigilance].filter(Boolean).forEach(a=>links.append(a));
    if(!links.children.length){const none=document.createElement("span");none.textContent=en?"No verified portal link recorded":"कोई सत्यापित पोर्टल लिंक दर्ज नहीं";links.append(none)}
    article.append(links);
    const note=document.createElement("p");note.className="jurisdiction-note";
