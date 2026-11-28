@@ -312,6 +312,22 @@
       ],
       "verification_status": "official_guidance_pages_located",
       "scope_note": "NALSA pages describe Section 12 eligibility categories. Do not promise individual eligibility; verify current Act, rules, income criteria where relevant, and State/District Legal Services Authority process."
+    },
+    {
+      "source_id": "IN-NALSA-SLSA-DIRECTORY",
+      "name": "NALSA — Websites of State Legal Services Authorities",
+      "authority": "National Legal Services Authority",
+      "jurisdiction": "National directory of State/UT legal-services authorities",
+      "source_type": [
+        "state_legal_services_authority_directory",
+        "legal_aid_referrals"
+      ],
+      "official_url": "https://nalsa.gov.in/",
+      "related_urls": [
+        "https://nalsa.gov.in/directory/"
+      ],
+      "verification_status": "official_directory_listing_checked",
+      "scope_note": "NALSA homepage directory was checked on 28 November 2026 for State Legal Services Authority website links. A directory listing does not verify current contact details, individual eligibility, filing steps or service availability. Legacy DNH and Daman & Diu links require unified-UT verification."
     }
   ],
   "state_and_ut_register": {
