@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0b1424">
   <meta name="description" content="NYAY SAATHI — भारतीय कानून की सामान्य जानकारी और उपयोगी दस्तावेज़ टेम्पलेट।">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css?v=42">
+  <link rel="stylesheet" href="styles.css?v=43">
   <title>NYAY SAATHI | न्याय का साथ</title>
   <style id="print-only-application">
     @media print {
@@ -107,6 +107,22 @@
         <article class="card"><span class="card-icon">04</span><h3 data-i18n="firCopyTitle">FIR की कॉपी</h3><p data-i18n="firCopyText">BNSS की धारा 173(2) के अनुसार दर्ज सूचना की कॉपी सूचनाकर्ता या पीड़ित को तुरंत और निःशुल्क दी जानी है।</p><a href="https://www.indiacode.nic.in/bitstream/123456789/21920/1/the_bharatiya_nagarik_suraksha_sanhita%2C_2023.pdf" target="_blank" rel="noopener" data-i18n="official">BNSS का आधिकारिक पाठ ↗</a></article>
         <article class="card"><span class="card-icon">05</span><h3 data-i18n="legalAidTitle">निःशुल्क कानूनी सहायता</h3><p data-i18n="legalAidText">पात्रता की जानकारी NALSA से लें। हेल्पलाइन: 15100। जिला और तालुका विधिक सेवा प्राधिकरण भी सहायता देते हैं।</p><a href="https://nalsa.gov.in/legal-aid/" target="_blank" rel="noopener" data-i18n="legalAid">NALSA कानूनी सहायता ↗</a></article>
       </div>    </section>
+    
+    <section id="jurisdiction-directory" class="section jurisdiction-section">
+      <div class="section-head"><div><span class="eyebrow">PAN-INDIA • OFFICIAL DIRECTORY</span><h2>राज्य और केंद्रशासित प्रदेश के संसाधन</h2></div><p>अपने क्षेत्र के पुलिस पोर्टल, विधिक सेवा प्राधिकरण और संबंधित उच्च न्यायालय की जानकारी खोजें।</p></div>
+      <div class="jurisdiction-tools">
+        <label for="jurisdictionSearch">राज्य / केंद्रशासित प्रदेश खोजें · Search</label>
+        <input id="jurisdictionSearch" type="search" maxlength="80" placeholder="राज्य का नाम लिखें / Type a state or UT">
+        <label for="jurisdictionType">क्षेत्र का प्रकार · Region type</label>
+        <select id="jurisdictionType"><option value="all">सभी क्षेत्र / All regions</option><option value="state">राज्य / States</option><option value="ut">केंद्रशासित प्रदेश / Union Territories</option></select>
+        <p id="jurisdictionCount" class="guide-count" aria-live="polite">निर्देशिका लोड हो रही है…</p>
+        <p id="jurisdictionStatus" class="guide-empty" role="status" aria-live="polite"></p>
+      </div>
+      <div id="jurisdictionCards" class="jurisdiction-grid" aria-live="polite">
+        <p>निर्देशिका लोड हो रही है… / Loading directory…</p>
+      </div>
+      <p class="jurisdiction-disclaimer">महत्वपूर्ण: ये केवल आधिकारिक निर्देशिका/संसाधन लिंक हैं। पुलिस पोर्टल लिंक को FIR दर्ज करने या शिकायत जमा करने की पुष्टि न मानें। उच्च न्यायालय का नाम क्षेत्राधिकार सूची से लिया गया है; यह किसी मामले की अदालत या प्रक्रिया पर कानूनी राय नहीं है। जहाँ किसी आधिकारिक लिंक की पुष्टि अधूरी है, वहाँ उसे उपलब्ध नहीं दिखाया जाएगा।</p>
+    </section>
     <section id="fir-help" class="section fir-center">
       <div class="section-head"><div><span class="eyebrow">NYAY SAATHI • FIR SUPPORT</span><h2>FIR सहायता केंद्र</h2></div><p>शिकायत का प्रारूप समझें और अपनी बात क्रम से लिखें</p></div>
       <div class="fir-intro-grid">
@@ -183,7 +199,7 @@
     <section class="official"><h2 data-i18n="officialTitle">आधिकारिक संसाधन</h2><div class="resource-links"><a href="https://nalsa.gov.in/" target="_blank" rel="noopener">NALSA ↗</a><a href="https://www.mha.gov.in/" target="_blank" rel="noopener">Ministry of Home Affairs ↗</a><a href="https://cybercrime.gov.in/" target="_blank" rel="noopener">National Cyber Crime Portal ↗</a><a href="https://www.indiacode.nic.in/" target="_blank" rel="noopener">India Code ↗</a></div></section>
   </main>
   <footer><span>⚖ NYAY SAATHI</span><span data-i18n="footer">सामान्य जानकारी के लिए • कानूनी सलाह का विकल्प नहीं</span><nav class="footer-links" aria-label="Help and policies"><a href="help-contact.html">Help & Contact / सहायता</a><a href="privacy.html">Privacy Policy / गोपनीयता नीति</a><a href="data-retention.html">Data Retention / डेटा हटाने की नीति</a><a href="legal-rights.html">Legal Rights Library / कानूनी अधिकार</a></nav></footer>
-  <script src="app.js?v=71"></script>
+  <script src="app.js?v=72"></script>
   <script src="cases.js?v=12"></script>
 </body>
 </html>
