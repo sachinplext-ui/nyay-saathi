@@ -390,6 +390,10 @@ document.getElementById("printDraft").addEventListener("click",()=>{const draft=
  const count=document.getElementById("jurisdictionCount");
  const status=document.getElementById("jurisdictionStatus");
  let records=[];
+ const hindiAliases={
+  "Andhra Pradesh":"आंध्र प्रदेश","Arunachal Pradesh":"अरुणाचल प्रदेश","Assam":"असम","Bihar":"बिहार","Chhattisgarh":"छत्तीसगढ़","Goa":"गोवा","Gujarat":"गुजरात","Haryana":"हरियाणा","Himachal Pradesh":"हिमाचल प्रदेश","Jharkhand":"झारखंड","Karnataka":"कर्नाटक","Kerala":"केरल","Madhya Pradesh":"मध्य प्रदेश","Maharashtra":"महाराष्ट्र","Manipur":"मणिपुर","Meghalaya":"मेघालय","Mizoram":"मिजोरम","Nagaland":"नागालैंड","Odisha":"ओडिशा","Punjab":"पंजाब","Rajasthan":"राजस्थान","Sikkim":"सिक्किम","Tamil Nadu":"तमिलनाडु","Telangana":"तेलंगाना","Tripura":"त्रिपुरा","Uttar Pradesh":"उत्तर प्रदेश","Uttarakhand":"उत्तराखंड","West Bengal":"पश्चिम बंगाल",
+  "Andaman and Nicobar Islands":"अंडमान और निकोबार द्वीपसमूह","Chandigarh":"चंडीगढ़","Dadra and Nagar Haveli and Daman and Diu":"दादरा और नगर हवेली और दमन और दीव","Delhi (NCT)":"दिल्ली","Jammu and Kashmir":"जम्मू और कश्मीर","Ladakh":"लद्दाख","Lakshadweep":"लक्षद्वीप","Puducherry":"पुदुचेरी"
+ };
  const safeUrl=value=>{
   if(typeof value!=="string"||!value.trim())return null;
   try{const u=new URL(value);return ["https:","http:"].includes(u.protocol)?u.href:null}catch{return null}
@@ -402,7 +406,7 @@ document.getElementById("printDraft").addEventListener("click",()=>{const draft=
   const en=document.documentElement.lang==="en";
   const q=search.value.trim().toLocaleLowerCase();
   const kind=type.value;
-  const shown=q?records.filter(r=>(kind==="all"||r.kind===kind)&&[r.name,r.high_court_name||"",r.kind].join(" ").toLocaleLowerCase().includes(q)):[];
+  const shown=q?records.filter(r=>(kind==="all"||r.kind===kind)&&[r.name,hindiAliases[r.name]||"",r.high_court_name||"",r.kind].join(" ").toLocaleLowerCase().includes(q)):[];
   cards.replaceChildren();
   if(!q){
    count.textContent=en?"Search for your State / UT to view its resources.":"अपना राज्य / केंद्रशासित प्रदेश खोजें — उसी के संसाधन दिखाई देंगे।";
