@@ -323,3 +323,15 @@ The user manually exercised the published GitHub Pages site on an Android mobile
 
 - Extended `qa/check-app-contract.mjs` to guard against regressions in assistant/interface language isolation and long-document print pagination, while retaining widow/orphan controls.
 - Corrected the checker source boundaries and regex after reviewing the generated file. The next GitHub Actions run will execute the updated checker; no pass is claimed until that run completes.
+
+
+## Follow-up implementation update (28 November 2026)
+
+- Refined the mobile navigation with 44px touch targets, visible keyboard focus, horizontal scroll containment and reduced-motion handling.
+- Added regression contracts for language-toggle synchronization, preservation of edited draft fields and mobile navigation accessibility.
+- Improved document-generator feedback: successful/failed copy actions are announced in the live status region, and editing or clearing a draft resets the copy control label.
+- Added regression contracts for copy feedback and reset behaviour.
+- Updated the three BNSS links to a verified India Code-hosted copy of the Bharatiya Nagarik Suraksha Sanhita, 2023.
+- GitHub Actions validation and Pages deployment were initiated for these updates; each run's final status must be checked before release claims.
+
+**Verification boundary:** these checks validate source contracts, JavaScript syntax, HTML and local-link integrity. They do not replace interactive browser testing on physical devices, legal review, or verification of every external service workflow.
