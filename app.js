@@ -406,24 +406,21 @@ document.getElementById("printDraft").addEventListener("click",()=>{const draft=
   cards.replaceChildren();
   shown.forEach(r=>{
    const article=document.createElement("article");article.className="jurisdiction-card";
-   const title=document.createElement("h3");title.textContent=r.name;article.append(title);
-   const label=document.createElement("div");label.className="jurisdiction-kind";label.textContent=r.kind==="state"?(en?"State":"राज्य"):(en?"Union Territory":"केंद्रशासित प्रदेश");article.append(label);
-   if(r.high_court_name){const court=document.createElement("p");court.className="jurisdiction-court";court.textContent=(en?"Territorial High Court: ":"संबंधित उच्च न्यायालय: ")+r.high_court_name;article.append(court)}
+   const head=document.createElement("div");head.className="jurisdiction-card-head";
+   const title=document.createElement("h3");title.textContent=r.name;head.append(title);
+   const label=document.createElement("span");label.className="jurisdiction-kind";label.textContent=r.kind==="state"?(en?"State":"राज्य"):(en?"UT":"केंद्रशासित प्रदेश");head.append(label);
+   article.append(head);
+   if(r.high_court_name){const court=document.createElement("p");court.className="jurisdiction-court";court.textContent=(en?"High Court: ":"उच्च न्यायालय: ")+r.high_court_name;article.append(court)}
    const links=document.createElement("div");links.className="jurisdiction-links";
-   const police=makeLink(en?"Police portal directory link ↗":"पुलिस पोर्टल लिंक ↗",r.police_authority_url);
-   const slsa=makeLink(en?"Legal Services Authority ↗":"विधिक सेवा प्राधिकरण ↗",r.state_legal_services_authority_url);
-   const court=makeLink(en?"High Court website ↗":"उच्च न्यायालय वेबसाइट ↗",r.high_court_url);
-   const jurisdiction=makeLink(en?"Court jurisdiction source ↗":"न्यायालय क्षेत्राधिकार स्रोत ↗",r.high_court_jurisdiction_source_url);
-   const gazette=makeLink(en?"State Gazette index ↗":"राज्य राजपत्र निर्देशिका ↗",r.state_gazette_url);
-   const vigilance=makeLink(en?"Lokayukta / Vigilance ↗":"लोकायुक्त / सतर्कता ↗",r.anti_corruption_or_vigilance_authority_url);
+   const police=makeLink(en?"Police ↗":"पुलिस ↗",r.police_authority_url);
+   const slsa=makeLink(en?"Legal aid ↗":"विधिक सेवा ↗",r.state_legal_services_authority_url);
+   const court=makeLink(en?"High Court ↗":"हाई कोर्ट ↗",r.high_court_url);
+   const jurisdiction=makeLink(en?"Jurisdiction ↗":"क्षेत्राधिकार ↗",r.high_court_jurisdiction_source_url);
+   const gazette=makeLink(en?"Gazette ↗":"राजपत्र ↗",r.state_gazette_url);
+   const vigilance=makeLink(en?"Lokayukta ↗":"लोकायुक्त ↗",r.anti_corruption_or_vigilance_authority_url);
    [police,slsa,court,jurisdiction,gazette,vigilance].filter(Boolean).forEach(a=>links.append(a));
-   if(!links.children.length){const none=document.createElement("span");none.textContent=en?"No verified portal link recorded":"कोई सत्यापित पोर्टल लिंक दर्ज नहीं";links.append(none)}
-   article.append(links);
-   const note=document.createElement("p");note.className="jurisdiction-note";
-   note.textContent=en
-    ?"Directory links only. A portal listing does not confirm that FIR filing, complaint submission or a particular service is available online."
-    :"ये केवल निर्देशिका लिंक हैं। पोर्टल सूची में होने से FIR दर्ज करने, शिकायत जमा करने या किसी खास सेवा की ऑनलाइन उपलब्धता सिद्ध नहीं होती।";
-   article.append(note);cards.append(article);
+   if(!links.children.length){const none=document.createElement("span");none.textContent=en?"No portal link recorded":"पोर्टल लिंक दर्ज नहीं";links.append(none)}
+   article.append(links);cards.append(article);
   });
   count.textContent=en?shown.length+" of "+records.length+" regions shown":records.length+" में से "+shown.length+" क्षेत्र दिखाए जा रहे हैं";
   status.textContent=shown.length?"":(en?"No matching region found.":"कोई मिलता-जुलता क्षेत्र नहीं मिला।");
