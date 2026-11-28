@@ -328,6 +328,19 @@
       ],
       "verification_status": "official_directory_listing_checked",
       "scope_note": "NALSA homepage directory was checked on 28 November 2026 for State Legal Services Authority website links. A directory listing does not verify current contact details, individual eligibility, filing steps or service availability. Legacy DNH and Daman & Diu links require unified-UT verification."
+    },
+    {
+      "source_id": "IN-SCI-HC-JURISDICTION",
+      "name": "Supreme Court of India — High Court Territorial Jurisdiction",
+      "authority": "Supreme Court of India",
+      "jurisdiction": "National",
+      "source_type": [
+        "high_court_jurisdiction",
+        "territorial_jurisdiction"
+      ],
+      "official_url": "https://www.sci.gov.in/jurisdiction/",
+      "verification_status": "official_jurisdiction_annexure_checked",
+      "scope_note": "Annexure A lists High Court territorial jurisdictions, seats and benches. Use it to identify the relevant High Court at a broad level only; it does not establish case venue, court website service availability or filing procedure."
     }
   ],
   "state_and_ut_register": {
