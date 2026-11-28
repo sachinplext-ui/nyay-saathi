@@ -269,19 +269,26 @@
       "police_authority_url": "https://www.mppolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://madhyapradesh.nalsa.gov.in/",
-      "state_bar_council_url": null,
-      "anti_corruption_or_vigilance_authority_url": null,
-      "state_gazette_url": null,
-      "high_court_url": null,
+      "state_bar_council_url": "https://sbcofmp.org.in/main.html",
+      "anti_corruption_or_vigilance_authority_url": "https://mplokayukt.nic.in/",
+      "state_gazette_url": "https://govtpress.mp.gov.in/",
+      "high_court_url": "https://www.mphc.gov.in/",
       "last_verified_at": "2026-11-28",
-      "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
+      "verification_status": "partially_verified",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure. Madhya Pradesh-specific portal references cross-checked against the project source registry: State Bar Council, Lokayukta, Government Press/Gazette and Madhya Pradesh High Court. These portal links do not verify a particular filing process, eligibility, jurisdiction or current service availability. Dedicated public Home Department portal remains unconfirmed.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Madhya Pradesh High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
       "high_court_jurisdiction_checked": "2026-11-28",
       "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
-      "police_authority_checked": "2026-11-28"
+      "police_authority_checked": "2026-11-28",
+      "state_bar_council_source_url": "https://sbcofmp.org.in/main.html",
+      "anti_corruption_source_url": "https://mplokayukt.nic.in/",
+      "state_gazette_source_url": "https://govtpress.mp.gov.in/",
+      "high_court_source_url": "https://www.mphc.gov.in/",
+      "unresolved_fields": [
+        "Dedicated public-facing Home Department portal and citizen grievance procedure require confirmation"
+      ]
     },
     {
       "state_or_ut": "Maharashtra",
