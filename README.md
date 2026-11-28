@@ -26,6 +26,8 @@ This release is a public educational prototype only. No real accounts, case data
 - FIR Support Center with a browser-side police-complaint draft form (local formatting only; it does not submit a complaint or register an FIR)
 - Browser-side bilingual application templates with type-specific subject, fact prompts and request presets for police complaints, official-record requests, FIR-copy requests, Zero FIR representations, police-refusal representations and cybercrime follow-ups; user edits are preserved, with factual-accuracy reminders and acknowledgement wording
 - Copy application text
+- Copy feedback is announced accessibly and the copy-button label resets when the draft is edited or cleared
+- Mobile navigation has larger touch targets, visible keyboard focus and reduced-motion support
 - Standalone A4-oriented print page for saving as PDF
 - PWA manifest and service worker for basic offline support
 - Links to official public resources: NALSA, Ministry of Home Affairs, National Cyber Crime Portal and India Code
