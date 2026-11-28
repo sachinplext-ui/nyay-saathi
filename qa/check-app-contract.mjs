@@ -5,6 +5,26 @@ const app = fs.readFileSync("app.js", "utf8");
 const api = fs.readFileSync("server/index.js", "utf8");
 const errors = [];
 
+function objectKeys(source) {
+  return new Set([...source.matchAll(/(?:^|[,\\{])\\s*([A-Za-z_$][\\w$]*)\\s*:/g)].map(match => match[1]));
+}
+
+const englishStart = app.indexOf("const translations={en:{") + "const translations={en:{".length;
+const hindiStart = app.indexOf("},hi:{", englishStart);
+const hindiEnd = app.indexOf("}};", hindiStart);
+const englishKeys = objectKeys(app.slice(englishStart, hindiStart));
+const pageHindiStart = app.indexOf("const hi={") + "const hi={".length;
+const pageHindiEnd = app.indexOf(";\\nlet language", pageHindiStart);
+const hindiKeys = objectKeys(app.slice(pageHindiStart, pageHindiEnd));
+const pageKeys = [...html.matchAll(/data-i18n=["']([^"']+)["']/g)].map(match => match[1]);
+for (const key of new Set(pageKeys)) {
+  if (!englishKeys.has(key)) errors.push("Missing English page translation: " + key);
+  if (!hindiKeys.has(key)) errors.push("Missing Hindi page translation: " + key);
+}
+if (hindiStart < 0 || hindiEnd < 0 || pageHindiStart < "const hi={".length || pageHindiEnd < 0) {
+  errors.push("Could not locate both page translation dictionaries for language coverage checks.");
+}
+
 const selectStart = html.indexOf('<select id="draftType"');
 const selectEnd = html.indexOf("</select>", selectStart);
 const selector = selectStart >= 0 && selectEnd > selectStart ? html.slice(selectStart, selectEnd) : "";
@@ -53,4 +73,4 @@ if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
 }
-console.log("App contract checks passed: bilingual presets, safe print escaping and pagination, isolated assistant language state, disabled API, no browser storage, and key input limits.");
+console.log("App contract checks passed: page translation coverage, bilingual presets, safe print escaping and pagination, isolated assistant language state, disabled API, no browser storage, and key input limits.");
