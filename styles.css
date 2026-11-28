@@ -702,3 +702,15 @@ button:disabled{opacity:.55;cursor:not-allowed}
 @media(max-width:900px){.jurisdiction-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.jurisdiction-tools{grid-template-columns:1fr}.jurisdiction-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.jurisdiction-card{padding:9px}.jurisdiction-card h3{font-size:12px}.jurisdiction-card .jurisdiction-court{font-size:10px}.jurisdiction-card .jurisdiction-links a{font-size:9px;padding:4px 5px}}
 @media(max-width:360px){.jurisdiction-grid{grid-template-columns:1fr}}
+
+
+/* Tighten vertical whitespace around the searchable Pan-India directory. */
+.jurisdiction-section{padding-top:38px;padding-bottom:38px}
+.jurisdiction-section .section-head{margin-bottom:14px;gap:14px}
+.jurisdiction-section .section-head h2{margin-top:5px}
+.jurisdiction-section .jurisdiction-tools{margin-bottom:9px}
+.jurisdiction-section .jurisdiction-disclaimer{margin-top:9px}
+@media(max-width:760px){
+ .jurisdiction-section{padding-top:30px;padding-bottom:30px}
+ .jurisdiction-section .section-head{margin-bottom:12px}
+}
