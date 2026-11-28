@@ -538,3 +538,12 @@ button:disabled{opacity:.55;cursor:not-allowed}
  .hero-art{min-height:245px}
  .hero-chat input{font-size:13px}
 }
+
+
+/* Approved NYAY SAATHI hero artwork uploaded by project owner */
+.hero-art-photo{display:flex;align-items:center;justify-content:center;min-height:0;overflow:visible;background:transparent}
+.hero-art-photo .hero-reference-image{display:block;width:100%;height:auto;max-height:540px;object-fit:contain;border:0;border-radius:10px;filter:drop-shadow(0 18px 30px #0008)}
+@media(max-width:760px){
+ .hero-art-photo{width:100%;min-height:0;margin:12px auto 0}
+ .hero-art-photo .hero-reference-image{width:100%;max-height:none;object-fit:contain}
+}
