@@ -2,6 +2,7 @@ import fs from "node:fs";
 
 const html = fs.readFileSync("index.html", "utf8");
 const app = fs.readFileSync("app.js", "utf8");
+const cases = fs.readFileSync("cases.js", "utf8");
 const api = fs.readFileSync("server/index.js", "utf8");
 const errors = [];
 
@@ -23,6 +24,23 @@ for (const key of new Set(pageKeys)) {
 }
 if (hindiStart < 0 || hindiEnd < 0 || pageHindiStart < "const hi={".length || pageHindiEnd < 0) {
   errors.push("Could not locate both page translation dictionaries for language coverage checks.");
+}
+
+const caseHiStart = cases.indexOf("hi:{") + "hi:{".length;
+const caseEnStart = cases.indexOf("en:{", caseHiStart) + "en:{".length;
+const caseDictEnd = cases.indexOf("};", caseEnStart);
+const caseHindiKeys = objectKeys(cases.slice(caseHiStart, caseEnStart - "en:{".length));
+const caseEnglishKeys = objectKeys(cases.slice(caseEnStart, caseDictEnd));
+const casePageKeys = [...html.matchAll(/data-case-text=["']([^"']+)["']/g)].map(match => match[1]);
+for (const key of new Set(casePageKeys)) {
+  if (!caseHindiKeys.has(key)) errors.push("Missing Hindi case-manager translation: " + key);
+  if (!caseEnglishKeys.has(key)) errors.push("Missing English case-manager translation: " + key);
+}
+if (caseHiStart < "hi:{".length || caseEnStart < "en:{".length || caseDictEnd < 0) {
+  errors.push("Could not locate both case-manager translation dictionaries.");
+}
+if (!cases.includes('new MutationObserver(()=>{labels();render();})')) {
+  errors.push("Case manager must refresh translated labels and cards when page language changes.");
 }
 
 const selectStart = html.indexOf('<select id="draftType"');
