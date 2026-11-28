@@ -474,3 +474,12 @@ button:disabled{opacity:.55;cursor:not-allowed}
  .card:hover{transform:none}
  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
+
+
+/* Search controls for the Legal Guides library */
+.guide-tools{max-width:620px;margin:0 0 18px;padding:14px 16px;border:1px solid #d9b66f55;border-radius:10px;background:#0d2038}
+.guide-tools label{display:block;margin-bottom:7px;color:#f0d9a5;font-size:13px;font-weight:800}
+.guide-tools input{display:block;width:100%;min-height:46px;padding:11px 13px;border:1px solid #425a72;border-radius:7px;background:#08182b;color:#f2f5f9;font:inherit;font-size:16px}
+.guide-count,.guide-empty{margin:8px 0 0;color:#aebbd0;font-size:12px}
+.guide-empty{padding:12px;border:1px dashed #9d824d88;border-radius:7px}
+#guides .card[hidden]{display:none!important}
