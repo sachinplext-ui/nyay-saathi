@@ -150,7 +150,7 @@ if (/fetch\s*\(|XMLHttpRequest|sendBeacon/.test(cases)) {
 
 
 const languageToggleStart = app.indexOf('document.getElementById("langToggle").addEventListener("click"');
-const languageToggleEnd = app.indexOf("\\nconst legalTopics=", languageToggleStart);
+const languageToggleEnd = app.indexOf("\nconst legalTopics=", languageToggleStart);
 const languageToggleSource = languageToggleStart >= 0 && languageToggleEnd > languageToggleStart ? app.slice(languageToggleStart, languageToggleEnd) : "";
 if (!languageToggleSource.includes('document.documentElement.lang=language')) errors.push("Language toggle must update the document language.");
 if (!languageToggleSource.includes('applyDraftLanguage()')) errors.push("Language toggle must refresh the document generator labels.");
