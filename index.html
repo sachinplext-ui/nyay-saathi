@@ -33,7 +33,25 @@
       </div>
       <div class="hero-art" aria-hidden="true">
         <div class="globe"><div class="globe-grid"></div><div class="globe-shine"></div></div>
-        <div class="justice-statue">⚖</div>
+        <svg class="justice-figure" viewBox="0 0 320 430" role="img" aria-label="Golden Lady Justice illustration">
+          <defs>
+            <linearGradient id="statueGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff0b4"/><stop offset=".42" stop-color="#d8ad58"/><stop offset="1" stop-color="#805b27"/></linearGradient>
+            <filter id="statueGlow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+          </defs>
+          <g fill="none" stroke="url(#statueGold)" stroke-linecap="round" stroke-linejoin="round" filter="url(#statueGlow)">
+            <path d="M155 82 Q142 61 154 42 Q169 24 188 39 Q203 54 190 78 Q177 91 155 82Z" fill="url(#statueGold)" stroke-width="3"/>
+            <path d="M150 78 Q137 99 126 123 L111 174 Q105 195 125 207 L153 218 L187 206 Q207 194 198 173 L184 119 Q176 91 190 79" fill="url(#statueGold)" stroke-width="4"/>
+            <path d="M126 124 L83 91 L53 67 M190 119 L226 91 L257 68" stroke-width="12"/>
+            <path d="M53 67 L53 114 M257 68 L257 114" stroke-width="4"/>
+            <path d="M35 114 Q53 128 71 114 M239 114 Q257 128 275 114" stroke-width="4"/>
+            <path d="M53 114 L35 154 Q53 166 71 154Z M257 114 L239 154 Q257 166 275 154Z" fill="#c99d4d" stroke-width="3"/>
+            <path d="M153 215 L143 310 L113 367 L207 367 L177 310 L187 215" fill="url(#statueGold)" stroke-width="5"/>
+            <path d="M143 310 L177 310 M128 342 L192 342" stroke-width="3"/>
+            <path d="M222 90 L238 45 L247 48 L231 96" stroke-width="5"/>
+            <path d="M244 44 L252 22" stroke-width="3"/>
+          </g>
+          <path d="M155 79 Q170 92 190 78" stroke="#f8e4a4" stroke-width="2" fill="none"/>
+        </svg>
         <div class="justice-pedestal"><span>JUSTICE</span><span>EQUALITY</span><span>LAW</span></div>
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
         <div class="art-caption">JUSTICE • RIGHTS • ACCESS</div>
