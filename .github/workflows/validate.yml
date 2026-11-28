@@ -1,0 +1,48 @@
+name: Validate NYAY SAATHI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: Check JavaScript syntax
+        run: |
+          node --check app.js
+          node --check cases.js
+          node --check sw.js
+
+      - name: Check required app files and UI hooks
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          html = Path("index.html").read_text(encoding="utf-8")
+          js = Path("app.js").read_text(encoding="utf-8")
+          required_ids = ["guideSearch", "guideCount", "draftType", "generateDraft", "copyDraft", "printDraft", "clearDraft", "question", "askBtn"]
+          missing = [item for item in required_ids if f'id="{item}"' not in html]
+          if missing:
+              raise SystemExit("Missing required HTML ids: " + ", ".join(missing))
+          for value in ["rti", "consumer", "legalAid"]:
+              if not re.search(rf'\b{value}:\{{hi:', js):
+                  raise SystemExit(f"Missing Hindi application preset: {value}")
+              if not re.search(rf'\b{value}:"', js):
+                  raise SystemExit(f"Missing translated application label: {value}")
+          print("Required UI elements and application presets are present.")
+          PY
