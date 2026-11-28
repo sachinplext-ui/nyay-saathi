@@ -163,6 +163,8 @@ draftFieldIds.forEach(id=>{
   if(status){status.textContent="";status.hidden=true;}
   const generateButton=document.getElementById("generateDraft");
   if(generateButton)generateButton.textContent=translations[language].generate;
+  const copyButton=document.getElementById("copyDraft");
+  if(copyButton)copyButton.textContent=translations[language].copyDraft;
  });
 });
 document.getElementById("generateDraft").addEventListener("click",()=>{
@@ -178,6 +180,7 @@ document.getElementById("clearDraft").addEventListener("click",()=>{
  document.getElementById("draftStatus").textContent=translations[language].cleared;
  document.getElementById("draftStatus").hidden=false;
  document.getElementById("generateDraft").textContent=translations[language].generate;
+ document.getElementById("copyDraft").textContent=translations[language].copyDraft;
  buildDraft();
 });
 async function copyTextWithFallback(value){
@@ -203,6 +206,8 @@ document.getElementById("copyDraft").addEventListener("click",async()=>{
  const button=document.getElementById("copyDraft");
  const copied=await copyTextWithFallback(document.getElementById("draftText").textContent);
  button.textContent=translations[language][copied?"copied":"copyUnavailable"];
+ const status=document.getElementById("draftStatus");
+ if(status){status.textContent=copied?translations[language].copied:translations[language].copyUnavailable;status.hidden=false;}
 });
 applyDraftLanguage();
 
