@@ -119,6 +119,35 @@ for (const required of ["--navy:#071426", "--gold:#d9b66f", ".hero-art", ".featu
   if (!css.includes(required)) errors.push("Premium design token or layout is missing: " + required);
 }
 
+
+const functionalContracts = [
+  [app, 'document.getElementById("askBtn").addEventListener("click",showGuidance)', "Assistant action button is not wired."],
+  [app, 'form.addEventListener("submit",event=>', "FIR complaint form submit handler is missing."],
+  [app, 'document.getElementById("generateDraft").addEventListener("click"', "Draft generation action is not wired."],
+  [app, 'document.getElementById("copyDraft").addEventListener("click"', "Draft copy action is not wired."],
+  [app, 'document.getElementById("printDraft").addEventListener("click"', "Draft print action is not wired."],
+  [app, 'document.getElementById("clearDraft").addEventListener("click"', "Draft clear action is not wired."],
+  [app, 'document.querySelectorAll("[data-dashboard-tab]")', "Dashboard tab navigation is missing."],
+  [app, 'checks.forEach(item=>item.addEventListener("change",update))', "Preparation checklist progress is not wired."],
+  [app, 'source?.value||""', "Hero quick-question handoff is missing."],
+  [cases, 'root.addEventListener("submit"', "Sample case creation/edit handler is missing."],
+  [cases, 'function changeStatus(id,status)', "Sample case status transitions are missing."],
+  [cases, 'function removeItem(id)', "Sample case removal handler is missing."],
+  [cases, 'function beginEdit(id)', "Sample case editing handler is missing."]
+];
+for (const [source, needle, message] of functionalContracts) {
+  if (!source.includes(needle)) errors.push(message);
+}
+for (const id of ["heroChatForm", "firDraftForm", "demoCaseForm", "askBtn", "generateDraft", "copyDraft", "printDraft", "clearDraft"]) {
+  if (!new RegExp('id="' + id + '"').test(html)) errors.push("Required interactive control is missing: " + id);
+}
+if (!html.includes('aria-live="polite"') || !html.includes('id="firDraftStatus"') || !html.includes('id="draftStatus"')) {
+  errors.push("Accessible live status feedback is missing from form workflows.");
+}
+if (/fetch\s*\(|XMLHttpRequest|sendBeacon/.test(cases)) {
+  errors.push("Sample case manager must remain local-only and must not transmit case entries.");
+}
+
 if (errors.length) {
   console.error(errors.join("\n"));
   process.exit(1);
