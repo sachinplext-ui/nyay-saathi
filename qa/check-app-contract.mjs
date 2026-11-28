@@ -107,9 +107,10 @@ for (const target of new Set(internalTargets)) {
   if (!htmlIds.includes(target)) errors.push("Internal navigation target does not exist: #" + target);
 }
 for (const required of [
-  'class="topbar"', 'class="hero"', 'class="hero-art"', 'class="globe"',
-  'class="justice-figure"', 'class="feature-ribbon"', 'class="platform-preview section"',
+  'class="topbar"', 'class="hero"', 'class="hero-art hero-art-photo"',
+  'class="feature-ribbon"', 'class="platform-preview section"',
   'preview-dashboard', 'preview-analysis', 'preview-phone', 'class="preview-case"',
+  'class="hero-reference-image"', 'src="nyay-saathi-hero-optimized.jpg"',
   'id="case-preview"', 'id="fir-help"', 'id="assistant"', 'id="guides"',
   'id="lawyer-connect"', 'id="drafts"'
 ]) {
