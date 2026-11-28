@@ -402,8 +402,13 @@ document.getElementById("printDraft").addEventListener("click",()=>{const draft=
   const en=document.documentElement.lang==="en";
   const q=search.value.trim().toLocaleLowerCase();
   const kind=type.value;
-  const shown=records.filter(r=>(kind==="all"||r.kind===kind)&&(!q||[r.name,r.high_court_name||"",r.kind].join(" ").toLocaleLowerCase().includes(q)));
+  const shown=q?records.filter(r=>(kind==="all"||r.kind===kind)&&[r.name,r.high_court_name||"",r.kind].join(" ").toLocaleLowerCase().includes(q)):[];
   cards.replaceChildren();
+  if(!q){
+   count.textContent=en?"Search for your State / UT to view its resources.":"अपना राज्य / केंद्रशासित प्रदेश खोजें — उसी के संसाधन दिखाई देंगे।";
+   status.textContent="";
+   return;
+  }
   shown.forEach(r=>{
    const article=document.createElement("article");article.className="jurisdiction-card";
    const head=document.createElement("div");head.className="jurisdiction-card-head";
@@ -422,8 +427,8 @@ document.getElementById("printDraft").addEventListener("click",()=>{const draft=
    if(!links.children.length){const none=document.createElement("span");none.textContent=en?"No portal link recorded":"पोर्टल लिंक दर्ज नहीं";links.append(none)}
    article.append(links);cards.append(article);
   });
-  count.textContent=en?shown.length+" of "+records.length+" regions shown":records.length+" में से "+shown.length+" क्षेत्र दिखाए जा रहे हैं";
-  status.textContent=shown.length?"":(en?"No matching region found.":"कोई मिलता-जुलता क्षेत्र नहीं मिला।");
+  count.textContent=en?shown.length+" matching region(s)":shown.length+" क्षेत्र मिले";
+  status.textContent=shown.length?"":(en?"No matching State / UT found. Try another spelling.":"कोई मिलता-जुलता राज्य / केंद्रशासित प्रदेश नहीं मिला। नाम की वर्तनी जाँचें।");
  };
  search.addEventListener("input",render);type.addEventListener("change",render);
  const load=async()=>{
