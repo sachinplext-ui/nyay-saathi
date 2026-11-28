@@ -6,7 +6,7 @@ const api = fs.readFileSync("server/index.js", "utf8");
 const errors = [];
 
 function objectKeys(source) {
-  return new Set([...source.matchAll(/(?:^|[,\\{])\\s*([A-Za-z_$][\\w$]*)\\s*:/g)].map(match => match[1]));
+  return new Set([...source.matchAll(/(?:^|[,{\s])\s*([A-Za-z_$][\w$]*)\s*:/g)].map(match => match[1]));
 }
 
 const englishStart = app.indexOf("const translations={en:{") + "const translations={en:{".length;
@@ -14,7 +14,7 @@ const hindiStart = app.indexOf("},hi:{", englishStart);
 const hindiEnd = app.indexOf("}};", hindiStart);
 const englishKeys = objectKeys(app.slice(englishStart, hindiStart));
 const pageHindiStart = app.indexOf("const hi={") + "const hi={".length;
-const pageHindiEnd = app.indexOf(";\\nlet language", pageHindiStart);
+const pageHindiEnd = app.indexOf(";\nlet language", pageHindiStart);
 const hindiKeys = objectKeys(app.slice(pageHindiStart, pageHindiEnd));
 const pageKeys = [...html.matchAll(/data-i18n=["']([^"']+)["']/g)].map(match => match[1]);
 for (const key of new Set(pageKeys)) {
