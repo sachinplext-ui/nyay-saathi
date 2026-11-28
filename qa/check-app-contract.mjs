@@ -1,6 +1,7 @@
 import fs from "node:fs";
 
 const html = fs.readFileSync("index.html", "utf8");
+const css = fs.readFileSync("styles.css", "utf8");
 const app = fs.readFileSync("app.js", "utf8");
 const cases = fs.readFileSync("cases.js", "utf8");
 const api = fs.readFileSync("server/index.js", "utf8");
