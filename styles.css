@@ -631,3 +631,28 @@ button:disabled{opacity:.55;cursor:not-allowed}
  .hero-art-photo{padding-bottom:12px!important}
  .hero-copy{padding-top:4px!important}
 }
+
+
+/* NYAY SAATHI unified 3D metallic-gold icon system */
+:root{--icon-gold-hi:#fff2bd;--icon-gold:#e9c36f;--icon-gold-mid:#bd8b35;--icon-gold-deep:#704817}
+.brand-mark,
+.feature-ribbon>.ribbon-link>span,
+.hero-side-panel a>span:first-child,
+.card-icon,
+.notice strong,
+.btn .icon,
+.topbar nav a .icon,
+.resource-links a .icon{
+ color:var(--icon-gold-hi)!important;
+ background:linear-gradient(155deg,#fff8d8 0%,#f4d889 22%,#d6a849 48%,#8d6123 72%,#f4d78f 100%);
+ -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+ text-shadow:1px 1px 0 #6c4a1b,2px 2px 0 #4b351c,3px 4px 5px #0009;
+ filter:drop-shadow(0 2px 2px #0008) drop-shadow(0 0 5px #d9ad5540);
+}
+.feature-ribbon>.ribbon-link>span{font-size:22px!important;line-height:1.1}
+.hero-side-panel a>span:first-child{font-size:20px!important}
+.card-icon{font-size:22px!important;letter-spacing:0!important;font-weight:900}
+.brand-mark{font-size:36px!important}
+.ribbon-link:hover>span,.hero-side-panel a:hover>span:first-child{filter:drop-shadow(0 3px 3px #000b) drop-shadow(0 0 8px #f4d889aa);transform:translateY(-1px)}
+.feature-ribbon>.ribbon-link>span,.hero-side-panel a>span:first-child{transition:filter .2s ease,transform .2s ease}
+@media(prefers-reduced-motion:reduce){.feature-ribbon>.ribbon-link>span,.hero-side-panel a>span:first-child{transition:none}}
