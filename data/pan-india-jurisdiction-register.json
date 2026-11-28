@@ -8,7 +8,9 @@
     "union_territories_researched": 0,
     "states_with_slsa_portal_directory_link": 28,
     "union_territories_with_slsa_portal_directory_link": 5,
-    "high_court_jurisdiction_names_mapped": 36
+    "high_court_jurisdiction_names_mapped": 36,
+    "states_with_police_portal_directory_link": 28,
+    "union_territories_with_police_portal_directory_link": 8
   },
   "national_sources": {
     "status": "starter_directory_only",
@@ -36,7 +38,7 @@
   "states": [
     {
       "state_or_ut": "Andhra Pradesh",
-      "police_authority_url": null,
+      "police_authority_url": "https://citizen.appolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://andhrapradesh.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -45,15 +47,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Andhra Pradesh High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Arunachal Pradesh",
-      "police_authority_url": null,
+      "police_authority_url": "https://arunpol.nic.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://arunachalpradesh.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -62,15 +66,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Gauhati High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Assam",
-      "police_authority_url": null,
+      "police_authority_url": "https://police.assam.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://assam.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -79,15 +85,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Gauhati High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Bihar",
-      "police_authority_url": null,
+      "police_authority_url": "https://police.bihar.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://patnahighcourt.gov.in/bslsa/",
       "state_bar_council_url": null,
@@ -96,15 +104,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Patna High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Chhattisgarh",
-      "police_authority_url": null,
+      "police_authority_url": "https://cgpolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://chhattisgarh.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -113,15 +123,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Chhattisgarh High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Goa",
-      "police_authority_url": null,
+      "police_authority_url": "https://citizen.goapolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://goa.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -130,15 +142,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Bombay High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Gujarat",
-      "police_authority_url": null,
+      "police_authority_url": "https://police.gujarat.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://gujarat.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -147,15 +161,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Gujarat High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Haryana",
-      "police_authority_url": null,
+      "police_authority_url": "https://haryanapoliceonline.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://haryana.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -164,15 +180,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Punjab and Haryana High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Himachal Pradesh",
-      "police_authority_url": null,
+      "police_authority_url": "https://citizenportal.hppolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://himachalpradesh.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -181,15 +199,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Himachal Pradesh High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Jharkhand",
-      "police_authority_url": null,
+      "police_authority_url": "https://www.jhpolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://jhalsa.org/",
       "state_bar_council_url": null,
@@ -198,15 +218,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Jharkhand High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Karnataka",
-      "police_authority_url": null,
+      "police_authority_url": "https://policeseva.ksp.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://karnataka.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -215,15 +237,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Karnataka High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Kerala",
-      "police_authority_url": null,
+      "police_authority_url": "https://keralapolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://kerala.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -232,15 +256,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Kerala High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Madhya Pradesh",
-      "police_authority_url": null,
+      "police_authority_url": "https://www.mppolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://madhyapradesh.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -249,15 +275,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Madhya Pradesh High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Maharashtra",
-      "police_authority_url": null,
+      "police_authority_url": "https://www.mahapolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://maharashtra.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -266,15 +294,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Bombay High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Manipur",
-      "police_authority_url": null,
+      "police_authority_url": "https://manipurpolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://manipur.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -283,15 +313,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Manipur High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Meghalaya",
-      "police_authority_url": null,
+      "police_authority_url": "https://megpolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://meghalaya.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -300,15 +332,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Meghalaya High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Mizoram",
-      "police_authority_url": null,
+      "police_authority_url": "https://mizopolicerec.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://mizoram.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -317,15 +351,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Gauhati High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Nagaland",
-      "police_authority_url": null,
+      "police_authority_url": "https://police.nagaland.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://nagaland.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -334,15 +370,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Gauhati High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Odisha",
-      "police_authority_url": null,
+      "police_authority_url": "https://odishapolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "http://www.oslsa.nic.in/",
       "state_bar_council_url": null,
@@ -351,15 +389,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Orissa High Court (official name as shown on Supreme Court jurisdiction page)",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Punjab",
-      "police_authority_url": null,
+      "police_authority_url": "https://www.punjabpolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://punjab.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -368,15 +408,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Punjab and Haryana High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Rajasthan",
-      "police_authority_url": null,
+      "police_authority_url": "https://police.rajasthan.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://rajasthan.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -385,15 +427,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Rajasthan High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Sikkim",
-      "police_authority_url": null,
+      "police_authority_url": "https://police.sikkim.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://sikkim.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -402,15 +446,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Sikkim High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Tamil Nadu",
-      "police_authority_url": null,
+      "police_authority_url": "https://eservices.tnpolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://tamilnadu.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -419,15 +465,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Madras High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Telangana",
-      "police_authority_url": null,
+      "police_authority_url": "https://www.tspolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://telangana.nalsa.gov.in/te/",
       "state_bar_council_url": null,
@@ -436,15 +484,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Telangana High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Tripura",
-      "police_authority_url": null,
+      "police_authority_url": "https://police.tripura.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://tripura.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -453,15 +503,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Tripura High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Uttar Pradesh",
-      "police_authority_url": null,
+      "police_authority_url": "https://uppolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "http://uttarpradesh.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -470,15 +522,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Allahabad High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Uttarakhand",
-      "police_authority_url": null,
+      "police_authority_url": "https://uttarakhandpolice.uk.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "http://uttarakhand.nalsa.gov.in",
       "state_bar_council_url": null,
@@ -487,15 +541,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Uttarakhand High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "West Bengal",
-      "police_authority_url": null,
+      "police_authority_url": "https://wbpolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://westbengal.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -504,17 +560,19 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this State Legal Services Authority portal. This confirms a directory listing only, not current contact details, eligibility decisions, filing steps or service availability. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Calcutta High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     }
   ],
   "union_territories": [
     {
       "state_or_ut": "Andaman and Nicobar Islands",
-      "police_authority_url": null,
+      "police_authority_url": "https://police.andaman.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": null,
       "state_bar_council_url": null,
@@ -523,14 +581,16 @@
       "high_court_url": null,
       "last_verified_at": null,
       "verification_status": "not_researched",
-      "notes": "Do not display a jurisdiction-specific route until its official authority, exact service scope and current procedure are verified. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "Do not display a jurisdiction-specific route until its official authority, exact service scope and current procedure are verified. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "high_court_name": "Calcutta High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Chandigarh",
-      "police_authority_url": null,
+      "police_authority_url": "https://chandigarhpolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://chandigarh.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -539,15 +599,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Punjab and Haryana High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Dadra and Nagar Haveli and Daman and Diu",
-      "police_authority_url": null,
+      "police_authority_url": "https://police.ddd.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": null,
       "state_bar_council_url": null,
@@ -556,18 +618,20 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded_legacy_links",
-      "notes": "NALSA's portal directory lists separate legacy DNH and Daman & Diu SLSA sites. Because these territories were merged, do not treat the legacy split as confirmation of the current unified authority or workflow; verify with NALSA/UT administration. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA's portal directory lists separate legacy DNH and Daman & Diu SLSA sites. Because these territories were merged, do not treat the legacy split as confirmation of the current unified authority or workflow; verify with NALSA/UT administration. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "legacy_legal_services_links": [
         "https://dadraandnagarhaveli.nalsa.gov.in/",
         "http://damananddiu.nalsa.gov.in/"
       ],
       "high_court_name": "Bombay High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Delhi (NCT)",
-      "police_authority_url": null,
+      "police_authority_url": "https://www.delhipolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "http://delhi.nalsa.gov.in",
       "state_bar_council_url": null,
@@ -576,15 +640,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Delhi High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Jammu and Kashmir",
-      "police_authority_url": null,
+      "police_authority_url": "https://www.jkpolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "http://jammukashmir.nalsa.gov.in",
       "state_bar_council_url": null,
@@ -593,15 +659,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Jammu and Kashmir and Ladakh High Court (common High Court)",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Ladakh",
-      "police_authority_url": null,
+      "police_authority_url": "https://police.ladakh.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://ladakh.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -610,15 +678,17 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Jammu and Kashmir and Ladakh High Court (common High Court)",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Lakshadweep",
-      "police_authority_url": null,
+      "police_authority_url": "https://lakshadweeppolice.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": null,
       "state_bar_council_url": null,
@@ -627,14 +697,16 @@
       "high_court_url": null,
       "last_verified_at": null,
       "verification_status": "not_researched",
-      "notes": "Do not display a jurisdiction-specific route until its official authority, exact service scope and current procedure are verified. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "Do not display a jurisdiction-specific route until its official authority, exact service scope and current procedure are verified. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "high_court_name": "Kerala High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     },
     {
       "state_or_ut": "Puducherry",
-      "police_authority_url": null,
+      "police_authority_url": "https://police.py.gov.in",
       "home_department_url": null,
       "state_legal_services_authority_url": "https://puducherry.nalsa.gov.in/",
       "state_bar_council_url": null,
@@ -643,11 +715,13 @@
       "high_court_url": null,
       "last_verified_at": "2026-11-28",
       "verification_status": "portal_link_recorded",
-      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification.",
+      "notes": "NALSA official website directory lists this UT legal-services portal. Directory listing does not verify current contacts, eligibility or workflow. High Court territorial-jurisdiction name recorded from the Supreme Court of India's jurisdiction annexure; exact court website and current service workflow still require separate verification. Police authority portal link recorded from the National Investigation Agency (Ministry of Home Affairs) State Police Organisations directory, checked 28 November 2026. This confirms a directory link only; it does not verify complaint registration, FIR filing, citizen-service availability or jurisdiction-specific procedure.",
       "state_legal_services_source": "NALSA official portal directory: https://nalsa.gov.in/",
       "high_court_name": "Madras High Court",
       "high_court_jurisdiction_source_url": "https://www.sci.gov.in/jurisdiction/",
-      "high_court_jurisdiction_checked": "2026-11-28"
+      "high_court_jurisdiction_checked": "2026-11-28",
+      "police_authority_source_url": "https://nia.mha.gov.in/en/state-police-organisations",
+      "police_authority_checked": "2026-11-28"
     }
   ],
   "publication_rules": [
