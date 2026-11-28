@@ -195,6 +195,17 @@ if (!app.includes('renderGuidance(out,(match?match.answer:') || !app.includes(')
   errors.push("Assistant guidance must pass its detected answer language to the renderer.");
 }
 if (!cases.includes('search.setAttribute("aria-label",t().searchPlaceholder)') || !cases.includes('filter.setAttribute("aria-label",lang()==="en"?"Filter by status":"स्थिति के अनुसार फ़िल्टर")')) {
+const caseActionLabels = [
+  'move.setAttribute("aria-label",t().moveToReview+": "+displayTitle(item))',
+  'move.setAttribute("aria-label",t().returnToDraft+": "+displayTitle(item))',
+  'move.setAttribute("aria-label",t().reopenAction+": "+displayTitle(item))',
+  'close.setAttribute("aria-label",t().closeAction+": "+displayTitle(item))',
+  'edit.setAttribute("aria-label",t().edit+": "+displayTitle(item))',
+  'del.setAttribute("aria-label",t().remove+": "+displayTitle(item))'
+];
+for (const label of caseActionLabels) {
+  if (!cases.includes(label)) errors.push("Case manager action is missing a descriptive, case-specific accessible label: " + label);
+}
   errors.push("Case search and status-filter accessible labels must follow the selected language.");
 }
 
